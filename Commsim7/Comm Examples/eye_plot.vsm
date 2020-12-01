@@ -1,0 +1,118 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POt="Eye Plot generation example"
+POa="Eritek, Inc."
+PV=4.500
+PS=0
+PE=10
+PP=0.005
+PI=170
+PX=0.005
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman"
+Pc=8
+Po=0.01,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=1024,0,0,768,0,0
+Pd=777
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=1
+123
+1
+0
+N.1="plot"*85x8*106x44
+pt="Eye Diagram"
+px="Time (sec)"
+pax=1
+pf=S
+pf=F
+pb=1.5,-0.5
+pbx=0.2,0
+pbY=1.5,-0.5
+pbX=10,0
+pc=4096
+pm=10,0
+pT=         0.2,           0,          10
+pb.0=2,-1
+pb.1=2,-1
+pb.2=2,-1
+pb.3=2,-1
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.2="label"*17x26
+n="BIT RATE = 10 Hz"
+N.3="label"*11x32
+n="Change the cutoff frequency and
+see the effect on the eye pattern.
+"
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.4="userFunction"*17x20#1,1<U>
+n="viscomm.PNData"
+DP=136
+DLF[3]=10
+0.1
+0
+DLi[6]=6
+0
+0
+0
+1
+0
+DLI[2]=67
+31
+DLs[6]="10."
+"0."
+"6"
+"0."
+"103"
+"37"
+N.5="userFunction"*44x20#1,1<U>
+n="viscomm.IIRfilter"
+DP=152
+DLi[7]=4
+0
+4
+0
+0
+0
+0
+DLF[5]=8
+1
+1
+20
+3.01029995663981
+DLs[6]="4"
+"8."
+"1."
+"1."
+"20."
+0
+N.6="label"*90x55
+n="Plot with Retrace Option enabled, and Retrace Interval set to 0.2 sec."
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.7="label"*8x3
+n="EYE PLOT GENERATION EXAMPLE"
+Ob=8454016
+Og=255
+Of=-16,0,400,0,1,0,18,"Times New Roman",0,2
+N.8="label"*9x42
+n="To view block parameters
+click over the block using the right
+mouse button."
+Ob=65535
+Og=255
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+I.1.i1=5.o1
+I.5.i1=4.o1
+cEOF

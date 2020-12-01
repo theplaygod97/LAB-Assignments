@@ -1,0 +1,198 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-2002 Visual Solutions
+POa="Eugene"
+PV=5.000.52
+PS=0
+PE=1
+PP=2.5e-005
+PI=170
+PX=2.5e-005
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,6,14,"Arial",18,0,400,2,0,1,0,1
+Pc=16
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=3071,0,0,3071,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[5]=1
+0
+1
+0
+180
+QLc[8]="5.0.7c"
+QLc[64]="móéØÖòAÄ≤áêâC1~öç."
+N.1="userFunction"*58x12#3,4<U>
+n="viscomm.complexFFT"
+DP=168
+DLi[8]=12
+0
+0
+0
+1
+1
+0
+0
+DLF[1]=0
+DLi[1]=4
+DLs[2]="0."
+"4"
+N.2="userFunction"*2x20#1,2<U>
+n="viscomm.randomSym"
+DP=88
+DLi[2]=4
+0
+DLF[3]=1800
+0
+0.000555555555555556
+DLs[3]="4"
+"1800"
+"0."
+N.3="userFunction"*37x19#1,2<UT11@2,1>
+n="viscomm.cpxReIm"
+N.4="userFunction"*34x11#0,1<U>
+n="viscomm.impulse"
+DP=48
+DLF[2]=0
+1
+DLs[2]=0
+0
+N.5="plot"*85x7*70x33<c>
+pt="FFT of Complex Signal"
+px="Time (sec)"
+py="Power Spectrum (dBm)"
+pax=2
+pf=S
+pf=x
+pf=F
+pb=1,-50
+pbx=20,-20
+pbY=0,0
+pbX=0,0
+pm=-1,0
+pb.0=0,-70
+pb.1=0,0
+pb.2=20000,-20000
+pL.2="Frequency (kHz)"
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.6="userFunction"*58x42#3,4<U>
+n="viscomm.complexFFT"
+DP=168
+DLi[8]=12
+0
+0
+0
+1
+1
+0
+0
+DLF[1]=0
+DLi[1]=4
+DLs[2]="0."
+"4"
+N.7="plot"*85x40*70x33<c>
+pt="FFT of Real Signal"
+px="Time (sec)"
+py="Power Spectrum (dBm)"
+pax=2
+pf=S
+pf=x
+pf=F
+pb=1,-50
+pbx=20,-20
+pbY=0,0
+pbX=0,0
+pm=-1,0
+pb.0=0,-300
+pb.1=0,0
+pb.2=20,-20
+pL.2="Frequency (kHz)"
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.8="label"*2x2
+n="COMPLEX FFT EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,34,"Arial",0,2
+N.9="label"*64x21
+n="  Complex FFT
+(Complex Input)
+   4 averages"
+N.10="label"*65x51
+n="Complex FFT
+ (Real Input)
+ 4 averages"
+N.11="label"*14x27
+n="Carrier:       5 kHz
+Data Rate:  1.8 ksps"
+N.12="label"*4x65
+n="- Remember to include sufficient time in the run to display all the output points.
+- For a vector type FFT output use the Spectrum Analyzer block.
+- FFT block supports the averaging of multiple FFTs."
+Ob=8454143
+Og=255
+N.13="label"*4x71
+n="- Data collection for the FFT starts once the input trigger goes high.
+- Once the FFT process is started, the trigger input is ignored.
+- The frequency axis data is also output by the block (Plot in XY mode), and
+  can be scaled in Hz, kHz, MHz and GHz"
+Ob=8454143
+Og=255
+N.14="label"*4x59
+n="Notes:
+- Complex FFT block outputs its result one sample at a time (this can be used to operate
+  on the frequency domain signal just as any other signal (e.g. apply filtering, etc...)."
+Ob=8454143
+Og=255
+N.15="userFunction"*19x20#2,2<U>
+n="viscomm.pskModulate"
+DP=280
+DLi[2]=1
+1
+DLF[5]=5000
+1
+0
+0
+0
+DLc[128]="psk_gray.dat"
+DLs[5]="5000"
+"1."
+"0."
+"0."
+"0."
+N.16="const"<0>*42x47
+I.1.i1=4.o1
+I.1.i2=3.o1
+I.1.i3=3.o2
+f3.1.i=vT11
+I.3.i1=15.o1
+I.5.i1=1.o2
+I.5.i3=1.o4
+I.5.i0=1.o1
+I.6.i1=4.o1
+I.6.i2=3.o1
+I.6.i3=16.o1
+I.7.i1=6.o2
+I.7.i3=6.o4
+I.7.i0=6.o1
+f15.1.o=vT11@2,1
+f15.1.i=T3
+I.15.i1=2.o1
+f15.2.i=T3
+I.15.i2=2.o2
+cEOF

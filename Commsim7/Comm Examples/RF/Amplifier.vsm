@@ -1,0 +1,252 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eritek, Inc."
+PV=4.500
+PS=0
+PE=0.05
+PP=4e-005
+PI=170
+PX=4e-005
+PN=1e-006
+PL=5
+PT=0.05
+Pn=-8,6,14,"Arial"
+Pc=20
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=1
+63
+1
+0
+N.1="userFunction"*5x9#0,1<U>
+n="viscomm.sineHz"
+DP=80
+DLi[1]=1
+DLF[4]=2000
+0.630957344480193
+0
+6
+DLi[1]=1
+DLs[4]="2000."
+0
+"0."
+"6"
+N.2="userFunction"*5x15#0,1<U>
+n="viscomm.sineHz"
+DP=80
+DLi[1]=1
+DLF[4]=2500
+0.630957344480193
+0
+6
+DLi[1]=1
+DLs[4]="2500."
+0
+"0."
+"6."
+N.3="userFunction"*42x14#1,1<U>
+n="viscomm.amp"
+DP=176
+DLi[2]=0
+1
+DLF[6]=10
+3
+10
+30
+22
+50
+DLs[6]="10."
+"3."
+"10."
+"30."
+"22."
+"50."
+N.4="plot"*68x2*94x34
+pt="Amplifier Output (Time Domain)"
+px="Time (msec)"
+pax=0
+pf=S
+pS=7
+pf=F
+pb=1.5,-1.5
+pbx=0.05,0
+pbY=1,1e-031
+pbX=12500,0
+pc=5000
+pm=10,0
+pb.0=2,-1
+pb.1=0,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.5="userFunction"*25x14#2,1<U>
+n="viscomm.splitter"
+DP=72
+DLi[3]=0
+2
+2
+DLF[2]=1
+0.5
+DLs[2]="1"
+"0.5"
+N.6="label"*26x7
+n="Note:  4 dB loss
+through combiner
+(extra 1 dB loss)"
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.7="label"*44x7
+n="1 dB comp.= 10 dBm
+IP2= 30 dBm
+IP3= 22 dBm"
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.8="label"*2x2
+n="AMPLIFIER EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,34,"Arial",0,2
+N.9="label"*2x33
+n="This example illustrates the various intermodulation
+products formed when two tones are passed through an
+amplifier operating close to its compression point.
+
+Try varying the amplifier settings and observe
+the impact on the IM products."
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.10="label"*2x57
+n="- Amplifier output is deternined using a Taylor expansion up to
+  the saturation point.  Thereafter, if the input voltage is increased, 
+  the amplifier output will remain at the saturated level (see
+  graph below)."
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.11="label"*37x2
+n="Fs= 25 kHz"
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.12="ramp"<0;50>*5x70
+N.13="userFunction"*14x69#1,1<U>
+n="viscomm.amp"
+DP=176
+DLi[2]=0
+1
+DLF[6]=10
+3
+10
+30
+22
+50
+DLs[6]="10."
+"3."
+"10."
+"30."
+"22."
+"50."
+N.14="plot"*34x68*28x18
+px="Time (msec)"
+pax=0
+pf=H
+pS=7
+pb=2,0
+pbx=0.05,0
+pbY=0,0
+pbX=0,0
+pm=-1,0
+pb.0=0,0
+pb.1=2,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.15="label"*2x47
+n="Amplifier Notes:
+- If unsure about one of the Intercept Point (IP) settings,
+  and to minimize its impact on the output, enter a very
+  large value (e.g. 100 dBm)
+-  Intercerpt Points are referenced at the amplifier OUTPUT"
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.16="userFunction"*24x23#2,4<UT11>
+n="viscomm.spectrumRe"
+DP=136
+DLi[8]=9
+0
+0
+1
+1
+1
+0
+0
+DLF[1]=0
+DLi[1]=2
+DLs[2]="0."
+"2"
+DLi[1]=1
+N.17="plot"*68x37*94x45<c>
+pt="Output Spectrum"
+px="Time (sec)"
+py="Power Level (dBm)"
+pax=2
+pf=S
+pf=x
+pf=F
+pb=10,-40
+pbx=12.5,0
+pbY=0,0
+pbX=4096,0
+pc=257
+pm=-1,0
+pb.0=20,-90
+pb.1=0,0
+pb.2=20,0
+pL.2="Frequency (kHz)"
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.18="userFunction"*7x22#0,1<U>
+n="viscomm.impulse"
+DP=48
+DLF[2]=0
+1
+DLs[2]=0
+0
+N.19="label"*70x83
+n="Fundamental tones are at 2 kHz and 2.5 kHz"
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.20="wirePositioner"*24x19<R>
+I.3.i1=5.o1
+I.4.i1=3.o1
+I.5.i1=1.o1
+I.5.i2=2.o1
+I.13.i1=12.o1
+I.14.i2=13.o1
+f16.2.o=v
+f16.3.o=v
+f16.4.o=v
+I.16.i1=18.o1
+I.16.i2=20.o1
+f17.1.i=v
+I.17.i1=16.o2
+f17.3.i=v
+I.17.i3=16.o4
+I.17.i0=16.o1
+I.20.i1=3.o1
+cEOF

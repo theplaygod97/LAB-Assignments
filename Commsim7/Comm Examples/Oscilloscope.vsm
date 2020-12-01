@@ -1,0 +1,142 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eugene"
+PV=4.500
+PS=0
+PE=1150
+PP=0.01
+PI=170
+PX=0.01
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,6,14,"Arial"
+Pc=11
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=1
+0
+1
+0
+Qn="fixptblk.dll"
+QLI[1]=0
+QLI[1]=0
+N.1="userFunction"*50x20#3,4<UT11>
+n="viscomm.oScope"
+DP=80
+DLi[2]=0
+0
+DLF[2]=2
+0
+DLs[2]="2"
+"0"
+N.2="userFunction"*6x17#0,2<U>
+n="viscomm.sineHz"
+DP=72
+DLi[1]=1
+DLF[4]=5.2
+1
+0
+0
+DLi[1]=0
+DLs[4]="5.2"
+"1."
+"0."
+0
+N.3="plot"*79x16*75x37<c>
+pt="Oscilloscope Display"
+px="Time (sec)"
+py="Amplitude (V)"
+pax=3
+pf=S
+pf=x
+pf=F
+pb=1.5,-1.5
+pbx=2,0
+pbY=0,0
+pbX=101,0
+pc=201
+pm=-1,0
+pr=65535
+pR=0
+pb.0=1,-2
+pL.0="Chan A"
+pb.1=0,0
+pb.2=2,0
+pL.2="Chan B"
+pb.3=0,0
+pL.3="Time (sec)"
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.4="userFunction"*4x23#0,2<U>
+n="viscomm.sineHz"
+DP=72
+DLi[1]=1
+DLF[4]=0.001
+1
+0
+0
+DLi[1]=0
+DLs[4]="0.001"
+"1."
+"0."
+0
+N.5="*"*25x21
+N.6="userFunction"*33x35#0,2<U>
+n="viscomm.sineHz"
+DP=72
+DLi[1]=1
+DLF[4]=5.21
+0.8
+0
+0
+DLi[1]=0
+DLs[4]="5.21"
+"0.8"
+"0."
+0
+N.7="userFunction"*33x9#0,1<U>
+n="viscomm.impulse"
+DP=48
+DLF[2]=0
+1
+DLs[2]=0
+0
+N.8="label"*33x14
+n="Start pulse"
+N.9="label"*48x2
+n="OSCILLOSCOPE EXAMPLE"
+Of=-13,0,400,0,0,0,34,"Arial",0,2
+N.10="label"*33x24
+n="Varying amplitude
+waveform"
+N.11="label"*31x41
+n="Second waveform with slightly
+offset frequency"
+f1.2.o=v
+f1.3.o=v
+f1.4.o=v
+I.1.i1=7.o1
+I.1.i2=5.o1
+I.1.i3=6.o1
+f3.1.i=v
+I.3.i1=1.o2
+f3.3.i=v
+I.3.i3=1.o3
+f3.4.i=v
+I.3.i4=1.o4
+I.3.i0=1.o1
+I.5.i1=2.o1
+I.5.i2=4.o1
+cEOF

@@ -1,0 +1,165 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-2002 Visual Solutions
+POa="Eugene"
+PV=5.000b
+PS=0
+PE=0.001
+PP=1e-007
+PI=170
+PX=1
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman",18,0,400,2,0,1,0,1
+Pc=20
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=3071,0,0,3071,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[5]=1
+0
+1
+0
+186
+QLc[8]="5.0.9c"
+QLc[64]="âóÉèáåAd†´´ì|cTr®ä."
+N.1="Compound"*3x2#1,1
+n="Bluetooth
+   GFSK
+Modulator"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=1
+Mh=0
+Mp=0
+N.2="userFunction"*136x30#1,1<MU>
+n="viscomm.fmMod"
+DP=120
+DLF[4]=0
+1
+150000
+0
+DLs[4]="0."
+"1."
+":FMdev"
+"0."
+DLi[1]=0
+DLE
+N.3="label"*59x20<M>
+n="The Gaussian Filter Cutoff freq. is set to :  
+
+Filter Cutoff = BTvalue * Data Rate"
+Ob=8454143
+Og=255
+N.4="label"*122x13<M>
+n="Set the FM Deviation parameter to
+the specified value
+(e.g. 140 ~ 175 kHz for Bluetooth)
+
+This assumes that the data into the
+Gaussian Filter is +/- 1"
+Ob=8454143
+Og=255
+N.5="userFunction"*61x30#1,1<MU>
+n="viscomm.FIRfilter"
+DP=176
+DLi[4]=256
+7
+0
+0
+DLF[4]=500000
+2
+0
+1
+DLi[1]=0
+DLF[1]=100000000
+DLi[1]=0
+DLs[6]="256"
+"( :BT * :SymRate )"
+"2."
+"0."
+"1."
+"100."
+DLE
+N.6="label"*50x36<M>
+n="Note:  By setting the number of FIR taps to an ODD value,
+the filter delay will be an integral number of simulation steps
+
+                  delay = ( N - 1 ) / 2"
+N.7="variable"*35x7<M>
+n=":BT"
+N.8="const"<0.5>*23x7<M>
+N.9="const"<1000000>*16x11<M>
+N.10="variable"*35x11<M>
+n=":SymRate"
+N.11="label"*13x1<M>
+n="BLOCK PARAMETERS"
+Of=-16,0,400,0,1,0,18,"Times New Roman",0,2
+N.12="label"*6x57<M>
+n="THIS BLOCK EXPECTS AN NRZ BINARY INPUT
+SIGNAL IN THE RANGE OF [ 0, 1]"
+Of=-13,0,400,0,0,0,18,"Times New Roman",0,2
+N.13="const"<150000>*17x15<M>
+N.14="variable"*35x15<M>
+n=":FMdev"
+N.15="label"*57x2<M>
+n="The settings shown are for Bluetooth"
+Of=-13,0,400,0,0,0,18,"Times New Roman",0,2
+N.16="userFunction"*15x42#1,1<MU>
+n="viscomm.poly"
+DP=80
+DLF[6]=0
+0
+0
+0
+2
+-1
+DLs[6]="0."
+"0."
+"0."
+"0."
+"2"
+"-1"
+DLi[2]=1
+2
+DLE
+N.17="label"*6x46<M>
+n="Binary to Bilevel conversion
+
+Map 1 to positive freq. deviation
+Map 0 to negative freq. deviation"
+N.18="label"*137x36<M>
+n="Complex Baseband output
+(change as necessary)"
+N.19="label"*115x51<M>
+n="THIS BLOCK IS READ ONLY :
+TO MAKE CHANGES, PLEASE USE \"Save as...\" 
+
+After opening a newly created version or \"adding\" the
+original, you may disable the \"Read Only\" mode by
+accessing the compound block's Properties and
+unchecking the \"Read Only\" box"
+Of=-13,0,400,0,0,0,18,"Times New Roman",0,2
+N.20="label"*123x5<M>
+n="FOR HELP ON THIS BLOCK
+please refer to the Wireless Module Online Help and
+search for \"Bluetooth GFSK\""
+G.1=2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,
+f1.1.o=v
+I.1.o1=2.o1
+f1.1.o=vT11
+f2.1.o=vT11
+I.2.i1=5.o1
+I.5.i1=16.o1
+I.7.i1=8.o1
+I.10.i1=9.o1
+I.14.i1=13.o1
+I.16.i1=1.i1
+cEOF

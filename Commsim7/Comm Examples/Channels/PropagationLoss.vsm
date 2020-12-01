@@ -1,0 +1,102 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eugene"
+PV=4.500
+PS=0
+PE=10
+PP=0.01
+PI=170
+PX=0.01
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-9,6,16,"Times New Roman"
+Pc=7
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=1
+17
+1
+0
+N.1="userFunction"*22x6#2,2<U>
+n="viscomm.propLoss"
+DP=256
+DLi[2]=1
+0
+DLF[2]=0.1
+1
+DLs[2]=".1"
+"1."
+N.2="plot"*54x32*106x32
+pt="Path Attenuation vs. Distance"
+px="Time (sec)"
+py="Path Loss (dB)"
+pax=2
+pf=H
+pf=x
+pf=F
+pb=5,-35
+pbx=1,0
+pbY=5,-35
+pbX=10,0
+pm=-1,0
+pb.0=0,0
+pb.1=0,0
+pb.2=1,0
+pL.2="Path Distance (km)"
+pb.3=0,-40
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.3="sinusoid"<0;2;1>*7x2
+BF=H
+N.4="ramp"<0;0.1>*8x14
+N.5="plot"*54x2*106x30
+pt="Signal Amplitude vs. Distance"
+px="Time (sec)"
+py="Amplitude (V)"
+pax=2
+pf=H
+pf=x
+pf=F
+pb=2,-1.5
+pbx=1,0
+pbY=1,-1
+pbX=10,0
+pm=-1,0
+pb.0=1,-1
+pL.0="Original Signal"
+pb.1=1,-1
+pL.1="Attenuated Signal"
+pb.2=1,0
+pL.2="Path Distance (km)"
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.6="label"*4x17
+n="Path distance"
+N.7="label"*2x50
+n="Note:  Since the prop loss formula used yields a gain at close-in
+distances, the block's output is capped at unity gain."
+Ob=8454143
+Og=255
+I.1.i1=3.o1
+I.1.i2=4.o1
+I.2.i3=4.o1
+I.2.i4=1.o2
+I.5.i1=3.o1
+I.5.i2=1.o1
+I.5.i3=4.o1
+cEOF

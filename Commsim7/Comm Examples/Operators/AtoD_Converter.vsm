@@ -1,0 +1,175 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-2000 Visual Solutions
+POa="Eugene"
+PV=4.500
+PS=0
+PE=2
+PP=0.01
+PI=172
+PX=0.01
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,6,14,"Arial"
+Pc=15
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=1
+0
+1
+0
+N.1="userFunction"*27x12#1,1<U>
+n="viscomm.ADConv"
+DP=56
+DLi[3]=3
+0
+1
+DLF[1]=2.2
+DLs[2]="3."
+"2.2"
+N.2="userFunction"*7x28#0,2<U>
+n="viscomm.sineHz"
+DP=72
+DLi[1]=1
+DLF[4]=1
+2
+0
+0
+DLi[1]=0
+DLs[4]="1"
+"2"
+"0."
+0
+N.3="plot"*58x1*81x28
+px="Time (sec)"
+pax=0
+pf=S
+pf=F
+pb=4,-4
+pbx=2,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=3,-3
+pb.1=3,-3
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.4="label"*3x2
+n="A/D CONVERTER EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,34,"Arial",0,2
+N.5="label"*29x15
+n="Midlevel Mode
+Range= +/- 2.2 V
+Signed Output"
+N.6="label"*39x41
+n="Offset Mode
+Range= +/- 2.2 V
+Signed Output"
+N.7="userFunction"*37x36#1,1<U>
+n="viscomm.ADConv"
+DP=56
+DLi[3]=3
+1
+1
+DLF[1]=2.2
+DLs[2]="3."
+"2.2"
+N.8="userFunction"*37x50#1,1<U>
+n="viscomm.ADConv"
+DP=56
+DLi[3]=3
+0
+0
+DLF[1]=2.2
+DLs[2]="3."
+"2.2"
+N.9="label"*38x54
+n="Midlevel Mode
+Range= +/- 2.2 V
+Unsigned Output"
+N.10="plot"*58x30*81x28
+px="Time (sec)"
+pax=0
+pf=S
+pf=F
+pb=4,-4
+pbx=2,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=0,0
+pb.1=3,-3
+pb.2=0,0
+pb.3=3,-5
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.11="plot"*58x59*81x28
+px="Time (sec)"
+pax=0
+pf=S
+pb=8,0
+pbx=2,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=0,0
+pb.1=0,0
+pb.2=8,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.12="label"*2x70
+n="Signed Output Mode results in A/D values ranging from
+-(2**N)/2 to (2**N)/2 - 1, where N is the number bits.
+e.g. [-4, 3] for a 3 bit ADC.
+
+Unsigned Output Mode results in A/D values ranging
+from 0 to (2**N) - 1, e.g. [0, 7] for a 3 bit ADC."
+Ob=8454143
+Og=255
+N.13="label"*2x53
+n="Notes:
+Offset mode indicates that a zero
+volts INPUT level falls along an A/D
+quantization level boundary.
+
+Midlevel mode indicates that a zero
+volts INPUT level falls down the center
+of an A/D quantization level boundary."
+Ob=8454143
+Og=255
+N.14="wirePositioner"*41x28
+N.15="label"*6x34
+n="2 volts sine wave"
+I.1.i1=2.o1
+I.3.i1=1.o1
+I.3.i2=14.o1
+I.7.i1=2.o1
+I.8.i1=2.o1
+I.10.i2=14.o1
+I.10.i4=7.o1
+I.11.i3=8.o1
+I.14.i1=2.o1
+cEOF

@@ -1,0 +1,99 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POt="Second Order PLL (Complex Input)"
+POa="Eritek, Inc."
+PV=4.000
+PS=0
+PE=1
+PP=0.05
+PI=171
+PX=1
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman"
+Pc=12
+Po=0.01,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,1536,0,0
+Pd=777
+PM=1,1,1,1
+N.1="userFunction"*91x21#1,1<MU>
+n="viscomm.loop2Filter"
+DP=168
+DLi[1]=1
+DLF[7]=1
+0.7071
+1
+10
+0.522415421944385
+62.8318530717959
+1.39828450569081
+DLi[1]=0
+DLs[5]=0
+0
+0
+0
+0
+N.2="Compound"*2x2#1,2<C>
+n="Cmplx PLL
+  2nd Order"
+Ms=2048,0,0,1536,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+Mw=""
+N.3="label"*166x14<M>
+n="VCO Output (Complex)"
+N.4="label"*177x55<M>
+n="VCO Phase"
+N.5="label"*35x16<M>
+n="Phase Detector"
+N.6="label"*81x19<M>
+n="Kd"
+N.7="gain"(1)*79x22<M>
+N.8="userFunction"*37x20#2,1<MUT11>
+n="viscomm.multiply"
+N.9="userFunction"*58x34#1,1<MRUT11>
+n="viscomm.conjugate"
+N.10="userFunction"*116x35#1,2<MRUT11>
+n="viscomm.vco"
+DP=120
+DLF[4]=1
+1
+0
+10
+DLi[1]=1
+DLs[4]=0
+0
+0
+0
+N.11="userFunction"*56x20#1,2<MUT11>
+n="viscomm.cpxReIm"
+N.12="label"*2x37<M>
+n="Complex Input"
+I.1.i1=7.o1
+G.2=1,3,4,5,6,7,8,9,10,11,12,
+I.2.o1=10.o1
+I.2.o2=10.o2
+I.7.i1=11.o2
+f8.1.o=v
+f8.1.i=v
+I.8.i1=2.i1
+f8.2.i=v
+I.8.i2=9.o1
+f9.1.o=v
+f9.1.i=v
+I.9.i1=10.o1
+f10.1.o=v
+I.10.i1=1.o1
+f11.1.i=v
+I.11.i1=8.o1
+cEOF

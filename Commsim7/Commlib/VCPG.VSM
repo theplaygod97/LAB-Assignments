@@ -1,0 +1,62 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POt="Voltage Controlled Pulse Generator"
+POa="Eritek, Inc."
+PV=4.000
+PS=0
+PE=1
+PP=0.05
+PI=172
+PX=1
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman"
+Pc=6
+Po=0.01,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=1024,0,0,768,0,0
+Pd=777
+PM=1,1,1,1
+N.1="limit"(0,1)*135x36<M>
+N.2="crossDetect"(0)*76x33<M>
+N.3="Compound"*3x2#1,1<C>
+n="VCPG"
+Ms=2048,0,0,1536,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+Mw=""
+N.4="label"*125x40<M>
+n="Removes negative pulses
+at the half cycle point"
+N.5="userFunction"*27x34#1,1<MUT11>
+n="viscomm.vco"
+DP=120
+DLF[4]=1
+1
+0
+10
+DLi[1]=1
+DLs[4]=0
+0
+0
+0
+N.6="userFunction"*53x33#1,2<MUT11>
+n="viscomm.cpxReIm"
+I.1.i1=2.o1
+I.2.i1=6.o1
+G.3=1,2,4,5,6,
+I.3.o1=1.o1
+f5.1.o=v
+I.5.i1=3.i1
+f6.1.i=v
+I.6.i1=5.o1
+cEOF

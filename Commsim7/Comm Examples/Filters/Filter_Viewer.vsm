@@ -1,0 +1,118 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eugene"
+PV=4.500
+PS=0
+PE=1
+PP=0.005
+PI=170
+PX=0.005
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman"
+Pc=7
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=1
+123
+1
+0
+N.1="plot"*99x8*123x33
+px="Time (sec)"
+pax=0
+pf=S
+pf=F
+pb=2,-2
+pbx=1,0
+pbY=0,0
+pbX=0,0
+pm=-1,0
+pr=255
+pR=16777215
+pb.0=2,-1
+pb.1=1,-1
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.2="userFunction"*15x9#0,2<U>
+n="viscomm.sineHz"
+DP=72
+DLi[1]=1
+DLF[4]=10
+1
+0
+0
+DLi[1]=0
+DLs[4]="10."
+"1."
+"0."
+0
+N.3="userFunction"*56x12#1,1<U>
+n="viscomm.IIRfilter"
+DP=152
+DLi[7]=4
+0
+4
+1
+0
+0
+1
+DLF[5]=8
+2
+0.508847139909588
+20
+1
+DLs[6]="4"
+"8."
+"2."
+0
+"20."
+"1."
+N.4="label"*13x34
+n="Filter Viewer choices include:
+
+     Impulse Response
+     Gain response (normal or in dB)
+     Phase response
+     Group Delay response
+
+The response is obtained by internally stimulating the filter
+with a unit impulse and then computing an FFT."
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.5="label"*13x54
+n="Once in the filter viewer, drag left mouse over plot to zoom. 
+Right click mouse over graph to zoom back out."
+Ob=8454143
+Og=255
+N.6="label"*7x2
+n="FILTER VIEWER EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,18,"Times New Roman",0,2
+N.7="label"*13x23
+n="To envoke the Filter Viewer to see the response
+of the IIR Filter block, click over the block using
+the right mouse button, and then press the
+\"View Response\" button.  "
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+I.1.i1=2.o1
+I.1.i2=3.o1
+I.3.i1=2.o1
+cEOF

@@ -1,0 +1,6 @@
+clc;clear all;close all;
+Odefunc_handle=@funtest;
+tspan=[0 5];
+y0=1;
+[t,y]=Ode45(@funtest,tspan,y0)
+plot(t,y)

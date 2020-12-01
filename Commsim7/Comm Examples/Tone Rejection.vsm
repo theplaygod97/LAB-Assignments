@@ -1,0 +1,179 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eugene"
+PV=4.500
+PS=0
+PE=3
+PP=4.5351473922902e-005
+PI=170
+PX=4.5351473922902e-005
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman"
+Pc=16
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=1
+63
+1
+0
+N.1="import"*11x9#0,1
+n="Utopia Windows Start.wav"
+dl=0
+di=4.5351473922902e-005
+dS=9
+N.2="export"*76x40#1,0
+n="modified.wav"
+dc=100000
+dp=16
+dh
+df=ei
+di=4.5351473922903e-005
+dS=9
+N.3="userFunction"*24x54#1,1<U>
+n="viscomm.IIRfilter"
+DP=152
+DLi[7]=6
+0
+3
+0
+3
+0
+1
+DLF[5]=2990
+3010
+0.997628345110983
+20
+3
+DLs[6]="6"
+"2990."
+"3010."
+0
+"20."
+"3."
+N.4="plot"*107x32*118x25
+pt=" .wav File + Tone Interference"
+px="Time (sec)"
+pax=0
+pf=H
+pf=F
+pb=40000,-40000
+pbx=3,0
+pbY=0,0
+pbX=0,0
+pc=16384
+pm=-1,0
+pb.0=0,0
+pb.1=40000,-30000
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.5="summingJunction"*56x21
+N.6="userFunction"*22x23#0,2<U>
+n="viscomm.sineHz"
+DP=72
+DLi[1]=1
+DLF[4]=3000
+10000
+0
+0
+DLi[1]=0
+DLs[4]="3000."
+"10000."
+"0."
+0
+N.7="export"*75x71#1,0
+n="restored.wav"
+dc=100000
+dp=16
+dh
+df=ei
+di=4.5351473922903e-005
+dS=9
+N.8="plot"*107x58*118x25
+pt="Restored .wav File"
+px="Time (sec)"
+pax=0
+pf=H
+pf=F
+pb=40000,-40000
+pbx=3,0
+pbY=0,0
+pbX=0,0
+pc=16384
+pm=-1,0
+pb.0=0,0
+pb.1=40000,-30000
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.9="plot"*107x6*118x25
+pt="Original .wav File"
+px="Time (sec)"
+pax=0
+pf=H
+pf=F
+pb=40000,-40000
+pbx=3,0
+pbY=0,0
+pbX=0,0
+pc=16384
+pm=-1,0
+pb.0=0,0
+pb.1=40000,-30000
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.10="label"*32x59
+n="Reject 3 kHz tone"
+N.11="label"*8x1
+n="INPUT .WAV FILE IS CORRUPTED BY ADDITION OF A TONE,
+AND THEN RESTORED VIA A FILTERING TECHNIQUE"
+Of=-13,0,400,0,0,0,18,"Times New Roman",0,2
+N.12="label"*22x28
+n="Interfering Tone"
+N.13="label"*4x12
+n="Press \"Play Sound\" to hear input signal.
+
+Also try \"Utopia Windows Exit.wav\""
+N.14="label"*75x43
+n="Press \"Play Sound\" to
+hear distorded signal"
+N.15="label"*72x74
+n="Press \"Play Sound\" to
+hear filtered signal"
+N.16="label"*10x67
+n="To view block parameters,
+click over the block using the right
+mouse button."
+Ob=65535
+Og=255
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+I.2.i1=5.o1
+I.3.i1=5.o1
+I.4.i1=5.o1
+I.5.i1=1.o1
+I.5.i2=6.o1
+I.7.i1=3.o1
+I.8.i3=3.o1
+I.9.i2=1.o1
+cEOF

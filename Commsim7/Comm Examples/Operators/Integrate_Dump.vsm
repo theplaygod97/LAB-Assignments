@@ -1,0 +1,481 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-2002 Visual Solutions
+POt="BPSK Tracking example"
+POa="Eritek, Inc."
+PV=5.000.52
+PS=0
+PE=0.025
+PP=1.0416666666667e-005
+PI=170
+PX=1.0416666666667e-005
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman",18,0,400,2,0,1,0,1
+Pc=59
+Po=0.01,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=3071,0,0,3071,0,0
+Pd=777
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[5]=1
+331
+1
+0
+180
+QLc[8]="5.0.7c"
+QLc[64]="móéØÖòAÄ≤áêâC1~öç."
+N.1="variable"*70x47<M>
+n="data sig"
+N.2="plot"*87x42*115x34
+pt="Transmitted vs. Received Data Bits"
+px="Time (msec)"
+pax=0
+pf=S
+pS=7
+pf=F
+pb=4,-1
+pbx=0.025,0
+pbY=0,0
+pbX=0,0
+pc=2048
+pm=10,0
+pb.0=0,0
+pL.0="Received Data"
+pb.1=0,0
+pL.1="Transmitted Data"
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.3="plot"*133x3*70x38<c>
+pt="Phase Scatter Plot"
+px="Time (sec)"
+py="Q Channel"
+pax=0
+pl=1
+pf=S
+pf=x
+pf=F
+pb=2,-2
+pbx=2,-2
+pbY=0,-2
+pbX=5000,0
+pc=5000
+pm=9999,1
+pb.0=2,-2
+pL.0="I Channel"
+pb.1=2,-2
+pb.2=2,0
+pb.3=0,-2
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.4="summingJunction"*185x40<M>
+N.5="const"(2)*97x35<M>
+N.6="userFunction"*121x14#1,1<MU>
+n="viscomm.loop2Filter"
+DP=168
+DLi[1]=0
+DLF[7]=500
+0.7071
+1
+10
+265.164195304766
+0.000251327412287183
+0.0028284
+DLi[1]=0
+DLs[5]=0
+0
+0
+0
+0
+N.7="*"*112x14<M>
+N.8="Compound"*49x17#1,2
+n="Costas Loop
+  (Complex)"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.9="label"*202x59<M>
+n="VCO Output (Complex)"
+N.10="variable"*81x16<M>
+n="data sig"
+N.11="userFunction"*84x25#1,2<MU>
+n="viscomm.pskMod"
+DP=240
+DLF[4]=0
+1
+-80
+0
+DLi[1]=0
+DLc[128]="psk_gray.dat"
+DLF[2]=0
+0
+DLs[5]="0."
+"1."
+"-80."
+"0."
+"0."
+N.12="variable"*112x46<MT11>
+n="VCO Phase"
+N.13="variable"*4x33<T11>
+n="VCO Phase"
+N.14="summingJunction"*27x31
+N.15="label"*171x47<M>
+n="add offset to data for plotting purposes"
+N.16="label"*107x21<M>
+n="BPSK Phase Detector"
+N.17="label"*5x53
+n="COMPLEX ENVELOPE SIMULATION:
+Carrier frequency is set to 0 Hz
+in the modulator and VCO."
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.18="userFunction"*32x26#1,2<MU>
+n="viscomm.PNData"
+DP=136
+DLF[3]=4800
+0.000208333333333333
+0
+DLi[6]=6
+4
+0
+0
+1
+0
+DLI[2]=67
+63
+DLs[6]="Rate"
+"0."
+"6"
+"4."
+"103"
+"77"
+N.19="label"*38x32<M>
+n="Data Source
+ (4.8 kbps)"
+N.20="label"*107x28
+n="Data Output"
+N.21="userFunction"*55x13#1,1<MU>
+n="viscomm.IIRfilter"
+DP=152
+DLi[7]=4
+0
+4
+0
+0
+0
+0
+DLF[5]=4000
+5
+1
+20
+3.01029995663981
+DLs[6]="4"
+"Fc"
+"5."
+"1."
+"20."
+0
+N.22="userFunction"*60x19#1,1<MU>
+n="viscomm.IIRfilter"
+DP=152
+DLi[7]=4
+0
+4
+0
+0
+0
+0
+DLF[5]=4000
+5
+1
+20
+3.01029995663981
+DLs[6]="4"
+"Fc"
+"5."
+"1."
+"20."
+0
+N.23="label"*108x29<M>
+n="phase"
+N.24="userFunction"*25x18#1,2<U>
+n="viscomm.awgn"
+DP=240
+DLi[1]=1
+DLF[11]=4800
+1
+10
+1
+1
+1
+1
+1
+1
+1
+10
+DLi[1]=0
+DLF[2]=1
+1
+DLs[14]="1"
+"4800."
+"1."
+0
+"EbNo"
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+N.25="userFunction"*10x18#2,1<MU>
+n="viscomm.multiply"
+N.26="userFunction"*30x18#1,2<MUT11@2,1>
+n="viscomm.cpxReIm"
+N.27="userFunction"*45x37#1,1<MRU>
+n="viscomm.conjugate"
+N.28="userFunction"*86x38#1,2<MRU>
+n="viscomm.vco"
+DP=128
+DLF[4]=0
+1
+0
+10
+DLi[1]=1
+DLs[4]=0
+0
+0
+0
+N.29="userFunction"*105x5#2,1<MU>
+n="viscomm.reImCpx"
+N.30="userFunction"*74x17#2,2<U>
+n="viscomm.integDump2"
+DP=176
+DLi[3]=0
+0
+0
+DLF[4]=0
+4800
+0.0001
+4800
+DLs[4]="0."
+"Rate"
+"1.e-004"
+"Rate"
+DLi[1]=1
+N.31="userFunction"*105x16#1,1<UT11@2,1>
+n="viscomm.pskSlicer"
+DP=176
+DLi[1]=0
+DLF[2]=0
+0
+DLc[128]="psk_gray.dat"
+DLs[2]="0."
+"0."
+N.32="userFunction"*92x8#1,2<UT11@2,1>
+n="viscomm.cpxReIm"
+N.33="plot"*48x24*127x43<M>
+pt="Tracking PLL Phase Error"
+px="Time (msec)"
+pax=0
+pf=S
+pS=7
+pf=F
+pb=100,-100
+pbx=0.025,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=0,0
+pL.0="Phase Error (deg)"
+pb.1=0,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.34="label"*2x36
+n="(from Costas Loop)"
+N.35="label"*197x23<M>
+n="Tracked Signal (Complex)"
+N.36="label"*46x69<M>
+n="Click Right Mouse Button over blank area to return to previous level."
+Ob=65535
+Og=255
+N.37="label"*3x2
+n="INTEGRATE & DUMP EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,34,"Arial",0,2
+N.38="label"*28x24
+n="Eb/No set at 10 dB"
+N.39="userFunction"*12x42#1,1<MU>
+n="viscomm.convert"
+DP=8
+DLi[1]=5
+N.40="label"*127x11
+n="Q"
+N.41="label"*127x7
+n="I"
+N.42="const"<4800>*10x43
+N.43="variable"*25x43
+n="Rate"
+N.44="variable"*34x6<M>
+n="Fc"
+N.45="const"<4000>*19x6<M>
+N.46="const"<10>*12x47
+N.47="variable"*25x47
+n="EbNo"
+N.48="Compound"*3x19#0,2
+n="Modulator"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.49="Compound"*39x31#1,0
+n="PLL Acquisition
+Plot"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.50="Compound"*53x46#0,1
+n="Reference
+Data"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.51="label"*63x51<M>
+n="From Modulator block"
+N.52="label"*5x7
+n="The Integrate and Dump block is used to integrate a
+demodulated signal at a specified symbol rate, thus
+producing \"Dumped\" values suitable for Bit / Symbol detection."
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.53="label"*84x78
+n="Received data decisions are correct once PLL has pulled in (approx. 5 msec)"
+N.54="step"<0.005;1>*102x4
+N.55="label"*74x4
+n="Start plot at t= 5 msec"
+N.56="label"*5x62
+n="Notes:
+- The I&D block can operate with either an INTERNAL
+   or EXTERNAL clock.
+- The \"Scale Factor\" term is usually set equal to the
+   Dump Rate, so as to obtain a normalized output."
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.57="label"*5x73
+n="- The I&D block will reset to the specified value
+   after each dump.
+- In INTERNAL clock mode, the \"Delay\" term can be
+   used to synchronize the dump operation with the data."
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.58="userFunction"*100x47#1,1<MU>
+n="viscomm.delay"
+DP=64
+DLI[1]=29
+DLF[1]=0
+DLi[1]=0
+DLF[1]=1
+DLs[3]="29"
+"0."
+0
+N.59="label"*110x52<M>
+n="  one bit time +
+   filter delay
+compensation"
+I.2.i1=31.o1
+I.2.i2=50.o1
+I.3.i1=32.o1
+I.3.i2=32.o2
+I.3.i0=54.o1
+I.4.i1=5.o1
+I.4.i2=58.o1
+I.6.i1=7.o1
+I.7.i1=21.o1
+I.7.i2=22.o1
+G.8=6,7,9,12,16,21,22,25,26,27,28,29,35,36,44,45,
+I.8.o1=29.o1
+I.8.o2=28.o1
+f8.1.i=vT11
+I.8.i1=24.o1
+I.10.i1=18.o1
+f11.1.o=vT11@2,1
+I.11.i1=18.o1
+f12.1.o=T11
+I.12.i1=28.o2
+f13.1.o=T1
+I.14.i1=48.o2
+f14.2.i=-
+I.14.i2=13.o1
+I.21.i1=26.o1
+I.22.i1=26.o2
+f24.1.o=vT11@2,1
+f24.1.i=vT11
+I.24.i1=48.o1
+f25.1.o=vT11@2,1
+f25.1.i=vT11
+I.25.i1=8.i1
+f25.2.i=vT11
+I.25.i2=27.o1
+f26.1.i=vT11
+I.26.i1=25.o1
+f27.1.o=vT11@2,1
+f27.1.i=vT11
+I.27.i1=28.o1
+f28.1.o=vT11@2,1
+I.28.i1=6.o1
+f29.1.o=vT11@2,1
+I.29.i1=21.o1
+I.29.i2=22.o1
+f30.1.o=vT11@2,1
+f30.1.i=vT11
+I.30.i1=8.o1
+f31.1.i=vT11
+I.31.i1=30.o1
+f32.1.i=vT11
+I.32.i1=30.o1
+I.33.i1=39.o1
+I.39.i1=49.i1
+I.43.i1=42.o1
+I.44.i1=45.o1
+I.47.i1=46.o1
+G.48=10,11,18,19,23,
+f48.1.o=v
+I.48.o1=11.o1
+I.48.o2=11.o2
+f48.1.o=vT11@2,1
+G.49=33,39,
+I.49.i1=14.o1
+G.50=1,15,4,5,51,58,59,
+I.50.o1=4.o1
+I.58.i1=1.o1
+cEOF

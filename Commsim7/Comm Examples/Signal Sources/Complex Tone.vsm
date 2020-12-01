@@ -1,0 +1,167 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eritek, Inc."
+PV=4.500
+PS=0
+PE=0.01
+PP=1e-005
+PI=170
+PX=1e-005
+PN=1e-006
+PL=5
+PT=0.05
+Pn=-8,6,14,"Arial"
+Pc=13
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=0
+17
+1
+0
+N.1="plot"*57x6*97x35
+pt="Complex Sinusoid Output"
+px="Time (msec)"
+pax=0
+pf=S
+pS=7
+pf=F
+pb=3,-3
+pbx=0.01,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=7,-3
+pb.1=0,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.2="label"*2x2
+n="COMPLEX TONE EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,34,"Arial",0,2
+N.3="label"*3x58
+n="The Complex Tone block generates a complex sinusoid at the
+specified frequency.  The amplitude can be specified
+either in Volts or as a dBm level (50 Ohms impedance)."
+Ob=8454143
+Og=255
+N.4="userFunction"*10x37#0,2<U>
+n="viscomm.complexTone"
+DP=80
+DLi[1]=0
+DLF[4]=2100
+0.998814876483345
+-45
+13
+DLi[1]=1
+DLs[4]="2100"
+0
+"-45"
+"13."
+N.5="userFunction"*7x10#0,2<U>
+n="viscomm.complexTone"
+DP=80
+DLi[1]=0
+DLF[4]=1000
+2
+0
+0
+DLi[1]=0
+DLs[4]="1000"
+"2"
+"0."
+"13."
+N.6="userFunction"*35x9#1,2<UT11>
+n="viscomm.cpxReIm"
+N.7="userFunction"*33x36#1,2<UT11>
+n="viscomm.cpxReIm"
+N.8="plot"*57x43*97x35
+pt="Complex Sinusoid Output"
+px="Time (msec)"
+pax=0
+pf=S
+pS=7
+pf=F
+pb=3,-3
+pbx=0.01,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=7,-3
+pb.1=0,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.9="userFunction"*10x49#2,1<UT11>
+n="viscomm.avCpxPower"
+DP=112
+DLi[4]=10
+0
+1
+2
+DLF[1]=0
+DLs[2]="10"
+"0."
+N.10="display"(13)*28x50
+Oe=6
+Ox=1
+Ov=0
+N.11="display"(19.030899869919)*34x23
+n="13"
+Oe=6
+Ox=1
+Ov=0
+N.12="userFunction"*15x22#2,1<UT11>
+n="viscomm.avCpxPower"
+DP=112
+DLi[4]=10
+0
+1
+2
+DLF[1]=0
+DLs[2]="10"
+"0."
+N.13="label"*6x68
+n="Note:
+A Complex Tone of 1 Volt amplitude has a total power
+of 13 dBm (50 Ohms).
+
+A regular sine wave of 1 Volt amplitude has a power
+of 10 dBm."
+Ob=8454143
+Og=255
+I.1.i1=6.o1
+I.1.i2=6.o2
+f4.1.o=v
+f5.1.o=v
+f6.1.i=v
+I.6.i1=5.o1
+f7.1.i=v
+I.7.i1=4.o1
+I.8.i1=7.o1
+I.8.i2=7.o2
+f9.1.i=v
+I.9.i1=4.o1
+I.10.i1=9.o1
+I.11.i1=12.o1
+f12.1.i=v
+I.12.i1=5.o1
+cEOF

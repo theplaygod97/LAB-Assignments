@@ -1,0 +1,9 @@
+Spectral Mask Definition File - GMSK Mask (line 2= num values; freq. in Hz, Level in dB)
+7
+0	   0
+100000	   0
+200000	 -30
+250000	 -33
+400000	 -60
+600000	 -70
+1000000	 -70

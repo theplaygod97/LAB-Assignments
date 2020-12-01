@@ -1,0 +1,187 @@
+question 1
+#include<stdio.h>
+main()
+{
+      int a[10],odd=0,even=0,neg=0,pos=0,i;
+      clrscr();
+      printf("\nEnter 10 Elements : ");
+      for(i=0;i<10;i++)
+            scanf("%d",&a[i]);
+      for(i=0;i<10;i++)
+      {
+            if(a[i]>=0)
+                  pos++;
+            else
+                  neg++;
+            if(a[i]%2==0)
+                  even++;
+            else
+                  odd++;
+      }
+      printf("\nPositive : %d",pos);
+      printf("\nNegative : %d",neg);
+      printf("\nEven     : %d",even);
+      printf("\nOdd      : %d",odd);
+      
+}
+
+
+
+question 2
+#include<stdio.h>
+
+
+ main() {
+
+int i,arr[10],prsnt=0,num;
+clrscr();
+
+printf("Please enter 10 numbers: \n");
+
+for(i=0;i<10;i++) {
+scanf("%d",&arr[i]);
+}
+
+printf("\n\nPlease enter the number to be searched: ");
+scanf("%d",&num);
+
+
+for(i=0;i<10;i++) {
+
+if(num==arr[i])
+prsnt=prsnt+1;
+
+}
+
+
+if(prsnt==0) {
+printf("\n\nNumber does not present in the array.\n");
+}
+
+else {
+printf("\n\nNumber presents in the array.\n");
+printf("\nNumber of times it appears = %d.\n",prsnt);
+}
+
+
+
+}
+
+
+
+
+
+
+question 7
+#include<stdio.h>
+ main()
+{
+ char ch[10];
+ int i,count=0;
+ clrscr();
+ printf("Enter the string\n");
+ gets(ch);
+ for(i=0;ch[i]!='\0';i++)
+ {
+  if(ch[i]=='a' || ch[i]=='e' || ch[i]=='i' || ch[i]=='o'
+   || ch[i]=='u')
+  {
+   count++;
+  }
+ }
+ printf("Vowels = %d",count);
+ 
+}
+
+
+
+question 8
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    char string1[20];
+    int i, length;
+    int flag = 0;
+    
+    printf("Enter a string:");
+    scanf("%s", string1);
+    
+    length = strlen(string1);
+    
+    for(i=0;i < length ;i++){
+        if(string1[i] != string1[length-i-1]){
+            flag = 1;
+            break;
+	   }
+	}
+    
+    if (flag) {
+        printf("%s is not a palindrome", string1);
+    }    
+    else {
+        printf("%s is a palindrome", string1);
+    }
+    return 0;
+}
+
+
+
+
+question 9
+
+#include <stdio.h>
+#include <string.h>
+#include <conio.h>
+int
+main()
+{
+char
+a[50][50],temp[100];
+int
+i,j,m,n;
+printf
+(
+"Enter the number of elements you wish to order : "
+);
+scanf
+(
+"%d"
+,&m);
+printf
+(
+"\nEnter the names :\n"
+);
+for
+(i=0;i<m+1;i++)
+gets
+(a[i]);
+for
+(i=0;i<m;i++)
+for
+(j=i+1;j<m+1;j++)
+{
+if
+(
+strcmp
+(a[i],a[j])>0)
+{
+strcpy
+(temp,a[i]);
+strcpy
+(a[i],a[j]);
+strcpy
+(a[j],temp);
+}
+}
+printf
+(
+"\n\nSorted strings are : "
+);
+for
+(i=0;i<m+1;i++)
+puts
+(a[i]);
+getch();
+}
+

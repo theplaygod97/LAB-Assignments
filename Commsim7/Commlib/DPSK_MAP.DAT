@@ -1,0 +1,31 @@
+Differential PSK Map File.
+Format is "keyword" followed by a listing of input symbols and corresponding "normalized" deltaPhase values,
+where unity (1) corresponds to the phase difference between adjacient constellation points (e.g. 90 degrees
+for DQPSK, and 45 degrees for Pi4DQPSK or D8PSK).  Additional entries on each line beyond the first two
+values are ignored and can be used for comment purposes. Entry delimiters include spaces, commas and tabs.
+
+dbpsk
+0  0	(0)
+1  1	(180)
+
+dqpsk
+0  0	(0)
+1  1	(90)
+2 -1	(-90)
+3  2	(180)
+
+pi4dqpsk
+0  1	(45)
+1  3	(135)
+2 -1	(-45)
+3 -3	(-135)
+
+d8psk
+0  0	(0)
+1  1	(45)
+2  3	(135)
+3  2	(90)
+4 -1	(-45)
+5 -2	(-90)
+6  4	(180)
+7 -3	(-135)

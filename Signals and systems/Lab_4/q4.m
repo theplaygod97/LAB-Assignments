@@ -1,0 +1,14 @@
+clc;
+clear all;
+close all;
+t=0:0.1:5;
+A=exp(-2*t);
+subplot(3,1,1);plot(t,A);
+xlabel('Time');ylabel('Amp');title('Signal');
+B=fliplr(A);
+E=0.5*(A+B);
+subplot(3,1,2);plot(t,E);
+xlabel('Time');ylabel('Amp');title('Even Signal');
+O=0.5*(A-B);
+subplot(3,1,3);plot(t,O);
+xlabel('Time');ylabel('Amp');title(' Odd Signal');

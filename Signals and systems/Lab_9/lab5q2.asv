@@ -1,0 +1,9 @@
+clc;
+clear all;
+close all;
+num=[1 2 1];
+den=[1 11 60 50 0];
+t=tf(num,den);
+[P,Z]=pzmap(t)
+pzplot(t)
+A=conv()

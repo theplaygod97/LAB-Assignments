@@ -1,0 +1,200 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POt="Calculation of Frequency Response from impulse response"
+POa="Eritek, Inc."
+PV=4.500
+PS=0
+PE=4
+PP=0.005
+PI=170
+PX=0.005
+PN=5
+PL=5
+PT=0.05
+Pn=-8,4,14,"Times New Roman"
+Pc=14
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+Pd=1e-005
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=1
+123
+1
+0
+N.1="userFunction"*9x29#1,1<U>
+n="viscomm.FIRfilter"
+DP=168
+DLi[4]=64
+2
+0
+0
+DLF[4]=30
+70
+0
+1
+DLi[1]=1
+DLF[1]=200
+DLi[1]=0
+DLs[6]="64"
+"30."
+"70."
+"0."
+"1."
+"200."
+N.2="plot"*87x6*110x28<c>
+pt="Magnitude Response (-Fs/2 to +Fs/2)"
+px="Sample Number"
+py="Magnitude"
+pax=1
+pf=S
+pf=x
+pf=F
+pb=2,0
+pbx=100,-100
+pbY=2,0
+pbX=800,0
+pc=10000
+pm=100,0
+pb.0=2,0
+pb.1=100,-200
+pL.1="Frequency (Hz)"
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.3="label"*2x1
+n="FIR FILTER EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,18,"Times New Roman",0,2
+N.4="plot"*87x34*110x29<c>
+pt="Phase Response (-Fs/2 to +Fs/2)"
+px="Sample Number"
+py="Degrees"
+pax=1
+pf=S
+pf=x
+pf=F
+pb=200,-200
+pbx=100,-100
+pbY=200,-200
+pbX=512,0
+pc=512
+pm=10,0
+pb.0=200,-200
+pb.1=200,-200
+pL.1="Frequency (Hz)"
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.5="label"*60x1
+n="THIS SIMULATION ILLUSTRATES THE USE OF THE FFT BLOCK TO OBTAIN THE FREQUENCY
+RESPONSE OF AN FIR FILTER FROM ITS IMPLULSE RESPONSE"
+Ob=8454143
+Og=255
+Of=-12,0,400,0,0,0,18,"Times New Roman",0,2
+N.6="userFunction"*56x37#1,1<U>
+n="viscomm.convert"
+DP=8
+DLi[1]=5
+N.7="userFunction"*5x12#0,1<U>
+n="viscomm.impulse"
+DP=48
+DLF[2]=0
+1
+DLs[2]="0."
+"1."
+N.8="plot"*87x63*110x25
+pt="Impulse Response"
+px="Time (sec)"
+pax=0
+pf=S
+pf=F
+pb=0.4,-0.4
+pbx=4,0
+pbY=0,0
+pbX=0,0
+pm=10,0
+pb.0=0.4,-0.3
+pb.1=0,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.9="userFunction"*43x6#3,4<U>
+n="viscomm.complexFFT"
+DP=168
+DLi[8]=8
+0
+0
+0
+0
+0
+0
+0
+DLF[1]=0
+DLi[1]=1
+DLs[2]="0."
+"1."
+N.10="wirePositioner"*75x34
+N.11="label"*6x36
+n="Finite Impulse Response (FIR) Filters
+
+Supported filter types include:
+Lowpass
+Bandpass
+Bandstop
+Highpass
+Raised Cosine
+Root Raised Cosine
+Gaussian
+Hilbert"
+Ob=8454143
+Og=255
+N.12="label"*6x59
+n="Filter Response can also be viewed using
+the built-in \"Filter Viewer\".  Right click
+on block and press \"View Response\"."
+Ob=8454143
+Og=255
+N.13="label"*6x67
+n="Notes:
+- Filter delay is (N - 1)/2, where N= number of taps
+- Cutoff frequencies are specified as the half amplitude (6 dB)
+   point except for Root Raised Cosine and Gaussian types"
+Ob=8454143
+Og=255
+N.14="label"*6x75
+n="- If the \"Tap Spacing Frequency\" is less than the simulation rate,
+  then the FIR filter taps are spaced in a decimated fashion (only
+  integer spacings are supported)"
+Ob=8454143
+Og=255
+I.1.i1=7.o1
+I.2.i1=9.o2
+I.2.i2=9.o4
+I.2.i0=9.o1
+I.4.i1=6.o1
+I.4.i2=9.o4
+I.4.i0=10.o1
+I.6.i1=9.o3
+I.8.i1=1.o1
+I.9.i1=7.o1
+I.9.i2=1.o1
+I.10.i1=9.o1
+cEOF

@@ -1,0 +1,13 @@
+PSK Map File:  Gray Encoded
+bpsk
+0 1
+
+qpsk
+0 1 3 2
+
+8psk
+0 1 3 2 6 7 5 4
+
+16psk
+0 1 3 2 6 7 5 4
+12 13 15 14 10 11 9 8

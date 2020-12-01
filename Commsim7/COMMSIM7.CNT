@@ -1,0 +1,248 @@
+:Base Commsim7.hlp
+1 Preface
+2 Preface=TH_1
+2 What's new in version 7
+3 What's new in version 7=TH_374
+3 New blocks=TH_3
+3 New Multi-Block Elements=TH_300
+3 Modified Blocks=TH_5
+3 Obsolete Blocks=TH_301
+1 Conventions used in this manual=TH_6
+2 Commsim Version Details=TH_375
+2 Technical support service=TH_10
+1 Introduction
+2 Introduction=TH_11
+2 Lowpass equivalent systems=TH_20
+2 Communication blocks=TH_21
+1 Using Commsim
+2 Using Commsim=TH_368
+2 Starting Commsim=TH_369
+2 The Commsim environment
+3 The Commsim environment=TH_370
+3 Inserting blocks=TH_26
+3 Connecting blocks=TH_28
+3 Block connectors=TH_29
+3 Diagram timing=TH_33
+3 Random numbers=TH_34
+3 Setting up block parameters=TH_35
+3 Global variables=TH_329
+3 Choosing an integration method=TH_38
+2 Multirate diagrams
+3 Multirate diagrams=TH_325
+3 Configuring compound blocks for local rate mode=TH_323
+2 Output plots
+3 Output plots=TH_280
+3 BER curves=TH_281
+3 Eye plots=TH_282
+3 Frequency domain plots=TH_283
+3 Phase scatter plots=TH_284
+2 Filter Viewer
+3 Filter Viewer=TH_327
+2 Generating BER curves
+3 Generating BER curves=TH_49
+3 Enabling multiple consecutive runs=TH_50
+3 Varying the SNR for each run=TH_51
+3 Calculating BER measurements=TH_328
+2 Sample communication simulation
+3 Sample communication simulation=TH_53
+1 Comm Block Set
+2 Channels category
+3 AWGN (Complex or Real)=TH_330
+3 Binary Symmetric Channel=TH_58
+3 Jakes Mobile=TH_59
+3 Mobile Fading=TH_60
+3 Multipath=TH_61
+3 Propagation Loss=TH_62
+3 Rice/Rayleigh Fading=TH_63
+3 Rummler Multipath=TH_64
+3 TWTA (analytical)=TH_335
+3 Vector AWGN=TH_66
+2 Complex Math category
+3 Complex Addition=TH_336
+3 Complex Conjugate=TH_337
+3 Complex Division=TH_338
+3 Complex Exponential=TH_169
+3 Complex Inverse=TH_339
+3 Complex Multiplication=TH_340
+3 Complex Power=TH_341
+3 Complex Square Root=TH_342
+3 Complex to Mag/Phase=TH_75
+3 Complex to Real/Imag=TH_76
+3 Mag/Phase to Complex=TH_77
+3 Real/Imag to Complex=TH_78
+2 Demodulators category
+3 Differential PSK Detector=TH_302
+3 FM Demodulator=TH_81
+3 IQ Detector=TH_82
+3 PPM Demodulator=TH_83
+3 PSK Detector=TH_84
+3 QAM/PAM Detector=TH_85
+2 Digital category
+3 Accumulate & Dump=TH_87
+3 Binary Counter=TH_88
+3 Bits to Symbol=TH_89
+3 Buffer=TH_90
+3 D Flip Flop=TH_91
+3 Divide by N=TH_92
+3 JK Flip Flop=TH_93
+3 Mux/Demux=TH_94
+3 Parallel to Serial=TH_95
+3 Queue=TH_96
+3 Serial to Parallel=TH_97
+3 State Machine=TH_303
+3 Symbol to Bits=TH_98
+3 Unbuffer=TH_99
+2 Encode / Decode category
+3 Block Interleaver=TH_101
+3 Convolutional Encoder=TH_102
+3 Convolutional Interleaver=TH_103
+3 Depuncture=TH_104
+3 Gray Map=TH_343
+3 Gray Reverse Map=TH_344
+3 Hamming Decoder=TH_304
+3 Hamming Encoder=TH_305
+3 Puncture=TH_109
+3 Reed-Solomon Decoder=TH_110
+3 Reed-Solomon Encoder=TH_111
+3 Trellis Decoder=TH_112
+3 Trellis Encoder=TH_113
+3 Viterbi Decoder (Hard)=TH_114
+3 Viterbi Decoder (Soft)=TH_115
+2 Estimators category
+3 Average Power (Complex or Real)=TH_331
+3 BER Curve Control=TH_119
+3 BER Control (# Errors)=TH_306
+3 Bit/Symbol Error Rate=TH_122
+3 Correlation=TH_120
+3 Delay Estimator=TH_121
+3 Event Time=TH_123
+3 Mean=TH_124
+3 Median=TH_125
+3 Variance=TH_126
+3 Weighted Mean=TH_127
+2 Filters category
+3 Adaptive Equalizer (Complex or Real)=TH_332
+3 File FIR Filter=TH_345
+3 FIR Filter=TH_132
+3 IIR Filter=TH_346
+3 Pulse Shaping Filter=TH_134
+3 Sampling File FIR Filter=TH_359
+3 Sampling FIR Filter=TH_362
+3 MagPhase Filter=TH_360
+2 Instruments category
+3 BER Curve Display=TH_139
+3 Oscilloscope Display=TH_140
+3 Spectrum Analyzer Display (Complex)=TH_141
+3 Spectrum Analyzer Display (Real)=TH_142
+2 Modulators categories - Complex and Real
+3 AM Modulator=TH_347
+3 Differential PSK Modulator=TH_348
+3 FM Modulator=TH_349
+3 FSK Modulator=TH_350
+3 GFSK Modulator=TH_308
+3 GMSK Modulator=TH_309
+3 IQ Modulator=TH_358
+3 MSK Modulator=TH_351
+3 PM Modulator=TH_352
+3 PPM Modulator=TH_353
+3 PSK Modulator=TH_354
+3 QAM/PAM Modulator=TH_355
+3 SQPSK Modulator=TH_165
+2 Multirate Support category
+3 Clock Edge=TH_312
+3 Clock Extend=TH_313
+3 Interpolator=TH_314
+2 Operator category
+3 A/D Converter=TH_167
+3 Compander=TH_168
+3 Complex Exponential=TH_169
+3 Complex FFT/IFFT=TH_170
+3 Conversions=TH_171
+3 Delay (Complex)=TH_183
+3 Delay (Real)=TH_184
+3 Gain (dB)=TH_185
+3 IQ Mapper=TH_186
+3 Integrate & Dump (Complex or Real)=TH_333
+3 Max Index=TH_189
+3 Modulo=TH_190
+3 Oscilloscope=TH_191
+3 Phase Rotate=TH_192
+3 Phase Unwrap=TH_193
+3 Polynomial=TH_194
+3 Spectrum (Complex or Real)=TH_195
+3 Subsample=TH_326
+3 Vector FFT=TH_196
+2 PLL category
+3 Charge Pump=TH_198
+3 Loop Filter (2nd Order PLL)=TH_199
+3 Loop Filter (3rd Order PLL)=TH_200
+3 Type-2 Phase Detector=TH_201
+3 Type-3 Phase Detector=TH_202
+3 Type-4 Phase Detector=TH_203
+2 RF category
+3 Amplifier=TH_207
+3 Attenuator=TH_208
+3 Coupler=TH_209
+3 Double Balanced Mixer=TH_210
+3 Splitter/Combiner=TH_211
+3 Switch=TH_212
+3 Variable Attenuator=TH_213
+2 Signal Sources category
+3 Complex Tone=TH_215
+3 File Data=TH_216
+3 Frequency Sweep=TH_217
+3 Impulse=TH_218
+3 Impulse Train=TH_219
+3 Noise=TH_220
+3 PN Sequence=TH_221
+3 Random Seed (Obsolete)=TH_356
+3 Random Symbols=TH_223
+3 Rectangular Pulses=TH_224
+3 Sinusoid=TH_225
+3 Spectral Mask=TH_226
+3 VCO (Complex or Real)=TH_334
+3 Vector Constant=TH_228
+3 Walsh Sequence=TH_229
+3 Waveform Generator=TH_235
+2 Vector Operators category
+3 Matrix to Vector=TH_315
+3 SubVector=TH_237
+3 Vector Bits to Symbol=TH_316
+3 Vector Demux=TH_317
+3 Vector Merge=TH_238
+3 Vector Mux=TH_318
+3 Vector Symbol to Bits=TH_319
+3 Vector to Matrix=TH_320
+1 Appendix
+2 Comm Library Blocks
+3 Compound Blocks
+4 COSTAS_C.VSM=TH_241
+4 COSTAS_R.VSM=TH_242
+4 GFSK.VSM=TH_321
+4 GMSK.VSM=TH_243
+4 PLL1CPLX.VSM=TH_244
+4 PLL1REAL.VSM=TH_245
+4 PLL2CPLX.VSM=TH_246
+4 PLL2REAL.VSM=TH_247
+4 TWTA_TBL.VSM=TH_248
+4 V32DIFDE.VSM=TH_249
+4 V32DIFEN.VSM=TH_250
+4 VCPG.VSM=TH_251
+3 Data Files
+4 AMAM.DAT=TH_253
+4 AMPM.DAT=TH_254
+4 DATA_IN.DAT=TH_255
+4 PSK_GRAY.DAT=TH_256
+4 QAM_GRAY.DAT=TH_257
+4 TABLFILT.DAT=TH_258
+4 V32QAM.DAT=TH_259
+4 V32TRELS.DAT=TH_260
+4 VTB3SOFT.DAT=TH_261
+2 Sample Block Diagrams
+3 Sample Block Diagrams=TH_262
+2 Acronyms and Abbreviations
+3 Acronyms and Abbreviations=TH_263
+2 Installing Commsim
+3 Installing Commsim=TH_372
+3 Computer requirements=TH_265
+3 Commsim Installation=TH_373

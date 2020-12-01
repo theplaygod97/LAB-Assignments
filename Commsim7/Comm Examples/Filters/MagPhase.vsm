@@ -1,0 +1,265 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eritek, Inc."
+PV=4.500
+PS=0
+PE=6
+PP=0.005
+PI=170
+PX=0.005
+PN=5
+PL=5
+PT=0.05
+Pn=-8,4,14,"Times New Roman"
+Pc=24
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+Pd=1e-005
+PM=1,1,1,1
+Pxi=2
+Px="LK_8S_S",-1,0
+Qn="viscomm.dll"
+QLi[4]=1
+123
+1
+0
+N.1="pulseTrain"(0,1000)*3x17
+N.2="plot"*103x2*123x41<c>
+pt="Impulse Response of Table Lookup Filter"
+px="Time (sec)"
+py="Gain (dB)"
+pax=1
+pf=S
+pf=x
+pf=F
+pb=1,-60
+pbx=100,-100
+pbY=0.9,0
+pbX=512,0
+pc=512
+pm=10,0
+pb.0=0,-60
+pb.1=100,-100
+pL.1="Frequency (Hz)"
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.3="plot"*101x44*124x41<c>
+pt="Impulse Response of Table Lookup Filter (Phase)"
+px="Time (sec)"
+py="Phase (deg)"
+pax=1
+pf=S
+pf=x
+pf=F
+pb=600,-600
+pbx=100,-100
+pbY=2,-2
+pbX=512,0
+pc=512
+pm=10,0
+pb.0=700,-700
+pb.1=100,-200
+pL.1="Frequency (Hz)"
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.4="userFunction"*19x17#1,1<U>
+n="viscomm.delay"
+DP=96
+DLI[1]=65
+DLF[1]=0
+DLi[1]=0
+DLF[1]=1
+DLs[3]=0
+0
+0
+N.5="userFunction"*47x31#1,2<UT11>
+n="viscomm.cpxReIm"
+N.6="userFunction"*12x22#2,1<U>
+n="viscomm.reImCpx"
+N.7="userFunction"*54x7#3,4<U>
+n="viscomm.complexFFT"
+DP=168
+DLi[8]=9
+0
+0
+0
+0
+0
+1
+0
+DLF[1]=0
+DLi[1]=1
+DLs[2]="0."
+"1."
+N.8="userFunction"*6x32#1,2<U>
+n="viscomm.tableFilter"
+DP=288
+DLi[2]=7
+1
+DLc[128]="MagPhaseData.dat"
+DLi[3]=0
+0
+1
+N.9="userFunction"*82x9#1,1<U>
+n="viscomm.convert"
+DP=8
+DLi[1]=0
+N.10="userFunction"*83x49#1,1<U>
+n="viscomm.convert"
+DP=8
+DLi[1]=5
+N.11="label"*3x1
+n="MAGPHASE FILTER EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,18,"Times New Roman",0,2
+N.12="label"*4x51
+n="The MagPhase block allows the specification of a filter using
+tabulated gain and phase response data.  The data can be
+provided over the range of [-fs/2, +fs/2] or [0, +fs/2].  The block
+then interpolates the input data to the needed frequency scale."
+Ob=8454143
+Og=255
+N.13="label"*4x60
+n="File format is:
+   Header line
+   Number of entries in file
+   Frequency, Gain (dB), Phase or Group Delay
+
+Entries must be in increasing order (freq) but need not be
+uniformly spaced.  Also, Phase values can be specified in
+degrees or radians."
+Ob=8454143
+Og=255
+N.14="label"*8x11
+n="Delay block used to delay start
+of FFT to match filter delay"
+N.15="label"*4x77
+n="This block uses an FFT method to produce the filtered output.
+A delay equal to the equivalent FIR filter length plus one
+(in simulation steps) is required by this process and is
+IN ADDITION to any filter response delay."
+Ob=8454143
+Og=255
+N.16="label"*10x37
+n="File based description of a
+40 Hz LPF with ripple"
+N.17="Compound"*49x38#1,0<C>
+n="Interpolated
+Response"
+Ms=2048,0,0,3840,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+Mw=""
+N.18="plot"*82x43*114x42<M>
+px="Time (sec)"
+pax=2
+pf=S
+pf=x
+pf=F
+pb=500,-500
+pbx=100,-100
+pbY=0,0
+pbX=6,0
+pc=16384
+pm=10,0
+pr=255
+pR=16777215
+pb.0=0,0
+pb.1=500,-700
+pb.2=100,-100
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.19="vecToScalar"(3,1)*32x40<M>
+N.20="userFunction"*55x42#1,1<MU>
+n="viscomm.convert"
+DP=8
+DLi[1]=5
+N.21="plot"*82x0*114x41<M>
+px="Time (sec)"
+pax=2
+pf=S
+pf=x
+pf=F
+pb=1,-60
+pbx=100,-100
+pbY=0,0
+pbX=6,0
+pc=16384
+pm=10,0
+pr=255
+pR=16777215
+pb.0=0,0
+pb.1=600,-600
+pb.2=100,-100
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.22="label"*32x43
+n="Lower output vector from MagPhase
+block represents the magnitude and
+phase response used (as interpolated)."
+N.23="label"*29x48<M>
+n="3 element vector:
+   magnitude
+   phase
+   frequency"
+N.24="label"*3x27<M>
+n="Lower vector output from MagPhase block
+represents the SUPPLIED Magnitude and Phase
+response (as interpolated by the block)."
+Ob=8454143
+Og=255
+I.2.i1=9.o1
+I.2.i2=7.o4
+I.2.i0=7.o1
+I.3.i1=10.o1
+I.3.i2=7.o4
+I.3.i0=7.o1
+I.4.i1=1.o1
+f5.1.i=v
+I.5.i1=8.o1
+f6.1.o=v
+I.6.i1=1.o1
+I.7.i1=4.o1
+I.7.i2=5.o1
+I.7.i3=5.o2
+f8.1.o=v
+f8.2.o=v
+f8.1.i=v
+I.8.i1=6.o1
+I.9.i1=7.o2
+I.10.i1=7.o3
+G.17=18,19,20,21,23,24,
+f17.1.i=v
+I.17.i1=8.o2
+I.18.i2=20.o1
+I.18.i3=19.o3
+f19.1.i=v
+I.19.i1=17.i1
+I.20.i1=19.o2
+I.21.i1=19.o1
+I.21.i3=19.o3
+cEOF

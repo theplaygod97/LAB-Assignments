@@ -1,0 +1,18 @@
+clc;
+clear all;
+close all;
+t=0:0.01:5;
+W=exp(-t);
+Y=cos(2*pi*t);
+A=W.*Y;
+subplot(2,2,1);plot(t,A);grid on;
+xlabel('Time');ylabel('Amp');title('Signal');
+B=fliplr(A);
+subplot(2,2,2);plot(t,B);grid on;
+xlabel('Time');ylabel('Amp');title('Flipped Signal');
+E=0.5*(A+B);
+subplot(2,2,3);plot(t,E);grid on;
+xlabel('Time');ylabel('Amp');title('Even Signal');
+O=0.5*(A-B);
+subplot(2,2,4);plot(t,O);grid on;
+xlabel('Time');ylabel('Amp');title(' Odd Signal');

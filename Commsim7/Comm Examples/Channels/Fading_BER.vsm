@@ -1,0 +1,406 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-2002 Visual Solutions
+PA=1
+POt="BER Curve generation example"
+POa="Eritek, Inc."
+PV=5.000
+PS=0
+PE=4000
+PP=0.02
+PI=170
+PX=0.02
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman",18,0,400,2,0,1,0,1
+Pc=45
+Po=0.01,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=3071,0,0,3071,0,0
+Pd=35
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[5]=1
+17
+1
+0
+1244
+QLc[8]="5.0.7c"
+QLc[64]="c±êíïåkt®°Æñ¨<Fe∂ú."
+N.1="userFunction"*120x50#3,3<U>
+n="viscomm.errorEst"
+DP=72
+DLi[2]=1
+2
+DLI[1]=0
+DLs[2]="2"
+"0"
+N.2="display"(0.0012421862477961)*170x50
+n="1.999e-003"
+Oe=8
+Ox=1
+Ov=0
+N.3="display"(93)*170x57
+n="16"
+Oe=8
+Ox=1
+Ov=0
+N.4="display"(74868)*168x64
+n="8004"
+Oe=8
+Ox=1
+Ov=0
+N.5="pulseTrain"(0.05,0.1)*104x57
+N.6="label"*169x60
+n="Number of bit errors"
+N.7="label"*170x67
+n="Overall Bit Count"
+N.8="label"*172x53
+n="Bit Error Estimate"
+N.9="variable"*143x47
+n="error rate"
+N.10="label"*97x60
+n="10 Hz sample clock
+1/2 symbol delay"
+N.11="plot"*109x1*90x43<c>
+pt="BER vs. Es/No (dB)"
+px="Time (sec)"
+py="Probability of Error"
+pax=1
+pf=S
+pf=x
+pf=F
+pb=1,1e-005
+pbx=24,8
+pbY=0,0
+pbX=100,0
+pc=100
+pm=-1,1
+pf=Y
+po=8
+pr=255
+pR=16777215
+pb.0=1,1e-015
+pb.1=100,1
+pL.1="Eb/No (dB)"
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.12="userFunction"*79x52#1,1<U>
+n="viscomm.delay"
+DP=96
+DLI[1]=5
+DLF[1]=0
+DLi[1]=1
+DLF[1]=0.1
+DLs[3]=0
+"0."
+"0.1"
+N.13="label"*10x46
+n="Data Rate= 10 sps"
+N.14="variable"*56x37<R>
+n="EbNo"
+N.15="variable"*49x10
+n="EbNo"
+N.16="variable"*46x13
+n="error rate"
+N.17="userFunction"*65x10#2,3<U>
+n="viscomm.berCurve"
+DP=344
+DLi[1]=7
+DLF[10]=500
+500
+1000
+1500
+2000
+3000
+4000
+1
+1
+1
+DLi[1]=1
+DLs[11]="7"
+"500"
+"500"
+"1000"
+"1500"
+"2000."
+"3000."
+"4000."
+"1."
+"1."
+"1."
+DLi[1]=0
+N.18="userFunction"*69x31#1,2<U>
+n="viscomm.awgn"
+DP=256
+DLi[1]=7
+DLF[11]=10
+1
+13
+15
+17
+19
+21
+23
+25
+1
+10
+DLi[1]=0
+DLF[2]=1
+1
+DLs[14]="7"
+"10."
+"1."
+0
+"13."
+"15."
+"17."
+"19."
+"21."
+"23."
+"25."
+"1."
+"1."
+"1."
+N.19="userFunction"*55x32#2,2<MU>
+n="viscomm.integDump2"
+DP=184
+DLi[3]=0
+0
+0
+DLF[4]=0
+10
+0
+10
+DLs[4]=0
+0
+0
+0
+DLi[1]=1
+N.20="label"*3x2
+n="FADING CHANNEL BER SIMULATION"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,18,"Times New Roman",0,2
+N.21="Compound"*101x47#1,1
+n="Receiver"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.22="label"*46x48<M>
+n="Click Right Mouse Button over blank area to return to previous level."
+Ob=65535
+Og=255
+N.23="label"*3x52
+n="To view block parameters, or
+enter compound blocks (blue),
+click over the block using the right
+mouse button."
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.24="label"*62x18
+n="To clear the BER Plot,
+press \"Clear Overplot\" in plot setup,
+or uncheck the \"Over Plot\" option."
+N.25="plot"*29x20*208x54<M>
+pt="Bit Error History"
+px="Time (sec)"
+py="Number of Bit Errors"
+pax=0
+pf=S
+pf=F
+pb=100,0
+pbx=4000,0
+pbY=0,0
+pbX=0,0
+pc=4096
+pm=-1,0
+po=8
+pb.0=200,0
+pb.1=0,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.26="Compound"*138x59#1,0
+n=" Error
+History"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.27="display"(7)*65x64
+n="8"
+Oe=6
+Ox=1
+Ov=0
+N.28="variable"*41x64
+n="$runCount"
+N.29="label"*35x6<M>
+n="To clear the Plot,
+press \"Clear Overplot\" in plot setup,
+or uncheck the \"Over Plot\" option."
+N.30="label"*106x9<M>
+n="Click Right Mouse Button over blank area to return to previous level."
+Ob=65535
+Og=255
+N.31="summingJunction"*97x41<M>
+N.32="const"<3>*68x51<M>
+N.33="Compound"*73x37#1,1<R>
+n="Es -> Eb"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.34="userFunction"*91x32#1,1<MU>
+n="viscomm.rice"
+DP=184
+DLF[3]=0
+0.1
+0
+DLs[3]="0."
+".1"
+"0."
+N.35="Compound"*50x31#1,1
+n="Rayleigh
+Fading"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.36="userFunction"*29x41#1,2<MUT11@2,1>
+n="viscomm.cpxMagPh"
+N.37="userFunction"*62x32#2,1<MU>
+n="viscomm.magPhCpx"
+N.38="userFunction"*115x32#1,2<MUT11@2,1>
+n="viscomm.cpxMagPh"
+N.39="userFunction"*144x41#2,1<MU>
+n="viscomm.magPhCpx"
+N.40="label"*80x46<M>
+n="Retain original modulated phase of signal
+since this example does not have phase tracking
+at the receiver"
+N.41="userFunction"*8x41#1,2<U>
+n="viscomm.randomSym"
+DP=88
+DLi[2]=4
+0
+DLF[3]=10
+0
+0.1
+DLs[3]="4"
+"10"
+"0."
+N.42="label"*85x23<M>
+n="Rayleigh fading rate set to ~ 1% of data rate
+to simulate SLOW FADING"
+N.43="userFunction"*22x32#2,2<U>
+n="viscomm.pskModulate"
+DP=280
+DLi[2]=1
+1
+DLF[5]=0
+1
+0
+0
+0
+DLc[128]="psk_gray.dat"
+DLs[5]="0."
+"1."
+"0."
+"0."
+"0."
+N.44="userFunction"*106x32#2,2<MUT11@2,1>
+n="viscomm.pskDetect"
+DP=168
+DLi[1]=1
+DLF[1]=0
+DLc[128]="psk_gray.dat"
+DLs[1]="0."
+N.45="label"*66x26
+n="Add Noise AFTER Rayleigh block
+(average signal power= 1 W)"
+I.1.i1=21.o1
+I.1.i2=12.o1
+I.1.i3=5.o1
+I.2.i1=1.o1
+I.3.i1=1.o2
+I.4.i1=1.o3
+f5.1.o=T3
+I.9.i1=1.o1
+I.11.i1=17.o2
+I.11.i2=17.o3
+I.11.i0=17.o1
+I.12.i1=41.o1
+I.14.i1=33.o1
+I.17.i1=15.o1
+I.17.i2=16.o1
+f18.1.o=vT11@2,1
+f18.1.i=vT11
+I.18.i1=35.o1
+f19.1.o=vT11@2,1
+f19.1.i=vT11
+I.19.i1=21.i1
+G.21=19,22,44,
+I.21.o1=44.o1
+f21.1.i=vT11
+I.21.i1=18.o1
+I.25.i1=26.i1
+G.26=25,29,30,
+I.26.i1=1.o2
+I.27.i1=28.o1
+I.31.i1=33.i1
+f31.2.i=-
+I.31.i2=32.o1
+G.33=31,32,
+I.33.o1=31.o1
+I.33.i1=18.o2
+f34.1.o=vT11@2,1
+f34.1.i=vT11
+I.34.i1=37.o1
+G.35=34,36,37,38,39,40,42,
+f35.1.o=v
+I.35.o1=39.o1
+f35.1.o=vT11
+f35.1.i=vT11
+I.35.i1=43.o1
+f36.1.i=vT11
+I.36.i1=35.i1
+f37.1.o=vT11@2,1
+I.37.i1=36.o1
+I.37.i2=36.o2
+f38.1.i=vT11
+I.38.i1=34.o1
+f39.1.o=vT11@2,1
+I.39.i1=38.o1
+I.39.i2=36.o2
+f43.1.o=vT11@2,1
+f43.1.i=T3
+I.43.i1=41.o1
+f43.2.i=T3
+I.43.i2=41.o2
+f44.1.o=T3
+f44.2.o=T3
+f44.1.i=vT11
+I.44.i1=19.o1
+f44.2.i=T3
+I.44.i2=19.o2
+cEOF

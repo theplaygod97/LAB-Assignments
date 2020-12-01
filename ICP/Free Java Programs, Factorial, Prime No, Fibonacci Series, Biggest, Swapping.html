@@ -1,0 +1,869 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0052)http://www.javatrainingprojects.com/javaprograms.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<title>Free Java Programs, Factorial, Prime No, Fibonacci Series, Biggest, Swapping</title>
+<style type="text/css">
+<!--
+.red {
+	color: #CC0000;
+}
+td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.blue {
+	color: #006699;
+}
+-->
+</style>
+</head>
+
+<body>
+<table width="780" border="0" align="center" cellpadding="3" cellspacing="1">
+  <tbody><tr>
+    <td><p class="red"><strong>Difference between Post Increment (n++) and Pre Increment (++n)</strong></p>
+      <p><strong>Post Increment (n++)</strong>: It increases the value of variable by 1 after execution of the statement. </p>
+      <p><strong>Pre Increment (++n)</strong>: It increases the value of variable by 1 before execution of the statement.</p>
+      <table width="53%" border="0" cellspacing="1" cellpadding="3">
+        <tbody><tr>
+          <td bgcolor="#EEEEEE"><strong>Program</strong></td>
+          <td bgcolor="#DDDDDD"><strong>Output</strong></td>
+        </tr>
+        <tr>
+          <td width="78%" bgcolor="#EEEEEE"><pre>class Demo
+{
+	public static void main(String args[])
+	{		
+		int n=10;
+		System.out.println(n);
+		System.out.println(n++);
+		System.out.println(n);
+	}
+}
+      </pre></td>
+          <td width="22%" valign="top" bgcolor="#DDDDDD"><pre>
+
+
+
+
+10
+10
+11
+      </pre>          </td>
+        </tr>
+      </tbody></table>
+      <br>
+      <table width="53%" border="0" cellspacing="1" cellpadding="3">
+        <tbody><tr>
+          <td bgcolor="#EEEEEE"><strong>Program</strong></td>
+          <td bgcolor="#DDDDDD"><strong>Output</strong></td>
+        </tr>
+        <tr>
+          <td width="78%" bgcolor="#EEEEEE"><pre>class Demo
+{
+	public static void main(String args[])
+	{		
+		int n=10;
+		System.out.println(n);
+		System.out.println(++n);
+		System.out.println(n);
+	}
+}
+      </pre></td>
+          <td width="22%" valign="top" bgcolor="#DDDDDD"><pre>
+
+
+
+
+10
+11
+11
+      </pre>          </td>
+        </tr>
+      </tbody></table>    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p class="red"><strong>Prime Number </strong></p>
+    <p><strong>Logic:</strong> Prime Number are divisible by itself only. </p>
+    <table width="500" border="0" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
+      <tbody><tr>
+        <td valign="top" class="blue"><strong>Not divisible by any Number </strong></td>
+        <td valign="top" class="blue"><strong>Divisible by 2 ...no need to check further </strong></td>
+        <td valign="top" class="blue"><strong>Divisible by 3 ...no need to check further </strong></td>
+      </tr>
+      <tr>
+        <td width="33%" valign="top" bgcolor="#EEEEEE"><p><strong>7%2=1<br>
+          7%3=1<br>
+          7%4=3<br>
+          7%5=2<br>
+          7%6=1</strong></p>          </td>
+        <td width="33%" valign="top" bgcolor="#EEEEEE"><strong>8%2=0<br>
+8%3=<br>
+8%4=<br>
+8%5=<br>
+8%6=<br>
+        8%7=</strong></td>
+        <td width="33%" valign="top" bgcolor="#EEEEEE"><strong>9%2=1<br>
+9%3=0<br>
+9%4<br>
+9%5<br>
+9%6<br>
+        9%7<br>
+        9%8</strong></td>
+      </tr>
+      <tr>
+        <td colspan="3" valign="top" bgcolor="#EEEEEE"><em>Numbers are not divisible by more than half of the number </em></td>
+        </tr>
+      <tr>
+        <td valign="top" bgcolor="#EEEEEE">No need to check upto 6 check upto 3 only <br></td>
+        <td valign="top" bgcolor="#EEEEEE">No need to check upto 7 check upto 4 only</td>
+        <td valign="top" bgcolor="#EEEEEE">No need to check upto 8 check upto 4 only</td>
+      </tr>
+    </tbody></table>
+    <br>
+    <table width="90%" border="0" cellspacing="1" cellpadding="3">
+      <tbody><tr>
+        <td bgcolor="#EEEEEE"><strong>Program</strong></td>
+        <td bgcolor="#DDDDDD"><strong>Output</strong></td>
+      </tr>
+      <tr>
+        <td width="70%" bgcolor="#EEEEEE">
+<pre>//Note: Scanner class work with JDK1.5 or above
+import java.util.*;
+class Prime
+{
+	public static void main(String args[])
+	{		
+		int n, i, res;
+		boolean flag=true;
+		Scanner scan= new Scanner(System.in);
+		System.out.println("Please Enter a No.");
+		n=scan.nextInt();
+		for(i=2;i&lt;=n/2;i++)
+		{
+			res=n%i;
+			if(res==0)
+			{
+				flag=false;
+				break;
+			}
+		}
+		if(flag)
+			System.out.println(n + " is Prime Number");
+		else
+			System.out.println(n + " is not Prime Number");
+	}
+}
+      </pre></td>
+        <td width="30%" valign="top" bgcolor="#DDDDDD">
+<pre>Please Enter a No.: 7
+7 is Prime Number
+</pre></td>
+      </tr>
+    </tbody></table>    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p class="red"><strong>Fibonacci Series ( 1 1 2 3 5 8 13...) </strong> </p>
+        <p><strong>Logic:</strong> Sum of previous two numbers will give us next number. </p>
+      <table width="300" border="0" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
+          <tbody><tr>
+            <td align="center" valign="top"><strong>prev</strong></td>
+            <td align="center" valign="top"><strong>next</strong></td>
+            <td align="center" valign="top"><strong>sum</strong></td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">&nbsp;</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE" class="blue">shifted to <strong>prev </strong></td>
+            <td align="center" valign="top" bgcolor="#EEEEEE" class="blue">shifted to <strong>next </strong></td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">1</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">1</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">2</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">1</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">2</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">3</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">2</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">3</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">5</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">3</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">5</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">8</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">5</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">8</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">13</td>
+          </tr>
+          <tr>
+            <td width="33%" align="center" valign="top" bgcolor="#EEEEEE">8</td>
+            <td width="33%" align="center" valign="top" bgcolor="#EEEEEE">13</td>
+            <td width="33%" align="center" valign="top" bgcolor="#EEEEEE">...</td>
+          </tr>
+          <tr>
+            <td width="33%" align="center" valign="top" bgcolor="#EEEEEE">13</td>
+            <td width="33%" align="center" valign="top" bgcolor="#EEEEEE">...</td>
+            <td width="33%" align="center" valign="top" bgcolor="#EEEEEE">...</td>
+          </tr>
+          <tr>
+            <td colspan="3" valign="top"><em>prev will give you fibonacci series </em></td>
+          </tr>
+        </tbody></table>
+      <br>
+      <table width="90%" border="0" cellspacing="1" cellpadding="3">
+          <tbody><tr>
+            <td bgcolor="#EEEEEE"><strong>Program</strong></td>
+            <td width="30%" bgcolor="#DDDDDD"><strong>Output</strong></td>
+          </tr>
+          <tr>
+            <td width="75%" bgcolor="#EEEEEE"><pre>class Fibonacci
+{
+	public static void main(String args[])
+	{		
+		int prev, next, sum, n;
+		prev=next=1
+		for(n=1;n&lt;=10;n++)
+		{
+			System.out.println(prev);
+			sum=prev+next;
+			prev=next;
+			next=sum;
+		}
+	}
+}
+      </pre></td>
+            <td width="30%" valign="top" bgcolor="#DDDDDD"><pre>1
+1
+2
+3
+5
+8
+13
+...      </pre></td>
+          </tr>
+      </tbody></table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p class="red"><strong>Sum of 1st 10 Natural Numbers </strong> </p>
+        <p><strong>Logic:</strong> Sum of previous two numbers will give us next number. </p>
+      <table width="300" border="0" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
+          <tbody><tr>
+            <td align="center" valign="top"><strong>sum</strong></td>
+            <td align="center" valign="top"><strong>n</strong></td>
+            <td align="center" valign="top"><strong>sum</strong></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center" valign="top" bgcolor="#EEEEEE" class="blue">sum+n<strong></strong></td>
+            <td align="center" valign="top" bgcolor="#EEEEEE" class="blue">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">0</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">1</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">1</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">1</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">2</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">3</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">3</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">3</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">6</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">6</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">4</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">10</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">10</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">5</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">15</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">15</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">6</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">21</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">21</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">7</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">28</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">28</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">8</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">36</td>
+          </tr>
+          <tr>
+            <td width="33%" align="center" valign="top" bgcolor="#EEEEEE">36</td>
+            <td width="33%" align="center" valign="top" bgcolor="#EEEEEE">9</td>
+            <td width="33%" align="center" valign="top" bgcolor="#EEEEEE">45</td>
+          </tr>
+          <tr>
+            <td width="33%" align="center" valign="top" bgcolor="#EEEEEE">45</td>
+            <td width="33%" align="center" valign="top" bgcolor="#EEEEEE">10</td>
+            <td width="33%" align="center" valign="top" bgcolor="#EEEEEE">55</td>
+          </tr>
+        </tbody></table>
+      <br>
+        <table width="90%" border="0" cellspacing="1" cellpadding="3">
+          <tbody><tr>
+            <td bgcolor="#EEEEEE"><strong>Program</strong></td>
+            <td width="30%" bgcolor="#DDDDDD"><strong>Output</strong></td>
+          </tr>
+          <tr>
+            <td width="75%" bgcolor="#EEEEEE"><pre>class Sum10
+{
+	public static void main(String args[])
+	{		
+		int n, sum=0;
+		for(n=1;n&lt;=10;n++)
+		{
+			sum+=n;    //or sum=sum+n;
+		}
+		System.out.println(sum);
+	}
+}
+      </pre></td>
+            <td width="30%" valign="top" bgcolor="#DDDDDD"><pre>55   </pre></td>
+          </tr>
+      </tbody></table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p class="red"><strong>Sum of Square of 1st 10 Natural Numbers </strong> </p>
+        <p><strong>Logic:</strong> Sum of previous two numbers will give us next number. </p>
+      <table width="300" border="0" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
+          <tbody><tr>
+            <td align="center" valign="top"><strong>sum</strong></td>
+            <td align="center" valign="top"><strong>n*n</strong></td>
+            <td align="center" valign="top"><strong>sum</strong></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center" valign="top" bgcolor="#EEEEEE" class="blue">sum+n<strong>*n</strong></td>
+            <td align="center" valign="top" bgcolor="#EEEEEE" class="blue">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">0</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">1*1</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">1</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">1</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">2*2</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">5</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">5</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">3*3</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">14</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">14</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">4*4</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">30</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">30</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">5*5</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">55</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">55</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">6*6</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">91</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">91</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">7*7</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">140</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">140</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">8*8</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">204</td>
+          </tr>
+          <tr>
+            <td width="33%" align="center" valign="top" bgcolor="#EEEEEE">204</td>
+            <td width="33%" align="center" valign="top" bgcolor="#EEEEEE">9*9</td>
+            <td width="33%" align="center" valign="top" bgcolor="#EEEEEE">285</td>
+          </tr>
+          <tr>
+            <td width="33%" align="center" valign="top" bgcolor="#EEEEEE">285</td>
+            <td width="33%" align="center" valign="top" bgcolor="#EEEEEE">10*10</td>
+            <td width="33%" align="center" valign="top" bgcolor="#EEEEEE">385</td>
+          </tr>
+        </tbody></table>
+      <br>
+        <table width="90%" border="0" cellspacing="1" cellpadding="3">
+          <tbody><tr>
+            <td bgcolor="#EEEEEE"><strong>Program</strong></td>
+            <td width="30%" bgcolor="#DDDDDD"><strong>Output</strong></td>
+          </tr>
+          <tr>
+            <td width="75%" bgcolor="#EEEEEE"><pre>class SumSq10
+{
+	public static void main(String args[])
+	{		
+		int n, sum=0;
+		for(n=1;n&lt;=10;n++)
+		{
+			sum+=n;*n    //or sum=sum+n;*n
+		}
+		System.out.println(sum);
+	}
+}
+      </pre></td>
+            <td width="30%" valign="top" bgcolor="#DDDDDD"><pre>385  </pre></td>
+          </tr>
+      </tbody></table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p class="red"><strong>Factorial</strong></p>
+        <p><strong>Logic:</strong> Factorial of 5 = 5 x 4 x 3 x 2 x 1 </p>
+      <table width="300" border="0" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
+          <tbody><tr>
+            <td width="33%" align="center" valign="top"><strong>prod</strong></td>
+            <td width="33%" align="center" valign="top"><strong>n</strong></td>
+            <td width="33%" align="center" valign="top"><strong>prod</strong></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center" valign="top" bgcolor="#EEEEEE" class="blue">prod*n<strong></strong></td>
+            <td align="center" valign="top" bgcolor="#EEEEEE" class="blue">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">1</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">5</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">5</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">5</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">4</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">20</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">20</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">3</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">60</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">60</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">2</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">120</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">120</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">1</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">120</td>
+          </tr>
+        </tbody></table>
+      <br>
+        <table width="90%" border="0" cellspacing="1" cellpadding="3">
+          <tbody><tr>
+            <td bgcolor="#EEEEEE"><strong>Program</strong></td>
+            <td bgcolor="#DDDDDD"><strong>Output</strong></td>
+          </tr>
+          <tr>
+            <td width="70%" bgcolor="#EEEEEE"><pre>//Note: Scanner class work with JDK1.5 or above
+import java.util.*;
+class Factorial
+{
+	public static void main(String args[])
+	{		
+		int n, i, prod=1;
+		Scanner scan= new Scanner(System.in);
+		System.out.println("Please Enter a No.");
+		n=scan.nextInt();
+		for(i=n;i&gt;=1;i--)
+		{
+			prod*=i;	//prod=prod*i;
+		}
+		System.out.println("Factorial of " + n + " is  " + prod);
+	}
+}
+      </pre></td>
+            <td width="30%" valign="top" bgcolor="#DDDDDD"><pre>Please Enter a No.: 5
+Factorial of 5 is 120
+    </pre></td>
+          </tr>
+      </tbody></table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p class="red"><strong>Biggest of 3 Numbers using Logical Operators</strong><br>
+      </p>
+        <table width="90%" border="0" cellspacing="1" cellpadding="3">
+          <tbody><tr>
+            <td bgcolor="#EEEEEE"><strong>Program</strong></td>
+            <td bgcolor="#DDDDDD"><strong>Output</strong></td>
+          </tr>
+          <tr>
+            <td width="70%" bgcolor="#EEEEEE"><pre>//Note: Scanner class work with JDK1.5 or above
+import java.util.*;
+class Biggest3
+{
+	public static void main(String args[])
+	{		
+		int n1, n2, n3, big;
+		Scanner scan= new Scanner(System.in);
+		System.out.println("Please Enter No 1: ");
+		n1=scan.nextInt();
+		System.out.println("Please Enter No 2: ");
+		n2=scan.nextInt();
+		System.out.println("Please Enter No 3: ");
+		n3=scan.nextInt();
+		if(n1&gt;n2 &amp;&amp; n1&gt;n3)
+			big=n1;
+		else if(n2&gt;n1 &amp;&amp; n2&gt;n3)
+			big=n2;
+		else
+			big=n3;
+		System.out.println("Biggest No: " + big);
+	}
+}
+      </pre></td>
+            <td width="30%" valign="top" bgcolor="#DDDDDD"><pre>Please Enter No 1: 5
+Please Enter No 2: 23
+Please Enter No 3: 14
+Biggest No: 23
+    </pre></td>
+          </tr>
+      </tbody></table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p class="red"><strong>Biggest of 3 Numbers using Nested If </strong><br>
+      </p>
+        <table width="90%" border="0" cellspacing="1" cellpadding="3">
+          <tbody><tr>
+            <td bgcolor="#EEEEEE"><strong>Program</strong></td>
+            <td bgcolor="#DDDDDD"><strong>Output</strong></td>
+          </tr>
+          <tr>
+            <td width="70%" bgcolor="#EEEEEE"><pre>//Note: Scanner class work with JDK1.5 or above
+import java.util.*;
+class Biggest3
+{
+	public static void main(String args[])
+	{		
+		int n1, n2, n3, big;
+		Scanner scan= new Scanner(System.in);
+		System.out.println("Please Enter No 1: ");
+		n1=scan.nextInt();
+		System.out.println("Please Enter No 2: ");
+		n2=scan.nextInt();
+		System.out.println("Please Enter No 3: ");
+		n3=scan.nextInt();
+		if(n1&gt;n2)
+		{
+			if(n1&gt;n3)
+				big=n1;
+			else
+				big=n3;
+		}
+		else
+		{
+			if(n2&gt;n3)
+				big=n2;
+			else
+				big=n3;
+		}
+		System.out.println("Biggest No: " + big);
+	}
+}
+      </pre></td>
+            <td width="30%" valign="top" bgcolor="#DDDDDD"><pre>Please Enter No 1: 5
+Please Enter No 2: 23
+Please Enter No 3: 14
+Biggest No: 23
+    </pre></td>
+          </tr>
+      </tbody></table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p class="red"><strong>Swap 2 Numbers using 3rd Variable </strong></p>
+      <p><strong>Logic:</strong></p>
+      <table width="300" border="0" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
+        <tbody><tr>
+          <td width="33%" align="center" valign="top"><strong>n1</strong></td>
+          <td width="33%" align="center" valign="top"><strong>n2</strong></td>
+          <td width="33%" align="center" valign="top"><strong>temp</strong></td>
+        </tr>
+        
+        <tr>
+          <td align="center" valign="top" bgcolor="#EEEEEE">5</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">23</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">0</td>
+        </tr>
+        <tr>
+          <td align="center" valign="top" bgcolor="#EEEEEE">5</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">23</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">5</td>
+        </tr>
+        <tr>
+          <td align="center" valign="top" bgcolor="#EEEEEE">23</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">23</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">5</td>
+        </tr>
+        <tr>
+          <td align="center" valign="top" bgcolor="#EEEEEE">23</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">5</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">5</td>
+        </tr>
+      </tbody></table>
+      <br>
+      <table width="90%" border="0" cellspacing="1" cellpadding="3">
+          <tbody><tr>
+            <td bgcolor="#EEEEEE"><strong>Program</strong></td>
+            <td bgcolor="#DDDDDD"><strong>Output</strong></td>
+          </tr>
+          <tr>
+            <td width="70%" bgcolor="#EEEEEE"><pre>//Note: Scanner class work with JDK1.5 or above
+import java.util.*;
+class Swap
+{
+	public static void main(String args[])
+	{		
+		int n1, n2, temp;
+		Scanner scan= new Scanner(System.in);
+		System.out.println("Please Enter No 1: ");
+		n1=scan.nextInt();
+		System.out.println("Please Enter No 2: ");
+		n2=scan.nextInt();
+		<b>temp=n1;
+		n1=n2;
+		n2=temp;</b>
+		System.out.println("First No: " + n1);
+		System.out.println("Second No: " + n2);
+
+	}
+}
+      </pre></td>
+            <td width="30%" valign="top" bgcolor="#DDDDDD"><pre>Please Enter No 1: 5
+Please Enter No 2: 23
+First No: 23
+Second No: 5
+    </pre></td>
+          </tr>
+      </tbody></table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p class="red"><strong>Swap 2 Numbers without using 3rd Variable </strong></p>
+        <p><strong>Logic:</strong></p>
+      <table width="300" border="0" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
+          <tbody><tr>
+            <td width="33%" align="center" valign="top"><strong>n1</strong></td>
+            <td width="33%" align="center" valign="top"><strong>n2</strong></td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">10</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">5</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">15</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">5</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">15</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">10</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#EEEEEE">5</td>
+            <td align="center" valign="top" bgcolor="#EEEEEE">10</td>
+          </tr>
+        </tbody></table>
+      <br>
+        <table width="90%" border="0" cellspacing="1" cellpadding="3">
+          <tbody><tr>
+            <td bgcolor="#EEEEEE"><strong>Program</strong></td>
+            <td bgcolor="#DDDDDD"><strong>Output</strong></td>
+          </tr>
+          <tr>
+            <td width="70%" bgcolor="#EEEEEE"><pre>//Note: Scanner class work with JDK1.5 or above
+import java.util.*;
+class Swap
+{
+	public static void main(String args[])
+	{		
+		int n1, n2, temp;
+		Scanner scan= new Scanner(System.in);
+		System.out.println("Please Enter No 1: ");
+		n1=scan.nextInt();
+		System.out.println("Please Enter No 2: ");
+		n2=scan.nextInt();
+		<b>n1=n1+n2;
+		n2=n1-n2;
+		n1=n1-n2</b>
+		System.out.println("First No: " + n1);
+		System.out.println("Second No: " + n2);
+
+	}
+}
+      </pre></td>
+            <td width="30%" valign="top" bgcolor="#DDDDDD"><pre>Please Enter No 1: 10
+Please Enter No 2: 5
+First No: 5
+Second No: 10
+    </pre></td>
+          </tr>
+      </tbody></table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p class="red"><strong>Sum of Digits </strong></p>
+      <p><strong>Logic:</strong> 513 -&gt; 5+1+3=9 </p>
+      <table width="300" border="0" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
+        <tbody><tr>
+          <td width="33%" align="center" valign="top"><strong>n</strong></td>
+          <td width="33%" align="center" valign="top"><strong>res</strong></td>
+          <td width="33%" align="center" valign="top"><strong>n</strong></td>
+          <td width="33%" align="center" valign="top"><strong>sum</strong></td>
+        </tr>
+        <tr>
+          <td align="center" valign="top" bgcolor="#EEEEEE">513</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">&nbsp;</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">&nbsp;</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">0</td>
+        </tr>
+        <tr>
+          <td align="center" valign="top" bgcolor="#EEEEEE">513%10</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">3</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">&nbsp;</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">3</td>
+        </tr>
+        <tr>
+          <td align="center" valign="top" bgcolor="#EEEEEE">513/10</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">&nbsp;</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">51</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">3</td>
+        </tr>
+        <tr>
+          <td align="center" valign="top" bgcolor="#EEEEEE">&nbsp;</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">&nbsp;</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">&nbsp;</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center" valign="top" bgcolor="#EEEEEE">51%10</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">1</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">&nbsp;</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">4</td>
+        </tr>
+        <tr>
+          <td align="center" valign="top" bgcolor="#EEEEEE">51/10</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">&nbsp;</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">5</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">4</td>
+        </tr>
+        <tr>
+          <td align="center" valign="top" bgcolor="#EEEEEE">&nbsp;</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">&nbsp;</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">&nbsp;</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center" valign="top" bgcolor="#EEEEEE">5%10</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">5</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">&nbsp;</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">9</td>
+        </tr>
+        <tr>
+          <td align="center" valign="top" bgcolor="#EEEEEE">5/10</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">&nbsp;</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">0</td>
+          <td align="center" valign="top" bgcolor="#EEEEEE">9</td>
+        </tr>
+      </tbody></table>
+      <br>
+      <table width="90%" border="0" cellspacing="1" cellpadding="3">
+          <tbody><tr>
+            <td bgcolor="#EEEEEE"><strong>Program</strong></td>
+            <td bgcolor="#DDDDDD"><strong>Output</strong></td>
+          </tr>
+          <tr>
+            <td width="70%" bgcolor="#EEEEEE"><pre>//Note: Scanner class work with JDK1.5 or above
+import java.util.*;
+class SumDigits
+{
+	public static void main(String args[])
+	{		
+		int n, res;
+		Scanner scan= new Scanner(System.in);
+		System.out.println("Please Enter No.: ");
+		n1=scan.nextInt();
+		while(n&gt;0)
+		{
+			res=n%10;
+			n=n/10;
+			sum+=res;	//sum=sum+res;
+		}
+		System.out.println("Second No: " + n2);
+
+	}
+}
+      </pre></td>
+            <td width="30%" valign="top" bgcolor="#DDDDDD"><pre>Please Enter No 1: 10
+Please Enter No 2: 5
+First No: 5
+Second No: 10
+    </pre></td>
+          </tr>
+      </tbody></table></td>
+  </tr>
+</tbody></table>
+<p>&nbsp;</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

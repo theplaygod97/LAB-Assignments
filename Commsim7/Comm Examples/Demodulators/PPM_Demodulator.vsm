@@ -1,0 +1,211 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-2002 Visual Solutions
+POa="Eugene"
+PV=5.000.52
+PS=0
+PE=0.02
+PP=5e-005
+PI=170
+PX=5e-005
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman",18,0,400,2,0,1,0,1
+Pc=17
+Po=0.01,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=3071,0,0,3071,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[5]=0
+331
+1
+0
+647
+QLc[8]="5.0.7c"
+QLc[64]="Xùçt∂ô_áîé{†BRáûp."
+N.1="userFunction"*8x27#1,1<U>
+n="viscomm.ppmMod"
+DP=112
+DLi[1]=4
+DLF[4]=1000
+1
+0.0004
+0
+DLs[5]="4"
+"1000"
+"1."
+"0.0004"
+"0."
+N.2="userFunction"*78x33#1,1<U>
+n="viscomm.ppmDemod"
+DP=152
+DLi[1]=4
+DLF[3]=1000
+0
+0.0004
+DLs[4]="4"
+"1000"
+"0."
+"0.0004"
+N.3="userFunction"*9x50#1,2<U>
+n="viscomm.randomSym"
+DP=88
+DLi[2]=4
+0
+DLF[3]=1000
+0
+0.001
+DLs[3]="4"
+"1000"
+"0."
+N.4="plot"*100x33*115x32
+pt="Received Data vs. Original Data (delayed)"
+ps="Errors visible where the two traces do not agree"
+px="Time (msec)"
+pax=0
+pf=H
+pS=7
+pf=F
+pb=4,-1
+pbx=0.02,0
+pbY=0,0
+pbX=0,0
+pm=-1,0
+pb.0=0,0
+pb.1=4,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.5="userFunction"*47x34#1,2<U>
+n="viscomm.awgnRe"
+DP=240
+DLi[1]=1
+DLF[11]=1000
+0.5
+10
+1
+1
+1
+1
+1
+1
+1
+10
+DLi[1]=0
+DLF[2]=1
+1
+DLs[14]="1"
+"1000"
+"0.5"
+0
+"10"
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+N.6="plot"*100x8*115x24
+pt="Baseband PPM waveform (1 msec frame interval)"
+px="Time (msec)"
+pax=0
+pf=S
+pS=7
+pf=F
+pb=1.5,-0.5
+pbx=0.02,0
+pbY=0,0
+pbX=0,0
+pm=-1,0
+pg=20,0,1
+pb.0=1,-1
+pb.1=0,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.7="label"*44x39
+n="Gaussian Noise Channel
+     ( 10 dB Es/No )"
+N.8="label"*11x56
+n="        1 ksps
+
+Symbol values: [0, 3]"
+N.9="label"*10x17
+n="Num. Levels= 4
+Symbol rate= 1 kHz
+Pulse width= 0.4 msec
+Frame start at t= 0 sec"
+N.10="userFunction"*55x50#1,1<U>
+n="viscomm.delay"
+DP=96
+DLI[1]=20
+DLF[1]=0
+DLi[1]=1
+DLF[1]=0.001
+DLs[3]=0
+"0."
+"0.001"
+N.11="userFunction"*44x25#2,1<MU>
+n="viscomm.avPower"
+DP=112
+DLi[4]=10
+0
+0
+0
+DLF[1]=0
+DLs[2]="10"
+"0."
+N.12="display"(0.39900249376559)*83x26<M>
+n=".493766"
+Oe=6
+Ox=1
+Ov=0
+N.13="Compound"*10x32#1,0<R>
+n="Av. Power Meter"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.14="label"*4x2
+n="PULSE POSITION DEMODULATION (PPM) EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,0,0,18,"Times New Roman",0,2
+N.15="label"*72x23
+n="Num. Levels= 4
+Symbol rate= 1 kHz
+Pulse width= 0.4 msec
+Frame start at t= 0 sec"
+N.16="label"*6x8
+n="Simulation sampling rate= 20 kHz"
+N.17="label"*106x68
+n="If no errors visible, run diagram again."
+I.1.i1=3.o1
+I.2.i1=5.o1
+I.4.i1=2.o1
+I.4.i2=10.o1
+I.5.i1=1.o1
+I.6.i1=1.o1
+I.10.i1=3.o1
+I.11.i1=13.i1
+I.12.i1=11.o1
+G.13=11,12,
+I.13.i1=1.o1
+cEOF

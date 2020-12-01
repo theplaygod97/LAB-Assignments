@@ -1,0 +1,172 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-2002 Visual Solutions
+POa="Eugene"
+PV=5.000.52
+PS=0
+PE=5
+PP=0.01
+PI=170
+PX=0.01
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,6,14,"Arial",18,0,400,2,0,1,0,1
+Pc=18
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=3071,0,0,3071,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[5]=1
+0
+1
+0
+48
+QLc[8]="5.0.7c"
+QLc[64]="U¿‹ †‚9Ž­¬™y{jD†¦€."
+N.1="plot"*65x1*87x26
+px="Time (sec)"
+pax=0
+pf=S
+pf=F
+pb=0.15,-0.05
+pbx=5,0
+pbY=0,0
+pbX=0,0
+pc=4096
+pm=-1,0
+pb.0=0,0
+pb.1=0.1,-0.03
+pL.1="Signal #1"
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0.1,-0.03
+pL.7="Signal #2"
+N.2="plot"*65x31*87x34
+pt="Auto Correlation of FIR Impulse Response"
+px="Time (sec)"
+pax=2
+pf=S
+pf=x
+pf=F
+pb=0.15,-0.05
+pbx=2,-2
+pbY=3,-3
+pbX=5,0
+pc=4096
+pm=-1,0
+pb.0=0.1,-0.03
+pb.1=0,0
+pb.2=2,-4
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.3="step"<1.29;1>*23x41
+N.4="label"*6x47
+n="Load Correlator with desired reference by shifting in
+the signal and then raising the LOCK (b) input after
+129 samples"
+N.5="userFunction"*10x15#0,1<U>
+n="viscomm.impulse"
+DP=48
+DLF[2]=2
+1
+DLs[2]=0
+0
+N.6="userFunction"*8x24#0,1<RU>
+n="viscomm.impulse"
+DP=48
+DLF[2]=0
+1
+DLs[2]=0
+0
+N.7="userFunction"*26x15#1,1<U>
+n="viscomm.FIRfilter"
+DP=168
+DLi[4]=129
+0
+0
+0
+DLF[4]=5
+2
+0
+1
+DLi[1]=1
+DLF[1]=100
+DLi[1]=0
+DLs[6]=0
+0
+0
+0
+0
+0
+N.8="userFunction"*11x31#1,1<U>
+n="viscomm.FIRfilter"
+DP=168
+DLi[4]=129
+0
+0
+0
+DLF[4]=5
+2
+0
+1
+DLi[1]=1
+DLF[1]=100
+DLi[1]=0
+DLs[6]=0
+0
+0
+0
+0
+0
+N.9="userFunction"*38x37#3,1<U>
+n="viscomm.correlation"
+DP=64
+DLi[2]=129
+0
+DLs[1]=0
+N.10="ramp"(0,1)*28x57
+N.11="summingJunction"*46x57
+N.12="const"<3.28>*28x61
+N.13="label"*7x65
+n="Time offset = pulse start time + 0.01 * (FIR length - 1)"
+N.14="label"*105x67
+n="XY Plot Mode"
+N.15="label"*3x2
+n="AUTOCORRELATION EXAMPLE
+
+(Crosscorrelation can be done by
+replacing Signal #1 with another waveform)"
+Ob=8454143
+Og=255
+N.16="label"*23x20
+n="Signal #1"
+N.17="label"*13x37
+n="Signal #2"
+N.18="label"*21x44
+n="t= 1.29"
+I.1.i2=7.o1
+I.1.i8=8.o1
+I.2.i1=9.o1
+I.2.i3=11.o1
+I.7.i1=5.o1
+I.8.i1=6.o1
+I.9.i1=7.o1
+I.9.i2=8.o1
+I.9.i3=3.o1
+I.11.i1=10.o1
+f11.2.i=-
+I.11.i2=12.o1
+cEOF

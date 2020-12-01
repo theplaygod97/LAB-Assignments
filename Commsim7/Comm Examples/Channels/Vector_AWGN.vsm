@@ -1,0 +1,336 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eugene"
+PV=4.500
+PS=0
+PE=20
+PP=0.005
+PI=170
+PX=0.005
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,6,14,"Arial"
+Pc=32
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=0
+0
+1
+0
+N.1="userFunction"*14x30#1,2<RU>
+n="viscomm.randomSym"
+DP=88
+DLi[2]=256
+0
+DLF[3]=100
+0
+0.01
+DLs[3]="256"
+"100"
+"0."
+N.2="plot"*73x37*87x31#3,0
+pt="Decoded Symbols vs. Original Data"
+px="Time (sec)"
+py="Symbol Value"
+pax=0
+pf=H
+pf=F
+pb=300,0
+pbx=20,0
+pbY=0,0
+pbX=0,0
+pm=-1,0
+pb.0=300,0
+pb.1=0,0
+pb.2=300,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.3="userFunction"*22x41#1,1<U>
+n="viscomm.delay"
+DP=96
+DLI[1]=374
+DLF[1]=0
+DLi[1]=0
+DLF[1]=3.74
+DLs[3]="187 * 2"
+"0."
+"1.87 *2"
+N.4="summingJunction"*63x79
+N.5="plot"*73x69*87x16#2,0
+pt="Uncorrected Error Events"
+px="Time (sec)"
+py="Errors"
+pax=0
+pf=H
+pf=F
+pb=2,-1
+pbx=20,0
+pbY=0,0
+pbX=0,0
+pm=-1,0
+pg=0,3,1
+pb.0=0,0
+pb.1=0,0
+pb.2=0,-2
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.6="wirePositioner"*50x36<R>
+N.7="plot"*73x1*87x35#4,0
+pt="RS Errors per Frame"
+px="Time (sec)"
+py="Number of Errors"
+pax=0
+pf=H
+pf=F
+pb=10,-2
+pbx=20,0
+pbY=0,0
+pbX=0,0
+pm=-1,0
+pg=0,12,1
+pb.0=2,0
+pL.0="Frame Clock"
+pb.1=0,0
+pL.1="Num. Corrected Errors (-1 ==> Failure)"
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=8,-2
+N.8="label"*24x44
+n="Ref Symbols Delay"
+N.9="label"*5x18
+n="NOTE:  Each run will produce a
+different result as the Comm
+Random Number seed is turned off."
+N.10="label"*43x29
+n="RS(204,188) CODE CAN
+CORRECT UP TO 8 ERRORS"
+N.11="label"*3x1
+n="VECTOR AWGN EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,34,"Arial",0,2
+N.12="label"*16x35
+n="Symbol Source (100 sps)"
+N.13="summingJunction"*82x34<MT11>
+N.14="const"<0.5>*52x28<M>
+N.15="Compound"*27x13#1,1<C>
+n="Offset"
+Ms=2048,0,0,3840,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+Mw=""
+N.16="label"*52x47<M>
+n="By adding a 0.5 offset, and then adding noise, we can introduce
+symbol errors.
+
+From a signal power point of view, neighboring symbols are
+separated by 1 Volt, and errors will occur if the noise exceeds +/- 0.5
+(i.e. power/symbol= 0.25 W)"
+N.17="label"*52x42<M>
+n="Input values are in the range of [0, 255]."
+N.18="variable"*15x50
+n="EbNo"
+N.19="const"<5>*7x50
+N.20="label"*2x58
+n="Notes on Vector AWGN Block:
+- User is responsible for correctly setting the input
+  vector size for the block.
+- Block will only add noise and produce a new output
+  when a Frame Clock occurs."
+Ob=8454143
+Og=255
+N.21="label"*2x53
+n="Sets Eb/No level for the AWGN process"
+N.22="label"*52x62<M>
+n="Note:  Occasionally this example will result in a simulation failure
+when a \"255\" symbol is changed to \"256\" (not a valid RS symbol)."
+Ob=8454143
+Og=255
+N.23="label"*2x72
+n="Note:  Occasionally this example will result in a
+simulation failure when a \"255\" symbol is changed
+to \"256\" (not a valid RS symbol)."
+Ob=8454143
+Og=255
+N.24="Compound"*41x22#2,3<C>
+n="Decoder
+RS(204,188)"
+Ms=2048,0,0,3840,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+Mw=""
+N.25="wirePositioner"*88x13<M>
+N.26="userFunction"*28x24#2,3<MUT11>
+n="viscomm.rsDecode"
+DP=64
+DLi[5]=8
+188
+204
+1
+1
+DLs[5]="8"
+"188"
+"204"
+0
+0
+N.27="userFunction"*111x24#3,2<MUT11>
+n="viscomm.blockOut"
+DP=72
+DLi[3]=0
+0
+188
+DLF[1]=100
+DLs[2]="188"
+"100"
+N.28="Compound"*3x11#2,2<C>
+n="Encoder
+RS(204, 188)"
+Ms=2048,0,0,3840,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+Mw=""
+N.29="userFunction"*38x32#3,2<MUT11>
+n="viscomm.blockIn"
+DP=24
+DLi[2]=0
+188
+DLs[1]="188"
+N.30="userFunction"*85x32#2,2<MUT11>
+n="viscomm.rsEncode"
+DP=56
+DLi[5]=8
+188
+204
+1
+1
+DLs[5]="8"
+"188"
+"204"
+0
+0
+N.31="userFunction"*42x10#2,3<UT11>
+n="viscomm.awgnVec"
+DP=512
+DLi[2]=1
+0
+DLI[1]=204
+DLF[12]=10
+0.25
+5
+1
+1
+1
+1
+1
+1
+1
+1
+1
+DLs[14]="1"
+"204"
+0
+"0.25"
+"EbNo"
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+N.32="label"*3x5
+n="THIS DIAGRAM REQUIRES VisSim/Comm DLL
+Version 4.5.21 or later"
+Ob=8454143
+Og=255
+I.2.i1=3.o1
+I.2.i3=6.o1
+I.3.i1=1.o1
+f4.1.i=-
+I.4.i1=3.o1
+I.4.i2=6.o1
+I.5.i2=4.o1
+I.6.i1=24.o2
+I.7.i1=24.o1
+I.7.i2=24.o3
+f13.1.o=v
+I.13.i1=14.o1
+f13.2.i=v
+I.13.i2=15.i1
+G.15=13,14,16,17,22,
+f15.1.o=v
+I.15.o1=13.o1
+f15.1.o=v
+f15.1.i=v
+I.15.i1=28.o2
+I.18.i1=19.o1
+G.24=25,26,27,
+I.24.o1=25.o1
+I.24.o2=27.o1
+I.24.o3=26.o3
+f24.1.o=n"Frame clk"
+f24.2.o=n"Data Out"
+f24.3.o=n"errors"
+f24.1.i=n"Fr ck"
+I.24.i1=31.o1
+f24.2.i=v
+f24.2.i=n"Rx Sym"
+I.24.i2=31.o2
+I.25.i1=26.o1
+f26.2.o=v
+I.26.i1=24.i1
+f26.2.i=v
+I.26.i2=24.i2
+I.27.i1=26.o1
+f27.2.i=v
+I.27.i2=26.o2
+G.28=29,30,
+I.28.o1=30.o1
+f28.2.o=v
+I.28.o2=30.o2
+f28.1.o=n"Fr ck"
+f28.2.o=v
+f28.2.o=n"Data"
+f28.1.i=n"sym  "
+I.28.i1=1.o1
+f28.2.i=n"clk"
+I.28.i2=1.o2
+f29.2.o=v
+I.29.i1=28.i1
+I.29.i2=28.i2
+f30.2.o=v
+I.30.i1=29.o1
+f30.2.i=v
+I.30.i2=29.o2
+f31.2.o=v
+I.31.i1=28.o1
+f31.2.i=v
+I.31.i2=15.o1
+cEOF

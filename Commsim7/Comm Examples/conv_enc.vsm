@@ -1,0 +1,232 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-2002 Visual Solutions
+POt="Hard decision Viterbi decoding example"
+POa="Eritek, Inc."
+PV=5.000.52
+PS=0
+PE=30
+PP=0.1
+PI=170
+PX=0.1
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman",18,0,400,2,0,1,0,1
+Pc=28
+Po=0.01,50,664,0
+Ppl=1
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=3071,0,0,3071,0,0
+Pd=777
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[5]=1
+9712
+1
+0
+1453
+QLc[8]="5.0.7c"
+QLc[64]="áÅ•xãõ=è¶åÜçwCcn¢s."
+N.1="userFunction"*3x14#1,2<U>
+n="viscomm.PNData"
+DP=136
+DLF[3]=2.5
+0.4
+0
+DLi[6]=5
+0
+0
+0
+1
+0
+DLI[2]=37
+31
+DLs[6]="2.5"
+"0."
+"5"
+"0."
+"45"
+"37"
+N.2="plot"*89x13*114x42
+pt="Convolutional Encoding & Viterbi Decoding"
+px="Time (sec)"
+pax=0
+pf=S
+pf=F
+pb=8,-4
+pbx=30,0
+pbY=0,0
+pbX=0,0
+pc=2048
+pm=10,0
+pr=255
+pR=16777215
+pb.0=0,0
+pL.0="Coded Bit Sequence"
+pb.1=0,0
+pL.1="Received Bit Sequence"
+pb.2=0,0
+pL.2="Original Data"
+pb.3=0,0
+pL.3="Recovered Data"
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.3="summingJunction"*72x31<M>
+N.4="const"(-2)*48x38<M>
+N.5="Compound"*72x48#1,1
+n="bias"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.6="Compound"*69x14#1,1
+n="bias"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.7="summingJunction"*114x30<M>
+N.8="const"(2)*88x37<M>
+N.9="timeDelay"(0,256)*63x42
+N.10="const"(12.5)*53x42
+N.11="userFunction"*32x48#2,3<U>
+n="viscomm.viterbiDec"
+DP=200
+DLF[1]=2.5
+DLi[12]=3
+4
+2
+10
+11
+21
+49
+39
+0
+0
+0
+0
+DLs[5]="2.5"
+"3"
+"4"
+"2"
+"10"
+N.12="userFunction"*32x14#2,2<U>
+n="viscomm.convEncode"
+DP=160
+DLi[11]=3
+4
+2
+11
+21
+49
+39
+0
+0
+0
+0
+DLF[1]=2.5
+DLs[4]="3"
+"4"
+"2"
+"2.5"
+N.13="Compound"*34x32#1,1
+n="bias"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.14="summingJunction"*72x32<M>
+N.15="const"(2)*48x38<M>
+N.16="label"*96x60
+n="Note:  The simulation step size must divide evenly into both
+the INPUT and OUTPUT data bit durations."
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.17="label"*37x9
+n="Rate 3/4, L=2 code"
+N.18="label"*4x2
+n="CONVOLUTIONAL CODING EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,18,"Times New Roman",0,2
+N.19="label"*8x56
+n="To view block parameters, or
+enter compound blocks (blue),
+click over the block using the right
+mouse button."
+Ob=65535
+Og=255
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.20="userFunction"*10x31#2,1<U>
+n="viscomm.bsc"
+DP=48
+DLF[1]=0.02
+DLs[1]="2.e-002"
+N.21="wirePositioner"*34x19
+N.22="label"*3x36
+n="Binary Symmetric
+       Channel"
+N.23="label"*84x2
+n="This example illustrates how coding can be used to correct for
+channel errors.  In the plot below, the blue and red traces are
+overlaid and show where errors have occurred when they differ.
+Note that the recovered data stream does not show any errors."
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.24="label"*61x39
+n="Delayed Data"
+N.25="label"*8x19
+n="Data Source"
+N.26="label"*48x48<M>
+n="Click Right Mouse Button over blank area to return to previous level."
+Ob=65535
+Og=255
+N.27="label"*39x48<M>
+n="Click Right Mouse Button over blank area to return to previous level."
+Ob=65535
+Og=255
+N.28="label"*48x52<M>
+n="Click Right Mouse Button over blank area to return to previous level."
+Ob=65535
+Og=255
+I.2.i1=6.o1
+I.2.i2=13.o1
+I.2.i3=9.o1
+I.2.i4=5.o1
+I.3.i1=5.i1
+I.3.i2=4.o1
+G.5=3,4,28,
+I.5.o1=3.o1
+I.5.i1=11.o1
+G.6=7,8,26,
+I.6.o1=7.o1
+I.6.i1=12.o1
+I.7.i1=6.i1
+I.7.i2=8.o1
+f9.1.i=lt
+I.9.i1=10.o1
+f9.2.i=lx
+I.9.i2=21.o1
+I.11.i1=20.o1
+I.11.i2=12.o2
+I.12.i1=1.o1
+I.12.i2=1.o2
+G.13=14,15,27,
+I.13.o1=14.o1
+I.13.i1=20.o1
+I.14.i1=13.i1
+I.14.i2=15.o1
+I.20.i1=12.o1
+I.20.i2=12.o2
+I.21.i1=1.o1
+cEOF

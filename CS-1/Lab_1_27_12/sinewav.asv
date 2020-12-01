@@ -1,0 +1,12 @@
+clc;
+clear all;
+close all;
+f=input('Enter freq = ');
+A=input('Enter Amp = ');
+P=
+t=0::0.001
+x=A*sin(2*3.14*t*f)
+plot(t,x)
+xlabel('Time')
+ylabel('Amplitute')
+title('Sine Wave')

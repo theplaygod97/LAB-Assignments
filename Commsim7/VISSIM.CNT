@@ -1,0 +1,601 @@
+:Base vissim.hlp>main
+1 Commsim Basics
+2 Starting Commsim
+3 Starting Commsim=StartingCommsim
+4 Customize the command line=Customizethecommandline@vissim.hlp>Proc
+2 Exploring the Commsim window
+3 Exploring the Commsim window=ExploringtheCommsimwindow
+4 Move a toolbar=Moveatoolbar@vissim.hlp>Proc
+4 Show or hide a toolbar=Showorhideatoolbar@vissim.hlp>Proc
+4 Create custom toolbar buttons=Createcustomtoolbarbuttons@vissim.hlp>Proc
+4 Remove a custom toolbar button=Removeacustomtoolbarbutton@vissim.hlp>Proc
+4 Show or hide the status bar=Showorhidethestatusbar@vissim.hlp>Proc
+4 Show or hide scroll bars=Showorhidescrollbars@vissim.hlp>Proc
+4 Expand or collapse diagram tree=Expandorcollapsediagramtree@vissim.hlp>Proc
+4 Jump to a location=Jumptoalocation@vissim.hlp>Proc
+4 Resize the diagram tree=Resizethediagramtree@vissim.hlp>Proc
+2 Setting up the Commsim environment
+3 Setting up the Commsim environment=SettinguptheCommsimenvironment
+4 Switch between presentation and standard mode=Switchbetweenpresentationandstandardmode@vissim.hlp>Proc
+4 Activate display mode=Activatedisplaymode@vissim.hlp>Proc
+4 Activate Data Types mode=ActivateDataTypesmode@vissim.hlp>Proc
+4 Display connector labels on compound blocks=Displayconnectorlabelsoncompoundblocks@vissim.hlp>Proc
+4 Change fonts=Changefonts@vissim.hlp>Proc
+4 Change background colors=Changebackgroundcolors@vissim.hlp>Proc
+4 Magnify the screen elements=Magnifythescreenelements@vissim.hlp>Proc
+4 Display block names=Displayblocknames@vissim.hlp>Proc
+4 Display diagrams in black and white=Displaydiagramsinblackandwhite@vissim.hlp>Proc
+2 Creating a new block diagram
+3 Creating a new block diagram=Creatinganewblockdiagram
+2 Setting up a new block diagram
+3 Setting up a new block diagram=Settingupanewblockdiagram
+4 Use fields in the Header and Footer boxes=UsefieldsintheHeaderandFooterboxes@vissim.hlp>Proc
+2 Opening an existing block diagram
+3 Opening an existing block diagram=Openinganexistingblockdiagram
+2 Undoing an editing action
+3 Undoing an editing action=Undoinganeditingaction
+2 Repainting the screen
+3 Repainting the screen=Repaintingthescreen
+2 Saving a block diagram
+3 Saving a block diagram=Savingablockdiagram
+4 The Save All command=TheSaveAllcommand@vissim.hlp>Proc
+4 The Save Embedded Files command=TheSaveEmbeddedFilescommand@vissim.hlp>Proc
+4 The Save As commands=TheSaveAscommands@vissim.hlp>Proc
+4 Retain diagram appearance on different graphic resolutions=Retaindiagramappearanceondifferentgraphicresolutions@vissim.hlp>Proc
+2 E-mailing a block diagram
+3 E-mailing a block diagram=E.mailingablockdiagram
+2 Previewing before printing
+3 Previewing before printing=Previewingbeforeprinting
+2 Printing a block diagram
+3 Printing a block diagram=Printingablockdiagram
+4 Select a different printer=Selectadifferentprinter@vissim.hlp>Proc
+4 Select the page orientation, paper size, and paper source=Selectthepageorientation.papersize.andpapersource@vissim.hlp>Proc
+2 Closing a diagram
+3 Closing a diagram=Closingadiagram
+2 Switching between diagrams
+3 Switching between diagrams=Switchingbetweendiagrams
+2 Exiting Commsim
+3 Exiting Commsim=ExitingCommsim
+1 Inserting, Setting Up, and Wiring Blocks
+2 Block basics
+3 Block basics=Blockbasics
+3 Insert blocks=Insertblocks
+3 Identify parts of a block=Identifypartsofablock
+3 Display additional information on a block=Displayadditionalinformationonablock
+3 Set up block properties=Setupblockproperties
+3 Enter numeric data=Enternumericdata
+3 Enter arithmetic expressions=Enterarithmeticexpressions
+3 Entering complex numbers=Enteringcomplexnumbers
+3 Entering matrix data
+4 Entering matrix data=Enteringmatrixdata
+4 diag(V,K)=diag.V.K.@vissim.hlp>Proc
+4 eye(N)=eye.N.@vissim.hlp>Proc
+4 ones(R,C)=ones.R.C.@vissim.hlp>Proc
+4 zeros(R,C)=zeros.R.C.@vissim.hlp>Proc
+3 Enter C expressions
+4 Enter C expressions=EnterCexpressions
+3 Control the number of displayed significant decimal digits
+4 Control the number of displayed significant decimal digits=Controlthenumberofdisplayedsignificantdecimaldigits
+3 Identify blocks by user-defined labels
+4 Identify blocks by user-defined labels=Identifyblocksbyuser.definedlabels
+2 Wiring basics
+3 Wiring basics=Wiringbasics
+4 Wire blocks together=Wireblockstogether@vissim.hlp>Proc
+4 Automatically complete connections=Automaticallycompleteconnections@vissim.hlp>Proc
+4 Automatically wire blocks=Automaticallywireblocks@vissim.hlp>Proc
+4 Create a specific wiring a path=Createaspecificwiringapath@vissim.hlp>Proc
+4 Color wires=Colorwires@vissim.hlp>Proc
+4 Hide wires=Hidewires@vissim.hlp>Proc
+4 Delete wires=Deletewires@vissim.hlp>Proc
+2 Connector tab basics
+3 Connector tab basics=Connectortabbasics
+4 Add and remove connector tabs=Addandremoveconnectortabs@vissim.hlp>Proc
+4 Set connection classes=Setconnectionclasses@vissim.hlp>Proc
+4 Restrict connections to class members=Restrictconnectionstoclassmembers@vissim.hlp>Proc
+1 Arranging Blocks
+2 Selecting blocks
+3 Selecting blocks=Selectingblocks
+4 Select a block=Selectablock@vissim.hlp>Proc
+4 Perform an area select=Performanareaselect@vissim.hlp>Proc
+4 Toggle select blocks=Toggleselectblocks@vissim.hlp>Proc
+4 Unselect blocks=Unselectblocks@vissim.hlp>Proc
+2 Moving and copying blocks
+3 Moving and copying blocks=Movingandcopyingblocks
+4 Move a single block using drag-and-drop editing=Moveasingleblockusingdrag.and.dropediting@vissim.hlp>Proc
+4 Move a group of blocks using drag-and-drop editing=Moveagroupofblocksusingdrag.and.dropediting@vissim.hlp>Proc
+4 Copy a single block using drag-and-drop editing=Copyasingleblockusingdrag.and.dropediting@vissim.hlp>Proc
+4 Copy or move selected blocks within Commsim=CopyormoveselectedblockswithinCommsim@vissim.hlp>Proc
+4 Copy blocks into other applications=Copyblocksintootherapplications@vissim.hlp>Proc
+2 Flipping blocks
+3 Flipping blocks=Flippingblocks
+2 Aligning blocks vertically and horizontally
+3 Aligning blocks vertically and horizontally=Aligningblocksverticallyandhorizontally
+3 Snap to grid=Snaptogrid
+3 The Align commands=TheAligncommands
+2 Finding and replacing blocks
+3 Finding and replacing blocks=Findingandreplacingblocks
+4 Find blocks=Findblocks@vissim.hlp>Proc
+4 Replace blocks=Replaceblocks@vissim.hlp>Proc
+2 Deleting blocks
+3 Deleting blocks=Deletingblocks
+1 Setting Simulation Properties
+2 Setting up the simulation range=Settingupthesimulationrange
+2 Setting up an integration method
+3 Setting up an integration method=Settingupanintegrationmethod
+4 Use the Integration Method property sheet=UsetheIntegrationMethodpropertysheet@vissim.hlp>Proc
+2 Setting up simulation preferences
+3 Setting up simulation preferences=Settingupsimulationpreferences
+4 Alter the sequence of generated random numbers=Alterthesequenceofgeneratedrandomnumbers@vissim.hlp>Proc
+2 Setting simulation defaults
+3 Setting simulation defaults=Settingsimulationdefaults
+1 Simulating Block Diagrams
+2 Simulation basics
+3 Simulation basics=Simulationbasics
+3 Continuous system simulation
+4 Continuous system simulation=Continuoussystemsimulation
+4 Simulate a spring-damper arm=Simulateaspring.damperarm@vissim.hlp>Proc
+4 Enter continuous time transfer functions=Entercontinuoustimetransferfunctions@vissim.hlp>Proc
+4 Apply an external driving force to a spring-damper arm=Applyanexternaldrivingforcetoaspring.damperarm@vissim.hlp>Proc
+4 Convert a continuous transfer function to a discrete transfer function=Convertacontinuoustransferfunctiontoadiscretetransferfunction@vissim.hlp>Proc
+4 Convert a discrete transfer function to a continuous transfer function=Convertadiscretetransferfunctiontoacontinuoustransferfunction@vissim.hlp>Proc
+3 Discrete time system simulation
+4 Discrete time system simulation=Discretetimesystemsimulation
+4 Enter difference equations=Enterdifferenceequations@vissim.hlp>Proc
+3 Hybrid system simulation
+4 Hybrid system simulation=Hybridsystemsimulation
+2 Controlling a simulation
+3 Controlling a simulation=Controllingasimulation
+4 Use the Control Panel=UsetheControlPanel@vissim.hlp>Proc
+4 Start a simulation=Startasimulation@vissim.hlp>Proc
+4 Stop a simulation=Stopasimulation@vissim.hlp>Proc
+4 Continue a simulation=Continueasimulation@vissim.hlp>Proc
+4 Single-step a simulation=Single.stepasimulation@vissim.hlp>Proc
+4 Reset a simulation to initial conditions=Resetasimulationtoinitialconditions@vissim.hlp>Proc
+4 Dynamically modify signal values=Dynamicallymodifysignalvalues@vissim.hlp>Proc
+4 Probe signal values=Probesignalvalues@vissim.hlp>Proc
+4 Trim a system=Trimasystem@vissim.hlp>Proc
+4 Reset error conditions=Reseterrorconditions@vissim.hlp>Proc
+4 Snapping system states=Snappingsystemstates@vissim.hlp>Proc
+4 Resetting  system states=Resettingsystemstates@vissim.hlp>Proc
+2 Troubleshooting
+3 Troubleshooting=Troubleshooting1
+1 Viewing Simulations
+2 Plots
+3 Plots=Plots
+3 Basic time domain plots=Basictimedomainplots
+3 XY plots
+4 XY plots=XYplots
+4 Specify an XY plot=SpecifyanXYplot@vissim.hlp>Proc
+4 Label the X axis on an XY plot=LabeltheXaxisonanXYplot@vissim.hlp>Proc
+3 Sizing a plot block
+4 Sizing a plot block=Sizingaplotblock
+3 Zooming
+4 Zooming=Zooming
+3 Printing a plot block
+4 Printing a plot block=Printingaplotblock
+3 Memory usage of plot block
+4 Memory usage of plot block=Memoryusageofplotblock
+3 Setting plot options
+4 Setting plot options=Settingplotoptions
+3 Setting plot labels
+4 Setting plot labels=Settingplotlabels
+3 Setting plot axes
+4 Setting plot axes=Settingplotaxes
+3 Setting plot appearance
+4 Setting plot appearance=Settingplotappearance
+3 Setting plot traces
+4 Setting plot traces=Settingplottraces
+2 Strip charts
+3 Strip charts=Stripcharts
+3 Basic time domain strip chart=Basictimedomainstripchart
+3 Sizing a stripChart block=SizingastripChartblock
+3 Printing a stripChart block=PrintingastripChartblock
+3 Setting strip chart options=Settingstripchartoptions
+3 Setting strip chart labels=Settingstripchartlabels
+3 Setting strip chart axes=Settingstripchartaxes
+3 Setting strip chart appearance=Settingstripchartappearance
+2 Histograms
+3 Histograms=Histograms
+3 Sizing a histogram block=Sizingahistogramblock
+3 Changing histogram properties=Changinghistogramproperties
+2 Meters
+3 Meters=Meters
+3 Sizing a meter block=Sizingameterblock
+3 Changing meter properties=Changingmeterproperties
+2 Creating animation
+3 Creating animation=Creatinganimation
+3 Animation basics=Animationbasics
+3 Applying pictures to the animate block
+4 Applying pictures to the animate block=Applyingpicturestotheanimateblock
+4 Run animations=Runanimations@vissim.hlp>Proc
+4 Create an animation trail=Createananimationtrail@vissim.hlp>Proc
+3 Using the lineDraw block
+4 Using the lineDraw block=UsingthelineDrawblock
+4 Create line motion=Createlinemotion@vissim.hlp>Proc
+3 Other ways to create animation
+4 Other ways to create animation=Otherwaystocreateanimation
+1 Solving Implicit Equations
+2 Setting up an implicit equation=Settingupanimplicitequation
+2 Solving an implicit equation=Solvinganimplicitequation
+2 Implicit equation examples=Implicitequationexamples
+1 Performing Global Optimization
+2 Global optimization basics
+3 Global optimization basics=Globaloptimizationbasics
+3 Cost functions with many local minimum values=Costfunctionswithmanylocalminimumvalues
+3 Cost functions with no minimum values=Costfunctionswithnominimumvalues
+2 Performing global optimization
+3 Performing global optimization=Performingglobaloptimization
+4 Perform global optimization:=Performglobaloptimization.@vissim.hlp>Proc
+2 Global optimization examples
+3 Global optimization examples=Globaloptimizationexamples
+2 Troubleshooting
+3 Troubleshooting=Troubleshooting2
+1 Designing Digital Filters
+2 Digital filter basics=Digitalfilterbasics
+2 Filter operations=Filteroperations
+2 Time domain filters with tapped delay=Timedomainfilterswithtappeddelay
+2 Time domain filters with transfer functions=Timedomainfilterswithtransferfunctions
+2 Frequency domain filter implementation=Frequencydomainfilterimplementation
+2 Comparison of FIR and IIR filters=ComparisonofFIRandIIRfilters
+2 Interactive filter design with the transferFunction block=InteractivefilterdesignwiththetransferFunctionblock
+2 IIR filter design
+3 IIR filter design=IIRfilterdesign
+4 How specification methods relate to analog filter prototypes=Howspecificationmethodsrelatetoanalogfilterprototypes@vissim.hlp>Proc
+4 Attenuation characteristics of the filter=Attenuationcharacteristicsofthefilter@vissim.hlp>Proc
+4 Set the frequency units=Setthefrequencyunits@vissim.hlp>Proc
+4 Generate an IIR filter=GenerateanIIRfilter@vissim.hlp>Proc
+2 FIR filter design
+3 FIR filter design=FIRfilterdesign
+3 Discrete and continuous FIR filter design=DiscreteandcontinuousFIRfilterdesign
+3 Using the FIR Filter Properties dialog box
+4 Using the FIR Filter Properties dialog box=UsingtheFIRFilterPropertiesdialogbox
+4 Add a band=Addaband@vissim.hlp>Proc
+4 Delete a band=Deleteaband@vissim.hlp>Proc
+4 Change a band's specifications=Changeaband.sspecifications@vissim.hlp>Proc
+4 Generate an FIR filter=GenerateanFIRfilter@vissim.hlp>Proc
+1 Working with Other Applications
+2 Importing basics
+3 Importing basics=Importingbasics
+3 Setting up the input file=Settinguptheinputfile
+3 Importing data=Importingdata
+2 Exporting basics
+3 Exporting basics=Exportingbasics
+3 Exporting data
+4 Exporting data=Exportingdata
+4 File formats for exported data=Fileformatsforexporteddata@vissim.hlp>Proc
+4 Header information=Headerinformation@vissim.hlp>Proc
+2 Commsim-MatLab interface basics
+3 Commsim-MatLab interface basics=Commsim.MatLabinterfacebasics
+3 Evaluating MatLab expressions=EvaluatingMatLabexpressions
+3 Setting up a MatLab expression=SettingupaMatLabexpression
+3 Reading and writing MatLab variables
+4 Reading and writing MatLab variables=ReadingandwritingMatLabvariables
+4 Read MatLab variables into Commsim=ReadMatLabvariablesintoCommsim@vissim.hlp>Proc
+4 Write variables into MatLab=WritevariablesintoMatLab@vissim.hlp>Proc
+2 ActiveX basics
+3 ActiveX basics=ActiveXbasics
+3 ActiveX read block
+4 ActiveX read block=ActiveXreadblock
+4 Create an ActiveX link to read data into Commsim=CreateanActiveXlinktoreaddataintoCommsim@vissim.hlp>Proc
+3 ActiveX write block
+4 ActiveX write block=ActiveXwriteblock
+4 Create an ActiveX link to write data to an ActiveX container=CreateanActiveXlinktowritedatatoanActiveXcontainer@vissim.hlp>Proc
+3 Commsim-specific functions
+4 Commsim-specific functions=Commsim.specificfunctions
+3 Examples
+4 Examples=Examples1
+2 Embedding objects
+3 Embedding objects=Embeddingobjects
+4 Embed existing objects=Embedexistingobjects@vissim.hlp>Proc
+4 Embed a new object=Embedanewobject@vissim.hlp>Proc
+4 Edit and update objects=Editandupdateobjects@vissim.hlp>Proc
+4 Examine the properties of an embedded object=Examinethepropertiesofanembeddedobject@vissim.hlp>Proc
+4 Scale and crop OLEobject blocks=ScaleandcropOLEobjectblocks@vissim.hlp>Proc
+4 Examples=Examples2@vissim.hlp>Proc
+2 DDE basics
+3 DDE basics=DDEbasics
+3 Creating an app-to-Commsim link with DDEreceive=Creatinganapp.to.CommsimlinkwithDDEreceive
+3 Creating a Commsim-to-app link with DDEsend=CreatingaCommsim.to.applinkwithDDEsend
+3 Creating a two-way link with DDE
+4 Creating a two-way link with DDE=Creatingatwo.waylinkwithDDE
+4 Using the DDE Link Configure dialog box=UsingtheDDELinkConfiguredialogbox@vissim.hlp>Proc
+3 Creating DDE links with applications that do not support Copy Link and Paste Link
+4 Creating DDE links with applications that do not support Copy Link and Paste Link=CreatingDDElinkswithapplicationsthatdonotsupportCopyLinkandPasteLink
+2 Look-up table basics
+3 Look-up table basics=Look.uptablebasics
+3 Specifying the data source
+4 Specifying the data source=Specifyingthedatasource
+4 Create a one-dimensional map file=Createaone.dimensionalmapfile@vissim.hlp>Proc
+4 Create a two-dimensional map file=Createatwo.dimensionalmapfile@vissim.hlp>Proc
+4 Create a three-dimensional map file=Createathree.dimensionalmapfile@vissim.hlp>Proc
+3 Using the Lookup Table wizard
+4 Using the Lookup Table wizard=UsingtheLookupTablewizard
+4 Create a look-up table with the Lookup Table wizard=Createalook.uptablewiththeLookupTablewizard@vissim.hlp>Proc
+3 Using the map block
+4 Using the map block=Usingthemapblock
+4 Insert a map block=Insertamapblock@vissim.hlp>Proc
+4 Set up, view, or change map block parameters=Setup.view.orchangemapblockparameters@vissim.hlp>Proc
+2 Commsim-Mathcad 2000 basics
+3 Commsim-Mathcad 2000 basics=Commsim.Mathcad2000basics
+3 Use of the inx and outx keywords=Useoftheinxandoutxkeywords
+3 Embedding Mathcad documents
+4 Embedding Mathcad documents=EmbeddingMathcaddocuments
+4 Embed an existing Mathcad document=EmbedanexistingMathcaddocument@vissim.hlp>Proc
+4 Embed a new Mathcad document=EmbedanewMathcaddocument@vissim.hlp>Proc
+3 Editing and updating Mathcad documents
+4 Editing and updating Mathcad documents=EditingandupdatingMathcaddocuments
+4 Edit an embedded Mathcad document directly from Commsim=EditanembeddedMathcaddocumentdirectlyfromCommsim@vissim.hlp>Proc
+4 Invoke Mathcad as a stand-alone application=InvokeMathcadasastand.aloneapplication@vissim.hlp>Proc
+3 Scaling and cropping embedded Mathcad documents
+4 Scaling and cropping embedded Mathcad documents=ScalingandcroppingembeddedMathcaddocuments
+4 Scale an embedded Mathcad document manually=ScaleanembeddedMathcaddocumentmanually@vissim.hlp>Proc
+4 Scale an embedded Mathcad document using the Mathcad Properties dialog box=ScaleanembeddedMathcaddocumentusingtheMathcadPropertiesdialogbox@vissim.hlp>Proc
+4 Crop an embedded Mathcad document manually=CropanembeddedMathcaddocumentmanually@vissim.hlp>Proc
+4 Reset the size of an embedded Mathcad document=ResetthesizeofanembeddedMathcaddocument@vissim.hlp>Proc
+3 Examining the properties of an embedded Mathcad document
+4 Examining the properties of an embedded Mathcad document=ExaminingthepropertiesofanembeddedMathcaddocument
+4 Access general information about an embedded Mathcad document=AccessgeneralinformationaboutanembeddedMathcaddocument@vissim.hlp>Proc
+4 Control the appearance of an embedded Mathcad document=ControltheappearanceofanembeddedMathcaddocument@vissim.hlp>Proc
+3 Changing the number of connector tabs on an embedded Mathcad document
+4 Changing the number of connector tabs on an embedded Mathcad document=ChangingthenumberofconnectortabsonanembeddedMathcaddocument
+3 Troubleshooting
+4 Troubleshooting=Troubleshooting3
+4 Server Busy message=ServerBusymessage@vissim.hlp>Proc
+4 Incorrect results=Incorrectresults@vissim.hlp>Proc
+3 Examples
+4 Examples=Examples3
+2 WMF basics
+3 WMF basics=WMFbasics
+3 Saving a diagram as a WMF file=SavingadiagramasaWMFfile
+3 Inserting a WMF file in another application=InsertingaWMFfileinanotherapplication
+1 Working with Large Diagrams
+2 Creating model hierarchy
+3 Creating model hierarchy=Creatingmodelhierarchy
+3 Creating a compound block=Creatingacompoundblock
+3 Drilling into a compound block=Drillingintoacompoundblock
+3 Automatically configuring a compound block
+4 Automatically configuring a compound block=Automaticallyconfiguringacompoundblock
+4 Use dialogConstants to create Auto Dialog dialog boxes=UsedialogConstantstocreateAutoDialogdialogboxes@vissim.hlp>Proc
+4 Encapsulate dialogConstant blocks in a compound block=EncapsulatedialogConstantblocksinacompoundblock@vissim.hlp>Proc
+4 Invoke the Auto Dialog dialog box=InvoketheAutoDialogdialogbox@vissim.hlp>Proc
+4 Create more complex Auto Dialog dialog boxes=CreatemorecomplexAutoDialogdialogboxes@vissim.hlp>Proc
+3 Triggering the execution of compound blocks
+4 Triggering the execution of compound blocks=Triggeringtheexecutionofcompoundblocks
+4 Enable and disable a trigger=Enableanddisableatrigger@vissim.hlp>Proc
+3 Specifying a local time step
+4 Specifying a local time step=Specifyingalocaltimestep
+3 Keeping track of the number of blocks in a compound block
+4 Keeping track of the number of blocks in a compound block=Keepingtrackofthenumberofblocksinacompoundblock
+3 Hiding compound blocks
+4 Hiding compound blocks=Hidingcompoundblocks
+3 Configuring pictures on compound blocks
+4 Configuring pictures on compound blocks=Configuringpicturesoncompoundblocks
+4 To configure a picture on a compound block=Toconfigureapictureonacompoundblock@vissim.hlp>Proc
+4 To reset bitmaps=Toresetbitmaps@vissim.hlp>Proc
+3 Labeling connector tabs on compound blocks
+4 Labeling connector tabs on compound blocks=Labelingconnectortabsoncompoundblocks
+3 Dissolving a compound block
+4 Dissolving a compound block=Dissolvingacompoundblock
+3 Coloring compound blocks
+4 Coloring compound blocks=Coloringcompoundblocks
+2 Embedding blocks
+3 Embedding blocks=Embeddingblocks
+3 Setting up a diagram to be embedded=Settingupadiagramtobeembedded
+3 Embedding a block diagram=Embeddingablockdiagram
+3 Editing an embedded block diagram=Editinganembeddedblockdiagram
+3 Reconnecting an embedded block diagram=Reconnectinganembeddedblockdiagram
+2 Adding block diagrams
+3 Adding block diagrams=Addingblockdiagrams
+2 Using variables to pass signals
+3 Using variables to pass signals=Usingvariablestopasssignals
+3 Creating variables=Creatingvariables
+3 Scoping variables
+4 Scoping variables=Scopingvariables
+4 Level scope=Levelscope@vissim.hlp>Proc
+4 Definition and below scope=Definitionandbelowscope@vissim.hlp>Proc
+4 Diagram scope=Diagramscope@vissim.hlp>Proc
+3 Finding variable definitions
+4 Finding variable definitions=Findingvariabledefinitions
+3 Finding variable references
+4 Finding variable references=Findingvariablereferences
+3 Built-in variables
+4 Built-in variables=Built.invariables
+2 Using path aliases to reference files
+3 Using path aliases to reference files=Usingpathaliasestoreferencefiles
+3 Types of path aliases=Typesofpathaliases
+3 Displaying conflicts between local and global path aliases=Displayingconflictsbetweenlocalandglobalpathaliases
+3 Creating path aliases=Creatingpathaliases
+3 Specifying path aliases in blocks=Specifyingpathaliasesinblocks
+3 Creating nested path aliases=Creatingnestedpathaliases
+2 Working with dialog tables
+3 Working with dialog tables=Workingwithdialogtables
+3 Understanding data tables=Understandingdatatables
+3 Creating a data table in Excel=CreatingadatatableinExcel
+3 Creating a data table with Notepad=CreatingadatatablewithNotepad
+3 Attaching a data table to a dialogTable block=AttachingadatatabletoadialogTableblock
+3 Examining the attached data table=Examiningtheattacheddatatable
+2 Entering expressions
+3 Entering expressions=Enteringexpressions
+4 What you can do with expression blocks=Whatyoucandowithexpressionblocks@vissim.hlp>Proc
+4 Writing an expression=Writinganexpression@vissim.hlp>Proc
+2 Adding audio and visual alarms
+3 Adding audio and visual alarms=Addingaudioandvisualalarms
+4 Setting up a light block=Settingupalightblock@vissim.hlp>Proc
+2 Comparing diagrams
+3 Comparing diagrams=Comparingdiagrams
+2 Using tags
+3 Using tags=Usingtags
+2 Tracking diagram progress
+3 Tracking diagram progress=Trackingdiagramprogress
+3 Maintaining an edit history=Maintaininganedithistory
+3 Generating a diagram report=Generatingadiagramreport
+2 Protecting your work
+3 Protecting your work=Protectingyourwork
+3 Protecting block diagrams
+4 Protecting block diagrams=Protectingblockdiagrams
+4 Restrict access to a block diagram=Restrictaccesstoablockdiagram@vissim.hlp>Proc
+4 Change or delete a password=Changeordeleteapassword1@vissim.hlp>Proc
+3 Protecting compound blocks
+4 Protecting compound blocks=Protectingcompoundblocks
+4 Restrict access to a compound block=Restrictaccesstoacompoundblock@vissim.hlp>Proc
+4 Change or delete a password=Changeordeleteapassword2@vissim.hlp>Proc
+4 Edit a read-only compound block with password protection=Editaread.onlycompoundblockwithpasswordprotection@vissim.hlp>Proc
+3 Protecting embed blocks
+4 Protecting embed blocks=Protectingembedblocks
+4 Drill into a protected embed block=Drillintoaprotectedembedblock@vissim.hlp>Proc
+4 Protect an embedded block diagram=Protectanembeddedblockdiagram@vissim.hlp>Proc
+4 Change or delete a password=Changeordeleteapassword3@vissim.hlp>Proc
+1 Block Reference
+2 * (multiply)=..multiply.
+2 -X (negate)=.X.negate.
+2 / (divide)=..divide.
+2 < (less than)=..lessthan.
+2 less than or equal to=lessthanorequalto
+2 equal to=equalto
+2 not equal to=notequalto
+2 > (greater than)=..greaterthan.
+2 greater than or equal to=greaterthanorequalto
+2 1/X (inverse)=1.X.inverse.
+2 abs=abs
+2 acos=acos
+2 ActiveX read=ActiveXread
+2 ActiveX write=ActiveXwrite
+2 and=and
+2 animate=animate
+2 asin=asin
+2 atan2=atan2
+2 bessel=bessel
+2 bezel=bezel
+2 buffer=buffer
+2 button=button
+2 case=case
+2 comment=comment
+2 complexToReIm=complexToReIm
+2 const=const
+2 constraint=constraint
+2 convert=convert
+2 cos=cos
+2 cosh=cosh
+2 cost=cost
+2 crossDetect=crossDetect
+2 date=date
+2 DDE=DDE
+2 DDEreceive=DDEreceive
+2 DDEsend=DDEsend
+2 deadband=deadband
+2 diag=diag
+2 dialogConstant=dialogConstant
+2 dialogTable=dialogTable
+2 display=display
+2 dotProduct=dotProduct
+2 embed=embed
+2 error=error
+2 exp=exp
+2 export=export
+2 expression=expression
+2 fft=fft
+2 gain=gain
+2 gaussian=gaussian
+2 globalConstraint=globalConstraint
+2 histogram=histogram
+2 ifft=ifft
+2 import=import
+2 index=index
+2 int=int
+2 integrator (1/S)=integrator.1.S.
+2 invert=invert
+2 label=label
+2 light=light
+2 limit=limit
+2 limitedIntegrator (1/S)=limitedIntegrator.1.S.
+2 lineDraw=lineDraw
+2 ln=ln
+2 log10=log10
+2 magPhase=magPhase
+2 map=map
+2 MatLab Expression=MatLabExpression
+2 MatLab Read Variable=MatLabReadVariable
+2 MatLab Write Variable=MatLabWriteVariable
+2 max=max
+2 merge=merge
+2 meter=meter
+2 min=min
+2 multiply=multiply
+2 neuralNet=neuralNet
+2 not=not
+2 OLEobject=OLEobject
+2 or=or
+2 parabola=parabola
+2 parameterUnknown=parameterUnknown
+2 plot=plot
+2 pow=pow
+2 PRBS=PRBS
+2 psd=psd
+2 pulseTrain=pulseTrain
+2 quantize=quantize
+2 ramp=ramp
+2 realTime=realTime
+2 relay=relay
+2 resetIntegrator (1/S)=resetIntegrator.1.S.
+2 reshape=reshape
+2 rt-DataIn=rt.DataIn
+2 rt-DataOut=rt.DataOut
+2 sampleHold=sampleHold
+2 sawtooth block=sawtoothblock
+2 scalarToVec=scalarToVec
+2 sign=sign
+2 sin=sin
+2 sinh=sinh
+2 sinusoid=sinusoid
+2 slider=slider
+2 sqrt=sqrt
+2 squareWave block=squareWaveblock
+2 stateSpace=stateSpace
+2 stateTransition=stateTransition
+2 step=step
+2 stop=stop
+2 stripChart=stripChart
+2 summingJunction=summingJunction
+2 tan=tan
+2 tanh=tanh
+2 timeDelay=timeDelay
+2 transferFunction=transferFunction
+2 transpose=transpose
+2 triangleWave block=triangleWaveblock
+2 unitConversion=unitConversion
+2 uniform=uniform
+2 unitDelay=unitDelay
+2 unknown=unknown
+2 userFunction=userFunction
+2 variable=variable
+2 vecToScalar=vecToScalar
+2 vsum=vsum
+2 wirePositioner=wirePositioner
+2 xor=xor
+1 Customizing Commsim
+2 Customizing other screen settings
+3 Customizing other screen settings=Customizingotherscreensettings
+4 Change the display settings in Commsim=ChangethedisplaysettingsinCommsim@vissim.hlp>Proc
+2 Creating custom implicit solvers
+3 Creating custom implicit solvers=Creatingcustomimplicitsolvers
+3 Source files for building a custom implicit solver=Sourcefilesforbuildingacustomimplicitsolver
+3 Using vissimRequest() in a custom implicit solver=UsingvissimRequest..inacustomimplicitsolver
+3 Building a custom implicit solver=Buildingacustomimplicitsolver
+3 Using the constraint block with a custom implicit solver=Usingtheconstraintblockwithacustomimplicitsolver
+2 Creating custom global optimizers
+3 Creating custom global optimizers=Creatingcustomglobaloptimizers
+3 Source files for building a custom global optimizer=Sourcefilesforbuildingacustomglobaloptimizer
+3 Using vissimRequest() in a custom global optimizer=UsingvissimRequest..inacustomglobaloptimizer
+3 Building a custom global optimizer=Buildingacustomglobaloptimizer
+1 Commsim Viewer
+2 Overview=Overview
+2 Distributing Commsim Viewer and your block diagrams to end users
+3 Distributing Commsim Viewer and your block diagrams to end users=DistributingCommsimViewerandyourblockdiagramstoendusers
+3 Commsim Viewer documentation=CommsimViewerdocumentation
+3 Installing and starting Commsim Viewer=InstallingandstartingCommsimViewer
+2 Commsim Viewer End User License Agreement
+3 Commsim Viewer End User License Agreement=CommsimViewerEndUserLicenseAgreement
+2 Commsim Viewer Distribution Agreement
+3 Commsim Viewer Distribution Agreement=CommsimViewerDistributionAgreement
+1 Glossary of Terms
+2 Glossary of Terms=GlossaryOfTerms.D2H@vissim.hlp>Main

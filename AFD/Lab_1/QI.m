@@ -1,0 +1,13 @@
+clc;close all;clear;
+fs=8000;
+t=0:1/fs:1;
+f=800;
+a=1;
+x=a*sin(2*pi*f*t);
+t1=0:1/fs:2;
+f1=1200;
+x1=a*sin(2*pi*f1*t1);
+append=[x,x1];
+b=1:100;
+subplot(2,1,1);plot(append);xlabel('Time');ylabel('Amplitude');title('Apppend');
+subplot(2,1,2);plot(append(b));xlabel('Time');ylabel('Amplitude');

@@ -1,0 +1,335 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eugene"
+PV=4.500
+PS=0
+PE=0.01
+PP=2e-005
+PI=170
+PX=2e-005
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,6,14,"Arial"
+Pc=35
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=0
+0
+1
+0
+N.1="userFunction"*10x22#0,2<MU>
+n="viscomm.sineHz"
+DP=72
+DLi[1]=1
+DLF[4]=1000
+1
+0
+0
+DLi[1]=0
+DLs[4]="1000"
+"1."
+"0."
+0
+N.2="summingJunction"*31x27#4,1<M>
+N.3="userFunction"*9x29#0,2<MU>
+n="viscomm.sineHz"
+DP=72
+DLi[1]=1
+DLF[4]=1320
+0.76
+20
+0
+DLi[1]=0
+DLs[4]="1320"
+"0.76"
+"20."
+0
+N.4="userFunction"*10x37#0,2<MU>
+n="viscomm.sineHz"
+DP=72
+DLi[1]=1
+DLF[4]=3400
+0.4
+-30
+0
+DLi[1]=0
+DLs[4]="3400"
+"0.4"
+"-30."
+0
+N.5="userFunction"*12x44#0,2<MU>
+n="viscomm.sineHz"
+DP=72
+DLi[1]=1
+DLF[4]=1770
+0.9
+125
+0
+DLi[1]=0
+DLs[4]="1770"
+"0.9"
+"125."
+0
+N.6="plot"*56x2*96x27
+pt="Baseband Information Signal"
+px="Time (msec)"
+pax=0
+pf=H
+pS=7
+pf=F
+pb=3,-3
+pbx=0.01,0
+pbY=0,0
+pbX=0,0
+pc=16384
+pm=10,0
+pb.0=3,-3
+pb.1=0,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.7="Compound"*6x9#0,1<C>
+n="Source"
+Ms=2048,0,0,3840,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+Mw=""
+N.8="userFunction"*18x16#1,2<U>
+n="viscomm.fmMod"
+DP=88
+DLF[4]=3000
+2
+500
+0
+DLs[4]="3000"
+"2."
+"500."
+"0."
+N.9="userFunction"*18x41#1,2<MUT11>
+n="viscomm.cpxReIm"
+N.10="userFunction"*25x45#1,1<MU>
+n="viscomm.delay"
+DP=96
+DLI[1]=1
+DLF[1]=0
+DLi[1]=0
+DLF[1]=1
+DLs[3]=0
+0
+0
+N.11="summingJunction"*45x37<M>
+N.12="summingJunction"*62x41<M>
+N.13="userFunction"*31x46#1,1<MU>
+n="viscomm.delay"
+DP=96
+DLI[1]=1
+DLF[1]=0
+DLi[1]=0
+DLF[1]=1
+DLs[3]=0
+0
+0
+N.14="*"*62x48<M>
+N.15="summingJunction"*77x40<M>
+N.16="*"*55x34<M>
+N.17="userFunction"*17x62#1,2<MUT11>
+n="viscomm.cpxMagPh"
+N.18="*"*50x62<M>
+N.19="/"*117x41<M>
+N.20="gain"<15.91549>*90x41<M>
+N.21="Compound"*35x50#1,1<MC>
+n="delta Im"
+Ms=2048,0,0,3840,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+Mw=""
+N.22="Compound"*35x34#1,1<MC>
+n="delta Re"
+Ms=2048,0,0,3840,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+Mw=""
+N.23="label"*82x31<M>
+n="Scale factor computation:
+Fs / (2 * pi * FM Index)  =  5.0e4 / (2 * pi * 500)  =  15.19549"
+Ob=8454143
+Og=255
+N.24="userFunction"*38x62#1,1<UT11>
+n="viscomm.fmDemod"
+DP=64
+DLF[3]=500
+-6
+0
+DLs[3]="500."
+"-6"
+"0."
+N.25="Compound"*13x63#1,1<C>
+n="Equivalent FM
+Demodulator
+Implementation"
+Ms=2048,0,0,3840,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+Mw=""
+N.26="userFunction"*38x30#1,2<UT11>
+n="viscomm.cpxReIm"
+N.27="plot"*56x30*96x27
+pt="FM Modulated Signal"
+px="Time (msec)"
+pax=0
+pf=H
+pS=7
+pf=F
+pb=3,-3
+pbx=0.01,0
+pbY=0,0
+pbX=0,0
+pc=16384
+pm=10,0
+pb.0=3,-3
+pb.1=0,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.28="plot"*56x58*96x27
+pt="Recovered Information Signal"
+px="Time (msec)"
+pax=0
+pf=H
+pS=7
+pf=F
+pb=3,-3
+pbx=0.01,0
+pbY=0,0
+pbX=0,0
+pc=16384
+pm=10,0
+pb.0=0,0
+pb.1=3,-6
+pL.1="FM Demod block output"
+pb.2=3,-6
+pL.2="Compound FM Demod output"
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.29="summingJunction"*129x49<M>
+N.30="const"<6>*114x55<M>
+N.31="label"*104x62<M>
+n="Offset Value:
+Since the input to demodulator is NOT at baseband,
+a fixed offset is present in the output,
+corresponding to:  Carrier Freq / FM deviation index
+
+In this case:  3 kHz / 500 Hz/V  = 6 V"
+Ob=8454143
+Og=255
+N.32="label"*2x2
+n="FM MODULATOR EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,0,0,34,"Arial",0,2
+N.33="label"*3x71
+n="Demod Settings:
+Use same FM Index as in modulator.
+Since the input to demodulator is NOT at baseband,
+a fixed offset will appear in the output unless compensated for.
+Offset =  Carrier Freq / FM deviation index
+
+In this case:  3 kHz / 500 Hz/V  = 6 "
+Ob=8454143
+Og=255
+N.34="label"*2x24
+n="Sampling Freq. =  50 kHz
+
+Modulator Settings:
+Carrier Frequency=  3 kHz
+Carrier Amplitude=  2 V
+FM Deviation Index=  500 Hz / V"
+Ob=8454143
+Og=255
+N.35="label"*129x54<M>
+n="Remove Offset"
+Ob=8454143
+Og=255
+I.2.i1=1.o1
+I.2.i2=3.o1
+I.2.i3=4.o1
+I.2.i4=5.o1
+I.6.i2=7.o1
+G.7=1,2,3,4,5,
+I.7.o1=2.o1
+f8.1.o=v
+I.8.i1=7.o1
+f9.1.i=v
+I.9.i1=25.i1
+I.10.i1=22.i1
+I.11.i1=22.i1
+f11.2.i=-
+I.11.i2=10.o1
+I.12.i1=21.i1
+f12.2.i=-
+I.12.i2=13.o1
+I.13.i1=21.i1
+I.14.i1=9.o1
+I.14.i2=21.o1
+f15.1.i=-
+I.15.i1=16.o1
+I.15.i2=14.o1
+I.16.i1=22.o1
+I.16.i2=9.o2
+f17.1.i=v
+I.17.i1=25.i1
+I.18.i1=17.o1
+I.18.i2=17.o1
+f19.1.i=ll
+I.19.i1=20.o1
+f19.2.i=lr
+I.19.i2=18.o1
+I.20.i1=15.o1
+G.21=12,13,
+I.21.o1=12.o1
+I.21.i1=9.o2
+G.22=10,11,
+I.22.o1=11.o1
+I.22.i1=9.o1
+f24.1.i=v
+I.24.i1=8.o1
+G.25=9,14,15,16,17,18,19,20,21,22,23,29,30,31,35,
+I.25.o1=29.o1
+f25.1.i=v
+I.25.i1=8.o1
+f26.1.i=v
+I.26.i1=8.o1
+I.27.i1=26.o1
+I.28.i2=24.o1
+I.28.i3=25.o1
+I.29.i1=19.o1
+f29.2.i=-
+I.29.i2=30.o1
+cEOF

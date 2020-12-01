@@ -1,0 +1,310 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-2002 Visual Solutions
+POt="GMSK vs. MSK modulation example"
+POa="Eritek, Inc."
+PV=5.000.52
+PS=0
+PE=0.005
+PP=2.3148148148148e-007
+PI=170
+PX=2.3148148148148e-007
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman",18,0,400,2,0,1,0,1
+Pc=31
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=3071,0,0,3071,0,0
+Pd=1e-005
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[5]=1
+123
+1
+0
+643
+QLc[8]="5.0.7c"
+QLc[64]="`ùêtµÅ_vîÅñzµBc_öq."
+N.1="userFunction"*1x14#1,2<U>
+n="viscomm.PNData"
+DP=136
+DLF[3]=270000
+3.7037037037037e-006
+0
+DLi[6]=15
+11
+0
+1
+1
+0
+DLI[2]=32771
+31
+DLs[6]="270000"
+"0."
+"15"
+"11"
+"45"
+"37"
+N.2="label"*5x19
+n="R = 270 kbps"
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.3="label"*31x18
+n="BT = 0.3
+Fc = 81 kHz"
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.4="label"*2x2
+n="GMSK MODULATION EXAMPLE (GSM Case)"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,34,"Arial",0,2
+N.5="plot"*117x6*117x48#6,0<c>
+pt="GMSK Signal and GSM Mask"
+px="Time (sec)"
+py="Power Spectral Density (dBm/Hz)"
+pax=3
+pf=S
+pf=x
+pf=F
+pb=10,-70
+pbx=500,-500
+pbY=0,0
+pbX=513,0
+pc=2048
+pm=-1,0
+pr=65535
+pR=0
+pg=8,0,1
+pb.0=0,0
+pb.1=0,0
+pb.2=0,-70
+pL.2="GMSK Spectrum"
+pb.3=10000,-10000
+pL.3="Frequency (kHz)"
+pb.4=0,0
+pb.5=0,0
+pL.5="GSM Mask"
+pb.6=0,0
+pb.7=0,0
+N.6="userFunction"*89x8#0,1<RU>
+n="viscomm.impulse"
+DP=48
+DLF[2]=0
+1
+DLs[2]="0."
+"1."
+N.7="userFunction"*67x14#2,4<UT11>
+n="viscomm.spectrum"
+DP=136
+DLi[8]=11
+0
+0
+0
+2
+1
+0
+0
+DLF[1]=0
+DLi[1]=10
+DLs[2]="0."
+"10"
+DLi[1]=1
+N.8="userFunction"*30x41#1,2<MUT11@2,1>
+n="viscomm.cpxReIm"
+N.9="userFunction"*69x9#1,1<RU>
+n="viscomm.delay"
+DP=96
+DLI[1]=32
+DLF[1]=0
+DLi[1]=0
+DLF[1]=1
+DLs[3]="32"
+"0."
+0
+N.10="userFunction"*57x45#2,2<U>
+n="viscomm.spectralMask"
+DP=176
+DLi[4]=11
+1
+1
+1
+DLc[128]="GMSK_mask_hz.dat"
+N.11="userFunction"*87x39#1,1<MU>
+n="viscomm.dBGain"
+DP=24
+DLF[2]=38
+79.4328234724281
+DLs[1]="38"
+N.12="userFunction"*87x45#1,1<MU>
+n="viscomm.dBGain"
+DP=24
+DLF[2]=38
+79.4328234724281
+DLs[1]="38"
+N.13="userFunction"*114x40#2,1<MU>
+n="viscomm.reImCpx"
+N.14="Compound"*48x14#1,1
+n="Scaling"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.15="label"*16x23
+n="Filter Cutoff = BTvalue * Data Rate"
+N.16="plot"*38x55*196x30
+pt="GMSK Time Domain Waveform"
+px="Time (sec)"
+pax=0
+pf=S
+pf=F
+pb=1.5,-1.5
+pbx=0.005,0
+pbY=0,0
+pbX=0,0
+pm=-1,0
+pb.0=0,0
+pb.1=1,-1
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.17="userFunction"*12x63#1,2<UT11@2,1>
+n="viscomm.cpxReIm"
+N.18="userFunction"*130x30#1,1<MU>
+n="viscomm.fmMod"
+DP=120
+DLF[4]=0
+1
+67500
+0
+DLs[4]="0."
+"1."
+"0.25 * SymRate"
+"0."
+DLi[1]=0
+N.19="Compound"*26x13#1,1
+n="   GMSK
+Modulator"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=1
+Mh=0
+Mp=0
+N.20="label"*41x19<M>
+n="The Gaussian Filter Cutoff freq. is set to :  
+
+Filter Cutoff = BTvalue * Data Rate"
+Ob=8454143
+Og=255
+N.21="label"*110x15<M>
+n="For GMSK the FM Deviation parameter is set to
+0.25 * R   where R= data rate
+
+This assumes that the data into the
+Gaussian Filter is +/- 1"
+Ob=8454143
+Og=255
+N.22="label"*152x33<M>
+n="Complex Baseband"
+N.23="userFunction"*45x30#1,1<MU>
+n="viscomm.FIRfilter"
+DP=176
+DLi[4]=65
+7
+0
+0
+DLF[4]=81000
+2
+0
+1
+DLi[1]=0
+DLF[1]=4320000.00000003
+DLi[1]=0
+DLs[6]="65"
+"( BT * SymRate )"
+"2."
+"0."
+"1."
+"4320000.00000003"
+N.24="label"*33x36<M>
+n="Note:  By setting the number of FIR taps to an ODD value,
+the filter delay will be an integral number of simulation steps
+
+                  delay = ( N - 1 ) / 2"
+N.25="variable"*35x7<M>
+n="BT"
+N.26="const"<0.3>*23x7<M>
+N.27="const"<270000>*21x11<M>
+N.28="variable"*35x11<M>
+n="SymRate"
+N.29="label"*11x1<M>
+n="BLOCK PARAMETERS"
+Of=-16,0,400,0,1,0,18,"Times New Roman",0,2
+N.30="label"*6x47<M>
+n="THIS BLOCK EXPECTS AN NRZ TYPE INPUT
+SIGNAL IN THE RANGE OF [ -1, +1]"
+Of=-13,0,400,0,0,0,18,"Times New Roman",0,2
+N.31="label"*101x50<M>
+n="THIS BLOCK IS READ ONLY :
+TO MAKE CHANGES, PLEASE USE \"Save as...\" 
+
+After opening of adding the newly created block
+you may disable the \"Read Only\" mode by accessing
+the compound block's Properties and unchecking the
+\"Read Only\" box."
+Of=-13,0,400,0,0,0,18,"Times New Roman",0,2
+f5.3.i=vT11
+I.5.i3=7.o2
+f5.4.i=vT11
+I.5.i4=7.o4
+f5.6.i=vT11
+I.5.i6=10.o1
+I.5.i0=7.o1
+f7.2.o=vT11@2048,1
+f7.3.o=vT11@2048,1
+f7.4.o=vT11@2048,1
+I.7.i1=9.o1
+f7.2.i=vT11
+I.7.i2=14.o1
+f8.1.i=vT11
+I.8.i1=14.i1
+I.9.i1=6.o1
+f10.1.o=vT11@1,2048
+f10.2.o=vT11@1,2048
+I.10.i1=7.o1
+f10.2.i=vT11
+I.10.i2=7.o4
+I.11.i1=8.o1
+I.12.i1=8.o2
+f13.1.o=vT11@2,1
+I.13.i1=11.o1
+I.13.i2=12.o1
+G.14=8,11,12,13,
+f14.1.o=v
+I.14.o1=13.o1
+f14.1.o=vT11
+f14.1.i=vT11
+I.14.i1=19.o1
+I.16.i3=17.o1
+f17.1.i=vT11
+I.17.i1=19.o1
+f18.1.o=vT11@2,1
+I.18.i1=23.o1
+G.19=18,20,21,22,23,24,25,26,27,28,29,30,31,
+f19.1.o=v
+I.19.o1=18.o1
+f19.1.o=vT11
+I.19.i1=1.o1
+I.23.i1=19.i1
+I.25.i1=26.o1
+I.28.i1=27.o1
+cEOF

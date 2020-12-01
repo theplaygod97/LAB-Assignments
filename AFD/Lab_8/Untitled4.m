@@ -1,0 +1,11 @@
+    k=0
+    a=0.532
+    sigma=-(sinh(a)*sin(((2*k-1)/(2*n))*pi))
+    omega=cosh(a)*cos(((2*k-1)/(2*n))*pi)
+    wok=sqrt(power(sigma,2)+power(omega,2))
+    Qck=wok/(2*sigma)
+    wiok=1/wok
+    Qick=Qck
+    alpha=sigma/(power(wok,2))
+    beta=(-omega)/(power(wok,2))
+    pk=alpha+ j*(beta)

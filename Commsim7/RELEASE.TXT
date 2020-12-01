@@ -1,0 +1,94 @@
+
+Commsim 7 by Electronics Workbench
+==================================
+
+Thank you for purchasing Commsim 7, part of the latest suite of innovative
+design software from Electronics Workbench:
+
+ - Dedicated to the Educator
+
+ - Committed to Innovation
+
+ - Truly Unique Functionality
+
+Commsim provides the ideal environment for simulating analog and digital
+end-to-end communication systems.
+
+For more information on the features and benefits of our entire Suite of 
+tools please visit http://www.electronicsworkbench.com/.
+
+Commsim 7 Features
+==================
+
+The following blocks have been added for version 7.
+
+ - State Transition Block
+
+ - Triangle, square and sawtooth signal generators
+
+ - Wireless LAN Module
+
+   - 802.11a and 802.11b
+   - Bluetooth
+
+ - Over 30 other blocks
+
+Some of the other new features include:
+
+ - Multi-level undo/redo
+
+ - Multiple document support
+
+ - Automatic wiring and wire checking
+
+ - Diagram comparisons
+
+ - automatic block alignment
+
+
+Tier Limitation Details
+=======================
+
+Commsim Student has the following limitations. Commsim 
+Educational does not have these limitations:
+
+Block diagrams cannot exceed 100 blocks
+
+The Wireless LAN module is not included.
+
+The userFunction block and embed block are not available.
+
+The following communication blocks are not available in the Comm menu:
+
+Channels		Jakes Mobile, Mobile Fading
+
+Demodulators		DPSK (8,16,32), IQ Detector, PSK Detector (8,16,32), QAM Detector (64,128,256)
+
+Digital Elements	Divide by N, Queue, State Machine
+
+Estimators		Correlation, Median, Weighted Mean
+
+Encoders / Decoders	Convolutional Interleaver, Depuncture, Puncture, Trellis Encoder and Decoder
+
+Filters			MagPhase, Sampled FIR, Sampled File FIR
+
+Modulators		DPSK (8,16,32), I/Q, PSK (8,16,32), QAM (64,128,256)
+
+Operators		IQ Mapper, Phase Unwrapper
+
+Multirate Support       Clock Edge, Clock Extend, Interpolator
+
+PLL Blocks		Loop Filter (3rd Order PLL), Type 4 Phase/Frequency Detector
+
+Signal Sources		Walsh Sequence, Spectral Mask
+
+For the latest information on bug fixes, program updates and circuit 
+troubleshooting hints see our Web support at:
+ 
+http://www.electronicsworkbench.com/support.
+
+
+
+
+
+

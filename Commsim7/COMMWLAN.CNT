@@ -1,0 +1,52 @@
+:Base CommWLAN.hlp
+1 Introduction
+2 Introduction=TH_1
+2 Manual conventions=TH_5
+2 Technical support service=TH_6
+1 Using Commsim WLAN
+2 Using Commsim WLAN=TH_62
+2 Wireless blocks=TH_50
+2 Wireless system communication elements=TH_49
+2 Bluetooth Overview=TH_51
+2 802.11 Overview=TH_52
+2 802.11a Overview=TH_53
+2 802.11b Overview=TH_54
+2 Sample wireless simulation=TH_16
+1 WLAN Block Set
+2 BLUETOOTH BLOCKS
+3 Bluetooth Hop Generator=TH_20
+3 Bluetooth Scrambler=TH_19
+3 GFSK Modulator=TH_55
+3 Shortened Hamming Decoder=TH_21
+3 Shortened Hamming Encoder=TH_22
+2 802.11 BLOCKS
+3 Barker Sequence=TH_43
+3 CRC-16 Generator=TH_24
+3 802.11 Hop Generator=TH_25
+3 802.11 Descrambler=TH_56
+3 802.11 Scrambler=TH_57
+3 GFSK-2 Modulator=TH_58
+3 GFSK-4 Modulator=TH_59
+2 802.11a BLOCKS
+3 802.11a Convolutional Encoder=TH_27
+3 802.11a Depuncture=TH_28
+3 802.11a Puncture=TH_29
+3 802.11a Interleaver=TH_30
+3 802.11a Scrambler=TH_31
+3 802.11a Viterbi Decoder=TH_32
+3 OFDM Demodulator=TH_33
+3 OFDM Modulator=TH_34
+3 OFDM Pilot Extract=TH_35
+3 OFDM Pilot Map=TH_36
+3 OFDM Vector Demodulator=TH_37
+3 OFDM Vector Modulator=TH_38
+2 802.11b BLOCKS
+3 802.11b High Rate Hop Generator=TH_41
+3 CCK Demodulator=TH_44
+3 CCK Modulator=TH_45
+2 GENERIC WIRELESS BLOCKS
+3 Frequency Hop=TH_47
+1 Sample Block Diagrams
+2 Sample Block Diagrams=TH_48
+1 Acronyms and Abbreviations
+2 Acronyms and Abbreviations=TH_60

@@ -1,0 +1,156 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eugene"
+PV=4.500
+PS=0
+PE=10
+PP=0.01
+PI=170
+PX=0.01
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,6,14,"Arial"
+Pc=16
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=1
+0
+1
+0
+N.1="label"*3x3
+n="PHASE ROTATION EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,34,"Arial",0,2
+N.2="userFunction"*44x13#1,2<UT11>
+n="viscomm.cpxReIm"
+N.3="plot"*69x6*50x38<c>
+pt="Original Constellation"
+px="Time (sec)"
+pax=0
+pl=1
+pf=S
+pf=x
+pf=F
+pb=2,-2
+pbx=2,-2
+pbY=1,-1
+pbX=0,0
+pm=-1,1
+pb.0=2,-2
+pb.1=1,-2
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.4="label"*6x62
+n="The Phase Rotation block can be used to rotate any
+complex signal, in this case a QPSK constellation.
+
+The phase value can be either a constant (as in this example)
+or a varying phase term."
+Ob=8454143
+Og=255
+N.5="userFunction"*31x45#2,1<U>
+n="viscomm.xejPhi"
+N.6="userFunction"*23x14#1,2<U>
+n="viscomm.pskMod"
+DP=232
+DLF[4]=0
+1.414
+20
+0
+DLi[1]=1
+DLc[128]="psk_gray.dat"
+DLF[2]=0
+0
+DLs[5]="0."
+"1.414"
+"20"
+"0."
+"0."
+N.7="userFunction"*3x15#1,2<U>
+n="viscomm.randomSym"
+DP=88
+DLi[2]=4
+0
+DLF[3]=10
+0
+0.1
+DLs[3]="4"
+"10"
+"0."
+N.8="const"<-20>*7x47
+N.9="userFunction"*14x47#1,1<U>
+n="viscomm.convert"
+DP=8
+DLi[1]=4
+N.10="plot"*69x45*50x38<c>
+pt="Phase Rotated Constellation"
+px="Time (sec)"
+pax=0
+pl=1
+pf=S
+pf=x
+pf=F
+pb=2,-2
+pbx=2,-2
+pbY=1,-1
+pbX=0,0
+pm=-1,1
+pb.0=0.8,-0.9
+pb.1=0.8,-0.9
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.11="userFunction"*51x50#1,2<UT11>
+n="viscomm.cpxReIm"
+N.12="variable"*24x23
+n="clock"
+N.13="variable"*53x46
+n="clock"
+N.14="variable"*47x7
+n="clock"
+N.15="label"*31x51
+n="Phase Rotation
+       Block"
+Ob=8454143
+Og=255
+N.16="label"*19x11
+n="Intentional 20 degrees rotation"
+Ob=8454143
+Og=255
+f2.1.i=v
+I.2.i1=6.o1
+I.3.i1=2.o1
+I.3.i8=2.o2
+I.3.i0=14.o1
+f5.1.o=v
+f5.1.i=v
+I.5.i1=6.o1
+I.5.i2=9.o1
+f6.1.o=v
+I.6.i1=7.o1
+I.9.i1=8.o1
+I.10.i1=11.o1
+I.10.i8=11.o2
+I.10.i0=13.o1
+f11.1.i=v
+I.11.i1=5.o1
+I.12.i1=7.o2
+cEOF

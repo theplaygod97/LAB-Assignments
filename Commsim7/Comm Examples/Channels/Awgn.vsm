@@ -1,0 +1,439 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-2002 Visual Solutions
+PA=1
+POt="BER Curve generation example"
+POa="Eritek, Inc."
+PV=5.000.52
+PS=0
+PE=4000
+PP=0.02
+PI=170
+PX=0.02
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman",18,0,400,2,0,1,0,1
+Pc=44
+Po=0.01,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=3071,0,0,3071,0,0
+Pd=35
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[5]=1
+17
+1
+0
+647
+QLc[8]="5.0.7c"
+QLc[64]="Xùçt∂ô_áîé{†BRáûp."
+N.1="userFunction"*117x62#3,3<U>
+n="viscomm.errorEst"
+DP=64
+DLi[2]=1
+2
+DLI[1]=0
+DLs[2]=0
+0
+N.2="display"(0.000175)*175x62
+n="1.999e-003"
+Oe=8
+Ox=1
+Ov=0
+N.3="display"(14)*175x69
+n="16"
+Oe=8
+Ox=1
+Ov=0
+N.4="display"(80000)*173x76
+n="8004"
+Oe=8
+Ox=1
+Ov=0
+N.5="pulseTrain"<0.04;0.1>*101x69
+N.6="label"*176x72
+n="Number of bit errors"
+N.7="label"*177x79
+n="Overall Bit Count"
+N.8="label"*177x65
+n="Bit Error Estimate"
+N.9="variable"*140x59
+n="error rate"
+N.10="label"*94x72
+n="10 Hz sample clock
+1/2 symbol delay"
+N.11="plot"*109x1*90x45<c>
+pt="BER vs. Es/No (dB)"
+px="Time (sec)"
+py="Probability of Error"
+pax=1
+pf=S
+pf=x
+pf=F
+pb=1,1e-005
+pbx=14,0
+pbY=0,0
+pbX=100,0
+pc=100
+pm=-1,1
+pf=Y
+po=8
+pr=255
+pR=16777215
+pb.0=1,1e-015
+pb.1=100,1
+pL.1="Es/No (dB)"
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.12="comment"*22x3*111x45<M>
+C="BER Curve Generation Example.	Last modified 9/30/02	Eritek, Inc.
+
+The \"Auto Restart\" option must be checked in the simulation setup for proper operation.  Also, the stop time should match or exceed the longest duration value specified in the BER Control Block (see below).
+
+The user specifies in the BER Control Block the number of consecutive runs to execute, and for each run provides a duration (sec).  The desired Es/No for each run is specified in the AWGN block, along with the noise bandwidth (usually equal to the symbol rate) and reference signal average complex power.  Note that the user must convert to Es from Eb depending on the number of bits per symbol.  In the future the number of bits/sym will be a parameter.  The BER Control block outputs drive signals for the output plot block.
+
+At the end of each run, the final bit error rate (from the BER block) and the run Es/No value (from the AWGN block) are read in and buffered to compile the BER curve results.  Notice that the run durations increase as the Eb/No value (SNR) increases.  This is because fewer and fewer errors will be generated as the SNR is increased, and therefore a longer time is needed to accurately estimate the bit error rate.
+"
+N.13="Compound"*57x2
+n="PRESS HERE FOR MORE INFO
+(Use Right Mouse Button)"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.14="userFunction"*76x64#1,1<U>
+n="viscomm.delay"
+DP=96
+DLI[1]=5
+DLF[1]=0
+DLi[1]=1
+DLF[1]=0.1
+DLs[3]=0
+0
+0
+N.15="label"*6x59
+n="Data Rate= 10 sps"
+N.16="userFunction"*125x31#2,1<MU>
+n="viscomm.bitsToSym"
+DP=8
+DLi[2]=1
+2
+N.17="variable"*72x55<RT11>
+n="EsNo"
+N.18="variable"*48x13<T11>
+n="EsNo"
+N.19="variable"*46x16
+n="error rate"
+N.20="userFunction"*65x13#2,3<U>
+n="viscomm.berCurve"
+DP=344
+DLi[1]=7
+DLF[10]=30
+40
+80
+200
+1000
+2500
+4000
+1
+1
+1
+DLi[1]=1
+DLs[11]="7"
+"30."
+"40."
+"80."
+"200."
+"1000."
+"2500."
+"4000."
+"1."
+"1."
+"1."
+DLi[1]=0
+N.21="userFunction"*110x31#1,1<MUT11@2,1>
+n="viscomm.pskSlicer"
+DP=176
+DLi[1]=1
+DLF[2]=0
+0
+DLc[128]="psk_gray.dat"
+DLs[2]="0."
+"0."
+N.22="userFunction"*64x49#1,2<U>
+n="viscomm.awgn"
+DP=240
+DLi[1]=7
+DLF[11]=10
+1
+1
+3
+5
+7
+9
+10
+11
+1
+10
+DLi[1]=0
+DLF[2]=1
+1
+DLs[14]=0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+N.23="userFunction"*55x32#2,2<MU>
+n="viscomm.integDump2"
+DP=176
+DLi[3]=0
+0
+0
+DLF[4]=0
+10
+0
+10
+DLs[4]=0
+0
+0
+0
+DLi[1]=1
+N.24="label"*75x55<M>
+n="Click Right Mouse Button over blank area to return to previous level."
+Ob=65535
+Og=255
+N.25="label"*4x6
+n="Theoretical QPSK BER
+performance:
+
+Eb/No= 2 dB => Pe= 3.2e-2  
+Eb/No= 4 dB => Pe= 1.0e-2
+Eb/No= 6 dB => Pe= 2.0e-3
+
+Note:  Es/No= Eb/No + 3 dB
+
+"
+N.26="label"*3x2
+n="AWGN BLOCK USE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,18,"Times New Roman",0,2
+N.27="Compound"*6x54#0,2
+n="Data Source"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.28="Compound"*98x59#1,1
+n="Receiver"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.29="label"*68x31<M>
+n="Data Rate= 10 sps"
+N.30="label"*38x49<M>
+n="Click Right Mouse Button over blank area to return to previous level."
+Ob=65535
+Og=255
+N.31="label"*46x48<M>
+n="Click Right Mouse Button over blank area to return to previous level."
+Ob=65535
+Og=255
+N.32="label"*3x64
+n="To view block parameters, or
+enter compound blocks (blue),
+click over the block using the right
+mouse button."
+Ob=65535
+Og=255
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.33="label"*117x48
+n="To clear the BER Plot,
+press \"Clear Overplot\" in plot setup,
+or uncheck the \"Over Plot\" option."
+Ob=8454143
+Og=255
+N.34="plot"*29x20*208x54<M>
+pt="Bit Error History"
+px="Time (sec)"
+py="Number of Bit Errors"
+pax=0
+pf=S
+pf=F
+pb=100,0
+pbx=4000,0
+pbY=0,0
+pbX=0,0
+pc=4096
+pm=-1,0
+po=8
+pb.0=200,0
+pb.1=0,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.35="Compound"*136x72#1,0
+n=" Error
+History"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.36="display"(7)*62x76
+n="8"
+Oe=6
+Ox=1
+Ov=0
+N.37="variable"*38x76
+n="$runCount"
+N.38="label"*35x6<M>
+n="To clear the Plot,
+press \"Clear Overplot\" in plot setup,
+or uncheck the \"Over Plot\" option."
+N.39="label"*106x9<M>
+n="Click Right Mouse Button over blank area to return to previous level."
+Ob=65535
+Og=255
+N.40="label"*8x37
+n="Notes on AWGN for Multi-Run simulations:
+- \"Number of runs\" should match corresponding BER Control block setting (if used).
+- Must select \"Auto Restart\" in Simulate/Simulation Preferences menu.
+- Also see the \"BER Curve Control\" block example."
+Ob=8454143
+Og=255
+N.41="label"*21x25
+n="Notes on AWGN Block Usage:
+- SNR level is specified as Es/No (energy per SYMBOL).
+- Data rate is specified as Symbols/sec.
+- It is important that the \"Reference Power\" parameter be
+  accurately specified to achieve the desired output SNR level(s)."
+Ob=8454143
+Og=255
+N.42="userFunction"*36x50#2,2<U>
+n="viscomm.pskModulate"
+DP=280
+DLi[2]=1
+1
+DLF[5]=0
+1
+0
+0
+0
+DLc[128]="psk_gray.dat"
+DLs[5]="0."
+"1."
+"0."
+"0."
+"0."
+N.43="userFunction"*68x38#1,2<MU>
+n="viscomm.PNData"
+DP=128
+DLF[3]=10
+0.1
+0
+DLi[6]=14
+50
+0
+0
+1
+0
+DLI[2]=17475
+16383
+DLs[6]="10"
+"0."
+"14"
+"50"
+"42103"
+"37777"
+N.44="userFunction"*66x24#1,2<MU>
+n="viscomm.PNData"
+DP=128
+DLF[3]=10
+0.1
+0
+DLi[6]=13
+100
+0
+0
+1
+0
+DLI[2]=8219
+8191
+DLs[6]="10"
+"0."
+"13"
+"100"
+"20033"
+"17777"
+I.1.i1=28.o1
+I.1.i2=14.o1
+I.1.i3=5.o1
+I.2.i1=1.o1
+I.3.i1=1.o2
+I.4.i1=1.o3
+f5.1.o=T3
+I.9.i1=1.o1
+I.11.i1=20.o2
+I.11.i2=20.o3
+I.11.i0=20.o1
+G.13=12,24,
+I.14.i1=27.o1
+I.16.i1=44.o1
+I.16.i2=43.o1
+f17.1.o=T11
+I.17.i1=22.o2
+f18.1.o=T1
+I.20.i1=18.o1
+I.20.i2=19.o1
+f21.1.i=vT11
+I.21.i1=23.o1
+f22.1.o=vT11@2,1
+f22.1.i=vT11
+I.22.i1=42.o1
+f23.1.o=vT11@2,1
+f23.1.i=vT11
+I.23.i1=28.i1
+G.27=16,29,30,43,44,
+I.27.o1=16.o1
+I.27.o2=43.o2
+G.28=21,23,31,
+I.28.o1=21.o1
+f28.1.i=vT11
+I.28.i1=22.o1
+I.34.i1=35.i1
+G.35=34,38,39,
+I.35.i1=1.o2
+I.36.i1=37.o1
+f42.1.o=vT11@2,1
+f42.1.i=T3
+I.42.i1=27.o1
+f42.2.i=T3
+I.42.i2=27.o2
+cEOF

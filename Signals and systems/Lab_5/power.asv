@@ -1,0 +1,8 @@
+clc;
+clear all;
+close all;
+syms 't';
+A=cos((pi*t*0.5)+(pi*0.25));
+P=(0.5*t^-1)*int(A^2,t,-t);
+E=limit(Q,t,inf)
+L=limit(,inf)

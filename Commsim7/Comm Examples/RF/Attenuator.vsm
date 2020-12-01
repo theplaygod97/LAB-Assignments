@@ -1,0 +1,166 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eritek, Inc."
+PV=4.500
+PS=0
+PE=7
+PP=0.01
+PI=170
+PX=0.01
+PN=1e-006
+PL=5
+PT=0.05
+Pn=-8,4,14,"Times New Roman"
+Pc=15
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=1
+0
+1
+0
+N.1="userFunction"*63x11#0,1<U>
+n="viscomm.sineHz"
+DP=80
+DLi[1]=1
+DLF[4]=1
+1
+0
+10
+DLi[1]=1
+DLs[4]="1"
+0
+"0."
+"10"
+N.2="label"*3x2
+n="ATTENUATOR EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,34,"Arial",0,2
+N.3="label"*4x8
+n="This Example illustrates the use of the 
+Attenuator and Variable Attenuator blocks.
+
+These blocks can also model thermal noise,
+based on the physical temperature of
+the device."
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.4="plot"*101x5*131x26
+px="Time (sec)"
+pax=0
+pf=H
+pf=F
+pb=2,-2
+pbx=7,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=1,-1
+pL.0="Input Signal"
+pb.1=0.8,-0.8
+pL.1="Attenuated Signal"
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.5="plot"*101x32*131x32
+px="Time (sec)"
+pax=0
+pf=H
+pf=F
+pb=2e-007,-2e-007
+pbx=7,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=1e-007,-1e-007
+pL.0="Original Signal"
+pb.1=1e-007,-1e-007
+pL.1="Attenuated Output (w/ Noise)"
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.6="userFunction"*31x32#0,1<U>
+n="viscomm.sineHz"
+DP=80
+DLi[1]=1
+DLF[4]=2.1
+1e-007
+0
+-130
+DLi[1]=1
+DLs[4]="2.1"
+0
+"0."
+"-130"
+N.7="label"*31x54
+n="Attenuation level in dB"
+N.8="userFunction"*73x20#1,1<U>
+n="viscomm.atten"
+DP=64
+DLi[1]=0
+DLF[2]=3
+290
+DLs[2]=0
+0
+N.9="userFunction"*63x39#2,1<U>
+n="viscomm.varAtten"
+DP=72
+DLi[1]=1
+DLF[1]=500
+DLs[1]="500"
+N.10="ramp"<0;1>*24x50
+N.11="const"(1)*25x46
+N.12="summingJunction"*40x48
+N.13="plot"*101x65*131x19#4,0
+px="Time (sec)"
+pax=0
+pf=H
+pf=F
+pb=10,0
+pbx=7,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=0,0
+pb.1=8,1
+pb.2=0,0
+pL.2="Attenuation Level (dB)"
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.14="label"*60x44
+n="Physical Temperature:  500 K"
+N.15="label"*77x23
+n="No Noise"
+I.4.i1=1.o1
+I.4.i2=8.o1
+I.5.i1=6.o1
+I.5.i2=9.o1
+I.8.i1=1.o1
+I.9.i1=6.o1
+I.9.i2=12.o1
+I.12.i1=11.o1
+I.12.i2=10.o1
+I.13.i3=12.o1
+cEOF

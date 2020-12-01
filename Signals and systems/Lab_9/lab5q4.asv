@@ -1,0 +1,27 @@
+clc;
+clear all;
+close all;
+t=-5:0.01:5;
+for i=1:length(t)
+    if t(i)>=0
+        u(i)=1;
+    else
+        u(i)=0;
+    end
+end
+for i=1:length(t)
+    if t(i)>=1
+        u1(i)=1;
+    else
+        u1(i)=0;
+    end
+end
+t1=u1;
+x1t=u-u1;
+ht=u-u1;
+x2t=exp(-4*t)*u;
+X1S=laplace(x1t);
+X2S=laplace(x2t);
+HS=laplace(ht);
+Q1S=X1S*HS;
+Q2S=X2S*

@@ -1,0 +1,389 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POt="BPSK Tracking example"
+POa="Eritek, Inc."
+PV=4.500
+PS=0
+PE=0.025
+PP=1e-005
+PI=170
+PX=1e-005
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,6,14,"Arial"
+Pc=40
+Po=0.01,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,1788,0,0
+Pd=777
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=1
+331
+1
+0
+N.1="plot"*66x21*61x45<Mc>
+pt="Phase Scatter Plot"
+px="Time (sec)"
+py="Q Channel"
+pax=0
+pl=1
+pf=S
+pf=x
+pf=F
+pb=2,-2
+pbx=2,-2
+pbY=0,-2
+pbX=2500,0
+pc=5000
+pm=9999,1
+pb.0=2,-2
+pL.0="I Channel"
+pb.1=2,-2
+pb.2=2,0
+pb.3=0,-2
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.2="userFunction"*81x18#1,1<U>
+n="viscomm.loop2Filter"
+DP=168
+DLi[1]=0
+DLF[7]=471.406027711741
+0.7071
+1
+10
+250
+0.000282741531162226
+0.00299996164
+DLi[1]=1
+DLs[5]="500."
+"0.7071"
+"1."
+"10."
+"250"
+N.3="*"*73x18
+N.4="variable"*52x28<M>
+n="data sig"
+N.5="userFunction"*56x37#1,2<MU>
+n="viscomm.pskMod"
+DP=232
+DLF[4]=0
+1
+-80
+0
+DLi[1]=0
+DLc[128]="psk_gray.dat"
+DLF[2]=0
+0
+DLs[5]="0."
+"1."
+"-80."
+"0."
+"0."
+N.6="summingJunction"*10x32<R>
+N.7="label"*71x23
+n="BPSK Phase
+   Detector"
+N.8="label"*3x68
+n="COMPLEX ENVELOPE SIMULATION:
+Carrier frequency is set to 0 Hz
+in the modulator and VCO."
+N.9="userFunction"*11x28#1,2<MU>
+n="viscomm.PNData"
+DP=136
+DLF[3]=4800
+0.000208333333333333
+0
+DLi[6]=6
+4
+0
+0
+1
+0
+DLI[2]=67
+63
+DLs[6]="Rate"
+"0."
+"6"
+"4."
+"103"
+"77"
+N.10="label"*15x34<M>
+n="Data Source
+ (4.8 kbps)"
+N.11="label"*102x20
+n="Loop Filter Settings
+
+Damping Factor:     0.707
+Detector Gain:   1 Volt/Rad
+VCO Gain:         10 Hz/Volt
+Loop BW:          250 Hz"
+Ob=8454143
+Og=255
+N.12="userFunction"*81x33#1,1<MU>
+n="viscomm.IIRfilter"
+DP=152
+DLi[7]=4
+0
+4
+0
+0
+0
+0
+DLF[5]=4000
+5
+1
+20
+3.01029995663981
+DLs[6]="4"
+"4000"
+"5."
+"1."
+"20."
+0
+N.13="userFunction"*81x42#1,1<MU>
+n="viscomm.IIRfilter"
+DP=152
+DLi[7]=4
+0
+4
+0
+0
+0
+0
+DLF[5]=4000
+5
+1
+20
+3.01029995663981
+DLs[6]="4"
+"4000"
+"5."
+"1."
+"20."
+0
+N.14="userFunction"*20x18#1,2<U>
+n="viscomm.awgn"
+DP=248
+DLi[1]=1
+DLF[11]=4800
+1
+10
+1
+1
+1
+1
+1
+1
+1
+10
+DLi[1]=0
+DLF[2]=1
+1
+DLs[14]="1"
+"4800."
+"1."
+0
+"EbNo"
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+N.15="userFunction"*40x18#2,1<U>
+n="viscomm.multiply"
+N.16="userFunction"*23x41#1,2<MUT11>
+n="viscomm.cpxReIm"
+N.17="userFunction"*49x28#1,1<RU>
+n="viscomm.conjugate"
+N.18="userFunction"*83x32#1,2<RU>
+n="viscomm.vco"
+DP=120
+DLF[4]=0
+1
+0
+10
+DLi[1]=1
+DLs[4]=0
+0
+0
+0
+N.19="userFunction"*71x8#2,1<U>
+n="viscomm.reImCpx"
+N.20="userFunction"*11x42#2,2<MU>
+n="viscomm.integDump2"
+DP=176
+DLi[3]=1
+0
+0
+DLF[4]=0
+4800
+0.0001
+4800
+DLs[4]="0."
+"Rate"
+"1.e-004"
+"Rate"
+N.21="userFunction"*37x41#1,2<MUT11>
+n="viscomm.cpxReIm"
+N.22="plot"*36x44*79x28
+pt="Tracking PLL Phase Error"
+px="Time (msec)"
+pax=0
+pf=S
+pS=7
+pf=F
+pb=100,-100
+pbx=0.025,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=0,0
+pL.0="Phase Error (deg)"
+pb.1=0,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.23="label"*4x2
+n="LOOP FILTER (2nd ORDER PLL) EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,34,"Arial",0,2
+N.24="label"*22x23
+n="Gaussian Noise
+Eb/No set at 10 dB"
+N.25="userFunction"*13x44#1,1<U>
+n="viscomm.convert"
+DP=8
+DLi[1]=5
+N.26="label"*62x31<M>
+n="Q"
+N.27="label"*62x26<M>
+n="I"
+N.28="const"<4800>*4x50
+N.29="variable"*19x50
+n="Rate"
+N.30="const"<10>*6x54
+N.31="variable"*19x54
+n="EbNo"
+N.32="label"*4x7
+n="A second order Phase Locked Loop (PLL) is used to track the
+carrier of a BPSK signal.
+The PLL acquisition performance is shown in the Phase Error plot."
+Ob=8454143
+Og=255
+N.33="label"*25x26<M>
+n="Start plot at t= 5 msec
+(allows for PLL pull-in)"
+N.34="step"<0.005;1>*34x22<M>
+N.35="wirePositioner"*19x28
+N.36="Compound"*4x19#0,2<C>
+n="   BPSK
+Transmitter"
+Ms=2048,0,0,3840,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+Mw=""
+N.37="Compound"*86x8#1,0<C>
+n="Phase Scatter
+     Plot"
+Ms=2048,0,0,3840,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+Mw=""
+N.38="Compound"*53x18#1,2<C>
+n="Lowpass
+Filtering"
+Ms=2048,0,0,3840,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+Mw=""
+N.39="label"*50x45<M>
+n="Intentional carier offset of -80 degrees"
+N.40="label"*3x59
+n="By varying the Eb/No setting,
+the effect of SNR on PLL
+performance can be observed."
+Ob=8454143
+Og=255
+I.1.i1=21.o1
+I.1.i2=21.o2
+I.1.i0=34.o1
+I.2.i1=3.o1
+I.3.i1=38.o1
+I.3.i2=38.o2
+I.4.i1=9.o1
+f5.1.o=v
+I.5.i1=9.o1
+I.6.i1=35.o1
+f6.2.i=-
+I.6.i2=18.o2
+I.12.i1=16.o1
+I.13.i1=16.o2
+f14.1.o=v
+f14.1.i=v
+I.14.i1=36.o1
+f15.1.o=v
+f15.1.i=v
+I.15.i1=14.o1
+f15.2.i=v
+I.15.i2=17.o1
+f16.1.i=v
+I.16.i1=38.i1
+f17.1.o=v
+f17.1.i=v
+I.17.i1=18.o1
+f18.1.o=v
+I.18.i1=2.o1
+f19.1.o=v
+I.19.i1=38.o1
+I.19.i2=38.o2
+f20.1.o=v
+f20.1.i=v
+I.20.i1=37.i1
+f21.1.i=v
+I.21.i1=20.o1
+I.22.i1=25.o1
+I.25.i1=6.o1
+I.29.i1=28.o1
+I.31.i1=30.o1
+I.35.i1=36.o2
+G.36=4,5,9,10,39,
+f36.1.o=v
+I.36.o1=5.o1
+I.36.o2=5.o2
+f36.1.o=v
+G.37=20,21,1,26,27,33,34,
+f37.1.i=v
+I.37.i1=19.o1
+G.38=16,12,13,
+I.38.o1=12.o1
+I.38.o2=13.o1
+f38.1.o=n"  I"
+f38.2.o=n"  Q"
+f38.1.i=v
+I.38.i1=15.o1
+cEOF

@@ -1,0 +1,72 @@
+.data
+
+size: .asciiz "Enter number of elements: "
+element: .asciiz "Enter an element: "
+next: .asciiz "\n"
+.text
+.globl  main
+main:
+
+la $a0,size
+li $v0,4
+syscall
+
+li $v0,5
+syscall
+
+move $s0,$v0
+              
+li $t0,0                
+
+loop:
+
+beq $t0,$s0,list          
+
+la $a0,element
+li $v0,4
+syscall
+
+li  $v0,5
+syscall
+
+addi $sp,$sp,-4
+sw $v0,0($sp)
+
+addi $t0,$t0,1               
+j loop
+  
+list:
+li     $t6,0                   
+move $t4,$s0                 
+
+list_loop:
+beqz $t4,average             
+
+lw $t7,0($sp)              
+addi $sp,$sp,4              
+
+add  $t6,$t6,$t7           
+addi $t4,$t4,-1              
+j list_loop
+
+average:  
+li $v0,1
+move $a0,$t6          
+syscall
+
+div $t6,$s0            
+mflo $t5    
+
+la $a0,next
+li $v0,4
+syscall            
+
+move $a0,$t5
+li $v0,1
+syscall
+
+exit:
+
+li $v0 10
+syscall
+.end main

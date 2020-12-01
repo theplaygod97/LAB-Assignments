@@ -1,0 +1,334 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-2001 Visual Solutions
+POa="Eugene"
+PV=4.500h
+PS=0
+PE=10
+PP=0.005
+PI=170
+PX=0.005
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman"
+Pc=48
+Po=0.01,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[5]=0
+0
+1
+0
+1989
+QLc[8]="4.5.27c"
+QLc[64]="â≠£Ü´èQÑäØ°°öq@}∞•."
+N.1="userFunction"*90x21#1,1<MU>
+n="viscomm.loop2Filter"
+DP=168
+DLi[1]=1
+DLF[7]=0.956450144848248
+0.7071
+1
+10
+0.5
+68.6839389970668
+1.46267699440268
+DLi[1]=1
+DLs[5]="1."
+"0.7071"
+"1."
+"10."
+"0.5"
+N.2="Compound"*38x16#1,2<C>
+n="Cmplx PLL
+  2nd Order"
+Ms=2048,0,0,1536,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.3="label"*191x17<M>
+n="VCO Output (Complex)"
+N.4="label"*211x42<M>
+n="VCO Phase"
+N.5="label"*35x16<M>
+n="Phase Detector"
+N.6="label"*81x19<M>
+n="Kd"
+N.7="gain"(1)*79x22<M>
+N.8="userFunction"*37x20#2,1<MU>
+n="viscomm.multiply"
+N.9="userFunction"*88x34#1,1<MRU>
+n="viscomm.conjugate"
+N.10="userFunction"*116x35#1,2<MRU>
+n="viscomm.vco"
+DP=128
+DLF[4]=2
+1
+0
+10
+DLi[1]=1
+DLs[4]="2"
+"1."
+"0."
+"10."
+N.11="userFunction"*56x20#1,2<MUT11>
+n="viscomm.cpxReIm"
+N.12="label"*2x37<M>
+n="Complex Input"
+N.13="userFunction"*4x21#0,2<U>
+n="viscomm.complexTone"
+DP=80
+DLi[1]=0
+DLF[4]=1.9
+1
+0
+0
+DLi[1]=0
+DLs[4]="1.9"
+"1."
+"0"
+0
+N.14="plot"*99x17*126x54
+pt="Digital PLL vs. Analog PLL"
+px="Time (sec)"
+py="Radians"
+pax=0
+pf=S
+pf=F
+pb=1,-0.6
+pbx=10,0
+pbY=0,0
+pbX=0,0
+pc=4096
+pm=10,0
+pg=0,8,1
+pb.0=0.6,-0.1
+pL.0="Frequency Offset Response"
+pb.1=0.7,-0.1
+pL.1="Phase Offset Response"
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.15="label"*83x2
+n="Theoretical max phase overshoot @ t= 3 pi / 16 Bl  for FREQUENCY Step   ==>   t= 1.12 sec
+(Where  Bl = Loop Bandwidth)"
+N.16="label"*83x8
+n="Theoretical max phase overshoot @ t= 3 pi / 8 Bl  for PHASE Step   ==>   t= 2.36 sec"
+N.17="summingJunction"*68x18
+N.18="label"*5x6
+n="This examples compares the PLL response to a
+phase offset vs. that from a frequency offset"
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.19="label"*3x1
+n="ANOLOG PLL RESPONSE EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,34,"Arial",0,2
+N.20="label"*39x27
+n="VCO Center Freq= 2 Hz
+Loop BW= 0.5 Hz"
+N.21="label"*71x17
+n="Phase Error"
+N.22="label"*4x27
+n="Freq Offset= 0.1 Hz
+Phase Offset= 0 deg"
+N.23="plot"*17x56*215x29<M>
+px="Time (sec)"
+pax=0
+pf=S
+pb=1,-1
+pbx=10,0
+pbY=0,0
+pbX=0,0
+pc=16384
+pm=10,0
+pb.0=1,-1
+pb.1=1,-1
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.24="userFunction"*26x41#1,2<MUT11>
+n="viscomm.cpxReIm"
+N.25="userFunction"*60x51#1,2<MRUT11>
+n="viscomm.cpxReIm"
+N.26="wirePositioner"*10x60<M>
+N.27="wirePositioner"*222x44<M>
+N.28="label"*69x34
+n="Phase Error"
+N.29="summingJunction"*67x37
+N.30="userFunction"*3x40#0,2<U>
+n="viscomm.complexTone"
+DP=80
+DLi[1]=0
+DLF[4]=2
+1
+30
+0
+DLi[1]=0
+DLs[4]="2"
+"1."
+"30"
+0
+N.31="Compound"*37x35#1,2<C>
+n="Cmplx PLL
+  2nd Order"
+Ms=2048,0,0,1536,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.32="userFunction"*90x21#1,1<MU>
+n="viscomm.loop2Filter"
+DP=168
+DLi[1]=1
+DLF[7]=0.956450144848248
+0.7071
+1
+10
+0.5
+68.6839389970668
+1.46267699440268
+DLi[1]=1
+DLs[5]="1."
+"0.7071"
+"1."
+"10."
+"0.5"
+N.33="label"*191x17<M>
+n="VCO Output (Complex)"
+N.34="label"*211x42<M>
+n="VCO Phase"
+N.35="label"*35x16<M>
+n="Phase Detector"
+N.36="label"*81x19<M>
+n="Kd"
+N.37="gain"(1)*79x22<M>
+N.38="userFunction"*37x20#2,1<MU>
+n="viscomm.multiply"
+N.39="userFunction"*88x34#1,1<MRU>
+n="viscomm.conjugate"
+N.40="userFunction"*116x35#1,2<MRU>
+n="viscomm.vco"
+DP=128
+DLF[4]=2
+1
+0
+10
+DLi[1]=1
+DLs[4]="2"
+"1."
+"0."
+"10."
+N.41="userFunction"*56x20#1,2<MUT11>
+n="viscomm.cpxReIm"
+N.42="label"*2x37<M>
+n="Complex Input"
+N.43="plot"*17x56*215x29<M>
+px="Time (sec)"
+pax=0
+pf=S
+pb=2,-1
+pbx=10,0
+pbY=0,0
+pbX=0,0
+pc=16384
+pm=10,0
+pb.0=1,-1
+pb.1=2,-1
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.44="userFunction"*26x41#1,2<MUT11>
+n="viscomm.cpxReIm"
+N.45="userFunction"*60x51#1,2<MRUT11>
+n="viscomm.cpxReIm"
+N.46="wirePositioner"*10x60<M>
+N.47="wirePositioner"*222x44<M>
+N.48="label"*4x45
+n="Freq Offset= 0 Hz
+Phase Offset= 30 deg"
+I.1.i1=7.o1
+G.2=1,3,4,5,6,7,8,9,10,11,12,23,24,25,26,27,
+I.2.o1=10.o1
+I.2.o2=27.o1
+f2.1.i=vT11
+I.2.i1=13.o1
+I.7.i1=11.o2
+f8.1.o=vT11
+f8.1.i=vT11
+I.8.i1=2.i1
+f8.2.i=vT11
+I.8.i2=9.o1
+f9.1.o=vT11
+f9.1.i=vT11
+I.9.i1=10.o1
+f10.1.o=vT11
+I.10.i1=1.o1
+f11.1.i=vT11
+I.11.i1=8.o1
+f13.1.o=vT11
+I.14.i1=17.o1
+I.14.i2=29.o1
+f17.1.i=-
+I.17.i1=2.o2
+I.17.i2=13.o2
+I.23.i1=25.o1
+I.23.i2=26.o1
+f24.1.i=vT11
+I.24.i1=2.i1
+f25.1.i=vT11
+I.25.i1=9.o1
+I.26.i1=24.o1
+I.27.i1=10.o2
+f29.1.i=-
+I.29.i1=31.o2
+I.29.i2=30.o2
+f30.1.o=vT11
+G.31=32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,
+I.31.o1=40.o1
+I.31.o2=47.o1
+f31.1.i=vT11
+I.31.i1=30.o1
+I.32.i1=37.o1
+I.37.i1=41.o2
+f38.1.o=vT11
+f38.1.i=vT11
+I.38.i1=31.i1
+f38.2.i=vT11
+I.38.i2=39.o1
+f39.1.o=vT11
+f39.1.i=vT11
+I.39.i1=40.o1
+f40.1.o=vT11
+I.40.i1=32.o1
+f41.1.i=vT11
+I.41.i1=38.o1
+I.43.i1=45.o1
+I.43.i2=46.o1
+f44.1.i=vT11
+I.44.i1=31.i1
+f45.1.i=vT11
+I.45.i1=39.o1
+I.46.i1=44.o1
+I.47.i1=40.o2
+cEOF

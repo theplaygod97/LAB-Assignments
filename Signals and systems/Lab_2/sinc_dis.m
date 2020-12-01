@@ -1,0 +1,14 @@
+clc;
+clear all;
+close all;
+t = -10:0.5:10;
+y = (sin(pi*t))./((pi*t));
+Z=sinc(t);
+subplot(2,1,1);stem(t,y);
+xlabel('Time (sec)');
+ylabel('Amplitude');
+title('Sinc Function');
+subplot(2,1,2);stem(t,Z);
+xlabel('Time (sec)');
+ylabel('Amplitude');
+title('Sinc Function');

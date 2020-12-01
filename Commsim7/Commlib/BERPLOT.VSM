@@ -1,0 +1,98 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-2002 Visual Solutions
+POa="Eugene"
+PV=4.500K3
+PS=0
+PE=10
+PP=0.01
+PI=170
+PX=1
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,6,14,"Arial",18,0,400,2,0,1,0,1
+Pc=5
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[5]=1
+0
+1
+0
+604
+QLc[8]="4.5.35c"
+QLc[64]="cïêüµé7tçÅ•r´GfíÇé."
+N.1="userFunction"*7x7#2,3<U>
+n="viscomm.berCurve"
+DP=344
+DLi[1]=3
+DLF[10]=1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+DLi[1]=1
+DLs[11]="4"
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+DLi[1]=0
+N.2="plot"*30x5*40x33#4,0<c>
+pt="BER Curve Display"
+px="Time (sec)"
+pax=1
+pf=H
+pf=x
+pf=F
+pb=1,1e-005
+pbx=12,0
+pbY=0,0
+pbX=0,0
+pc=256
+pm=-1,1
+pf=Y
+po=8
+pb.0=0,0
+pb.1=0,0
+pL.1="Eb/No (dB)"
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.3="label"*8x15
+n="Set number of Runs
+and desired run
+durations."
+N.4="label"*8x2
+n="Eb/No and
+Error Rate Inputs"
+N.5="label"*32x39
+n="To clear the plot after a run, press the
+\"Clear Overplot\" button, or uncheck the
+\"Over Plot\" checkbox."
+I.2.i1=1.o2
+I.2.i2=1.o3
+I.2.i0=1.o1
+cEOF

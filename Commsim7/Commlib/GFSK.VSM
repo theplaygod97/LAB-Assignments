@@ -1,0 +1,130 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-2001 Visual Solutions
+POa="Eugene"
+PV=4.500i
+PS=0
+PE=10
+PP=0.01
+PI=170
+PX=1
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman"
+Pc=17
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[5]=1
+123
+1
+0
+113
+QLc[8]="4.5.29c"
+QLc[64]="tüáîà•YS±§¢öÇ^]Å{¨."
+N.1="userFunction"*130x30#1,1<MU>
+n="viscomm.fmMod"
+DP=96
+DLF[4]=0
+1
+1
+0
+DLs[4]="0."
+"1."
+"FMdev"
+"0."
+N.2="Compound"*3x2#1,1<C>
+n="   GFSK
+Modulator"
+Ms=2048,0,0,3840,0,0
+Ml=0
+Mr=1
+Mh=0
+Mp=0
+N.3="label"*41x21<M>
+n="The Gaussian Filter Cutoff freq. is set to :  
+
+Filter Cutoff = BTvalue * Data Rate"
+Ob=8454143
+Og=255
+N.4="label"*110x15<M>
+n="For GFSK set the FM Deviation parameter to
+the specified value
+(e.g. 140 ~ 175 kHz for Bluetooth)
+
+This assumes that the data into the
+Gaussian Filter is +/- 1"
+Ob=8454143
+Og=255
+N.5="label"*152x33<M>
+n="Complex Baseband"
+N.6="userFunction"*45x30#1,1<MU>
+n="viscomm.FIRfilter"
+DP=176
+DLi[4]=32
+7
+0
+0
+DLF[4]=1
+2
+0
+1
+DLi[1]=0
+DLF[1]=100
+DLi[1]=0
+DLs[6]="65"
+"( BT * SymRate )"
+"2."
+"0."
+"1."
+"100."
+N.7="label"*33x36<M>
+n="Note:  By setting the number of FIR taps to an ODD value,
+the filter delay will be an integral number of simulation steps
+
+                  delay = ( N - 1 ) / 2"
+N.8="variable"*35x7<M>
+n="BT"
+N.9="const"<0.5>*23x7<M>
+N.10="const"<1000000>*16x11<M>
+N.11="variable"*35x11<M>
+n="SymRate"
+N.12="label"*11x1<M>
+n="BLOCK PARAMETERS"
+Of=-16,0,400,0,1,0,18,"Times New Roman",0,2
+N.13="label"*6x47<M>
+n="THIS BLOCK EXPECTS AN NRZ TYPE INPUT
+SIGNAL IN THE RANGE OF [ -1, +1]"
+Of=-13,0,400,0,0,0,18,"Times New Roman",0,2
+N.14="const"<140000>*18x15<M>
+N.15="variable"*35x15<M>
+n="FMdev"
+N.16="label"*72x5<M>
+n="The settings shown are for Bluetooth"
+Of=-13,0,400,0,0,0,18,"Times New Roman",0,2
+N.17="label"*94x53<M>
+n="THIS BLOCK IS READ ONLY :
+TO MAKE CHANGES, PLEASE USE \"Save as...\" 
+
+After opening of adding the newly created block
+you may disable the \"Read Only\" mode by accessing
+the compound block's Properties and unchecking the
+\"Read Only\" box."
+Of=-13,0,400,0,0,0,18,"Times New Roman",0,2
+f1.1.o=vT11
+I.1.i1=6.o1
+G.2=1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,
+I.2.o1=1.o1
+I.6.i1=2.i1
+I.8.i1=9.o1
+I.11.i1=10.o1
+I.15.i1=14.o1
+cEOF

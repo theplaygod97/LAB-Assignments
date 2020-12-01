@@ -1,0 +1,251 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-2002 Visual Solutions
+POt="Example of a saturating TWTA channel"
+POa="Eritek, Inc."
+PV=5.000.52
+PS=0
+PE=50
+PP=0.05
+PI=170
+PX=0.05
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman",18,0,400,2,0,1,0,1
+Pc=23
+Po=0.01,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=3071,0,0,3071,0,0
+Pd=777
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[5]=1
+63
+1
+0
+1249
+QLc[8]="5.0.7c"
+QLc[64]="r±Ü™òôkWêïçîêTPàÆ°."
+N.1="Compound"*38x19#1,1
+n="  Butterworth
+Low Pass Filter"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.2="label"*9x8
+n="BIT RATE = 1 Hz"
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.3="label"*38x15
+n="Cutoff freq. = 0.8 Hz"
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.4="label"*8x53
+n="Change the amplitude of the BPSK
+modulator and see the effect on the
+eye pattern due to the nonlinear
+TWTA channel. Try the range (0.5 - 2)"
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.5="userFunction"*66x38#1,1<U>
+n="viscomm.convert"
+DP=8
+DLi[1]=4
+N.6="const"(-38)*53x38
+N.7="label"*43x41
+n="       Rotation Correction (deg)
+[For display purposes only -  Compensates
+for AM/PM rotation in TWTA]"
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.8="label"*55x8
+n="Lowpass Equivalent Simulation (0 Hz carrier)"
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.9="userFunction"*8x11#1,2<RU>
+n="viscomm.PNData"
+DP=136
+DLF[3]=1
+1
+0
+DLi[6]=6
+3
+0
+0
+1
+0
+DLI[2]=67
+31
+DLs[6]=0
+0
+0
+0
+0
+0
+N.10="userFunction"*70x24#1,1<MU>
+n="viscomm.IIRfilter"
+DP=152
+DLi[7]=4
+0
+4
+0
+0
+0
+0
+DLF[5]=0.8
+1
+1
+20
+3.01029995663981
+DLs[6]=0
+0
+0
+0
+0
+0
+N.11="userFunction"*70x42#1,1<MU>
+n="viscomm.IIRfilter"
+DP=152
+DLi[7]=4
+0
+4
+0
+0
+0
+0
+DLF[5]=0.8
+1
+1
+20
+3.01029995663981
+DLs[6]=0
+0
+0
+0
+0
+0
+N.12="plot"*116x14*93x42
+pt="TWTA Output Eye Diagram"
+px="Time (sec)"
+pax=0
+pf=S
+pf=F
+pb=2.5,-2
+pbx=2,0
+pbY=0,0
+pbX=50,0
+pc=2000
+pm=10,0
+pT=           2,           0,          50
+pb.0=0,0
+pL.0="Filter Output"
+pb.1=0,0
+pL.1="TWTA Output Signal"
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.13="userFunction"*37x31#1,2<MUT11@2,1>
+n="viscomm.cpxReIm"
+N.14="userFunction"*121x31#2,1<MU>
+n="viscomm.reImCpx"
+N.15="label"*69x54
+n="To view block parameters, or
+enter compound blocks (blue),
+click over the block using the right
+mouse button."
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.16="label"*11x2
+n="ANALYTICAL TWTA EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,18,"Times New Roman",0,2
+N.17="userFunction"*78x15#1,2<UT11@2,1>
+n="viscomm.cpxReIm"
+N.18="label"*49x53<M>
+n="Click Right Mouse Button over blank area to return to previous level."
+Ob=65535
+Og=255
+N.19="userFunction"*42x27#2,1<U>
+n="viscomm.twta"
+DP=112
+DLi[1]=0
+DLF[7]=1.9638
+2.5293
+0.9945
+2.8168
+0
+1
+3
+DLs[7]="1.9638"
+"2.5293"
+"0.9945"
+"2.8168"
+"0."
+"1."
+"3"
+N.20="userFunction"*86x28#1,2<UT11@2,1>
+n="viscomm.cpxReIm"
+N.21="userFunction"*68x28#2,1<U>
+n="viscomm.xejPhi"
+N.22="label"*38x32
+n="TWTA Gain= 3 dB"
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.23="userFunction"*10x20#2,2<U>
+n="viscomm.pskModulate"
+DP=280
+DLi[2]=0
+1
+DLF[5]=0
+1
+0
+0
+0
+DLc[128]="psk_gray.dat"
+DLs[5]="0."
+"1."
+"0."
+"0."
+"0."
+G.1=10,11,13,14,18,
+f1.1.o=v
+I.1.o1=14.o1
+f1.1.o=vT11@2,1
+f1.1.i=vT11
+I.1.i1=23.o1
+I.5.i1=6.o1
+I.10.i1=13.o1
+I.11.i1=13.o2
+I.12.i1=17.o1
+I.12.i2=20.o1
+f13.1.i=vT11
+I.13.i1=1.i1
+f14.1.o=vT11@2,1
+I.14.i1=10.o1
+I.14.i2=11.o1
+f17.1.i=vT11
+I.17.i1=1.o1
+f19.1.o=vT11@2,1
+f19.1.i=vT11
+I.19.i1=1.o1
+f20.1.i=vT11
+I.20.i1=21.o1
+f21.1.o=vT11@2,1
+f21.1.i=vT11
+I.21.i1=19.o1
+I.21.i2=5.o1
+f23.1.o=vT11@2,1
+f23.1.i=T3
+I.23.i1=9.o1
+f23.2.i=T3
+I.23.i2=9.o2
+cEOF

@@ -1,0 +1,74 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POt="First Order PLL (Real Input)"
+POa="Eritek, Inc."
+PV=4.000
+PS=0
+PE=1
+PP=0.05
+PI=171
+PX=1
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman"
+Pc=11
+Po=0.01,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,1536,0,0
+Pd=777
+PM=1,1,1,1
+N.1="Compound"*2x2#1,2<C>
+n="Real PLL
+ 1st Order"
+Ms=2048,0,0,1536,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+Mw=""
+N.2="label"*169x13<M>
+n="VCO Output (Real)"
+N.3="label"*177x56<M>
+n="VCO Phase"
+N.4="*"*43x21<M>
+N.5="gain"(1)*73x22<M>
+N.6="label"*74x18<M>
+n="Kd"
+N.7="label"*52x45<M>
+n="(Loop Gain)  K= Kd Kvco"
+N.8="gain"(-2)*76x35<MR>
+N.9="label"*37x17<M>
+n="Phase Detector"
+N.10="userFunction"*128x34#1,2<MRUT11>
+n="viscomm.vco"
+DP=120
+DLF[4]=10
+1
+0
+10
+DLi[1]=1
+DLs[4]=0
+0
+0
+0
+N.11="userFunction"*101x33#1,2<MRUT11>
+n="viscomm.cpxReIm"
+G.1=2,3,4,5,6,7,8,9,10,11,
+I.1.o1=11.o1
+I.1.o2=10.o2
+I.4.i1=1.i1
+I.4.i2=8.o1
+I.5.i1=4.o1
+I.8.i1=11.o2
+f10.1.o=v
+I.10.i1=5.o1
+f11.1.i=v
+I.11.i1=10.o1
+cEOF

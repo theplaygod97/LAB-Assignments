@@ -1,0 +1,176 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eritek, Inc."
+PV=4.500
+PS=0
+PE=7
+PP=0.01
+PI=170
+PX=0.01
+PN=1e-006
+PL=5
+PT=0.05
+Pn=-8,4,14,"Times New Roman"
+Pc=16
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=1
+0
+1
+0
+N.1="userFunction"*35x34#0,1<U>
+n="viscomm.sineHz"
+DP=80
+DLi[1]=1
+DLF[4]=1
+3.16227766016838e-006
+0
+-100
+DLi[1]=1
+DLs[4]="1"
+0
+"0."
+"-100"
+N.2="label"*3x2
+n="COUPLER EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,34,"Arial",0,2
+N.3="label"*3x8
+n="This Example illustrates the
+use of the RF Coupler block.
+
+This block can be configured as:
+Input Coupler
+Output Coupler
+"
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.4="label"*69x24
+n="Direct Path Loss: 0.5 dB
+Coupled Loss: 10 dB
+No Noise"
+N.5="plot"*101x15*131x26
+px="Time (sec)"
+pax=0
+pf=H
+pf=F
+pb=8e-006,-4e-006
+pbx=7,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=4e-006,-4e-006
+pL.0="Input Signal"
+pb.1=3e-006,-3e-006
+pL.1="Direct Output"
+pb.2=1e-006,-1e-006
+pL.2="Coupled Output"
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.6="plot"*101x42*131x26
+px="Time (sec)"
+pax=0
+pf=H
+pf=F
+pb=8e-006,-5e-006
+pbx=7,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=0,0
+pb.1=5e-006,-5e-006
+pL.1="Coupler Output"
+pb.2=0,0
+pb.3=6e-006,-5e-006
+pL.3="Equivalent Output (w/o Noise)"
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.7="userFunction"*71x18#1,2<U>
+n="viscomm.coupler"
+DP=88
+DLi[2]=0
+1
+DLF[3]=0.5
+10
+10
+DLs[3]="0.5"
+"10."
+"10"
+N.8="userFunction"*71x44#2,1<U>
+n="viscomm.coupler"
+DP=88
+DLi[2]=1
+0
+DLF[3]=0.5
+10
+30
+DLs[3]="0.5"
+"10."
+"30"
+N.9="userFunction"*40x45#0,1<U>
+n="viscomm.sineHz"
+DP=80
+DLi[1]=1
+DLF[4]=2.1
+3.98107170553497e-006
+0
+-98
+DLi[1]=1
+DLs[4]="2.1"
+0
+"0."
+"-98"
+N.10="summingJunction"*85x58
+N.11="userFunction"*64x58#1,1<U>
+n="viscomm.dBGain"
+DP=24
+DLF[2]=-10
+0.316227766016838
+DLs[1]="-10"
+N.12="userFunction"*46x60#1,1<U>
+n="viscomm.dBGain"
+DP=24
+DLF[2]=-0.5
+0.944060876285923
+DLs[1]="-0.5"
+N.13="label"*68x64
+n="Equivalent Circuit"
+N.14="label"*69x49
+n="Direct Path Loss: 0.5 dB
+Coupled Loss: 10 dB
+Noise Figure: 30 dB"
+N.15="wirePositioner"*32x40<R>
+N.16="wirePositioner"*58x15
+I.5.i1=16.o1
+I.5.i2=7.o1
+I.5.i3=7.o2
+I.6.i2=8.o1
+I.6.i4=10.o1
+I.7.i1=1.o1
+I.8.i1=1.o1
+I.8.i2=9.o1
+I.10.i1=11.o1
+I.10.i2=12.o1
+I.11.i1=9.o1
+I.12.i1=15.o1
+I.15.i1=1.o1
+I.16.i1=1.o1
+cEOF

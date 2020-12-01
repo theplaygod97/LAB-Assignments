@@ -1,0 +1,478 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-2002 Visual Solutions
+POt="BPSK Tracking example"
+POa="Eritek, Inc."
+PV=5.000.52
+PS=0
+PE=0.025
+PP=1.0416666666667e-005
+PI=170
+PX=1.0416666666667e-005
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman",18,0,400,2,0,1,0,1
+Pc=58
+Po=0.01,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=3071,0,0,3071,0,0
+Pd=777
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[5]=1
+331
+1
+0
+180
+QLc[8]="5.0.7c"
+QLc[64]="móéØÖòAÄ≤áêâC1~öç."
+N.1="plot"*80x42*123x34
+pt="Transmitted vs. Received Data Bits"
+px="Time (msec)"
+pax=0
+pf=S
+pS=7
+pf=F
+pb=4,-1
+pbx=0.025,0
+pbY=0,0
+pbX=0,0
+pc=2048
+pm=10,0
+pb.0=0,0
+pL.0="Received Data"
+pb.1=0,0
+pL.1="Transmitted Data"
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.2="plot"*133x3*70x38<c>
+pt="Phase Scatter Plot"
+px="Time (sec)"
+py="Q Channel"
+pax=0
+pl=1
+pf=S
+pf=x
+pf=F
+pb=2,-2
+pbx=2,-2
+pbY=0,-2
+pbX=5000,0
+pc=5000
+pm=9999,1
+pb.0=2,-2
+pL.0="I Channel"
+pb.1=2,-2
+pb.2=2,0
+pb.3=0,-2
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.3="userFunction"*121x14#1,1<MU>
+n="viscomm.loop2Filter"
+DP=168
+DLi[1]=0
+DLF[7]=500
+0.7071
+1
+10
+265.164195304766
+0.000251327412287183
+0.0028284
+DLi[1]=0
+DLs[5]=0
+0
+0
+0
+0
+N.4="*"*112x14<M>
+N.5="Compound"*28x41#1,2<M>
+n="Costas Loop
+  (Complex)"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.6="label"*202x59<M>
+n="VCO Output (Complex)"
+N.7="variable"*34x25
+n="data sig"
+N.8="variable"*112x46<MT11>
+n="VCO Phase"
+N.9="variable"*8x36<T11>
+n="VCO Phase"
+N.10="summingJunction"*35x34
+N.11="label"*107x21<M>
+n="BPSK Phase Detector"
+N.12="label"*7x58
+n="COMPLEX ENVELOPE SIMULATION:
+Carrier frequency is set to 0 Hz
+in the modulator and VCO."
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.13="userFunction"*3x20#1,2<U>
+n="viscomm.PNData"
+DP=136
+DLF[3]=4800
+0.000208333333333333
+0
+DLi[6]=6
+4
+0
+0
+1
+0
+DLI[2]=67
+63
+DLs[6]="Rate"
+"0."
+"6"
+"4."
+"103"
+"77"
+N.14="label"*7x25
+n="Data Source
+ (4.8 kbps)"
+N.15="label"*101x34
+n="Data Output"
+N.16="userFunction"*55x13#1,1<MU>
+n="viscomm.IIRfilter"
+DP=152
+DLi[7]=4
+0
+4
+0
+0
+0
+0
+DLF[5]=4000
+5
+1
+20
+3.01029995663981
+DLs[6]="4"
+"Fc"
+"5."
+"1."
+"20."
+0
+N.17="userFunction"*60x19#1,1<MU>
+n="viscomm.IIRfilter"
+DP=152
+DLi[7]=4
+0
+4
+0
+0
+0
+0
+DLF[5]=4000
+5
+1
+20
+3.01029995663981
+DLs[6]="4"
+"Fc"
+"5."
+"1."
+"20."
+0
+N.18="userFunction"*70x18#1,2<U>
+n="viscomm.awgn"
+DP=256
+DLi[1]=1
+DLF[11]=4800
+1
+10
+1
+1
+1
+1
+1
+1
+1
+10
+DLi[1]=0
+DLF[2]=1
+1
+DLs[14]="1"
+"4800."
+"1."
+0
+"EbNo"
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+"1."
+N.19="userFunction"*10x18#2,1<MU>
+n="viscomm.multiply"
+N.20="userFunction"*30x18#1,2<MUT11@2,1>
+n="viscomm.cpxReIm"
+N.21="userFunction"*45x37#1,1<MRU>
+n="viscomm.conjugate"
+N.22="userFunction"*86x38#1,2<MRU>
+n="viscomm.vco"
+DP=128
+DLF[4]=0
+1
+0
+10
+DLi[1]=1
+DLs[4]=0
+0
+0
+0
+N.23="userFunction"*105x5#2,1<MU>
+n="viscomm.reImCpx"
+N.24="userFunction"*69x31#2,2<MU>
+n="viscomm.integDump2"
+DP=184
+DLi[3]=1
+0
+0
+DLF[4]=0
+4800
+0.0001
+4800
+DLs[4]="0."
+"Rate"
+"1.e-004"
+"Rate"
+DLi[1]=1
+N.25="userFunction"*138x13#1,2<MUT11@2,1>
+n="viscomm.cpxReIm"
+N.26="plot"*48x24*127x43<M>
+pt="Tracking PLL Phase Error"
+px="Time (msec)"
+pax=0
+pf=S
+pS=7
+pf=F
+pb=100,-100
+pbx=0.025,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=0,0
+pL.0="Phase Error (deg)"
+pb.1=0,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.27="label"*7x39
+n="(from Costas Loop)"
+N.28="label"*197x23<M>
+n="Tracked Signal (Complex)"
+N.29="label"*8x68
+n="To view block parameters, or enter
+compound blocks (blue), click over
+the block using the right mouse button."
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.30="label"*46x69<M>
+n="Click Right Mouse Button over blank area to return to previous level."
+Ob=65535
+Og=255
+N.31="label"*4x2
+n="PSK MODULATOR EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,0,0,18,"Times New Roman",0,2
+N.32="label"*71x24
+n="Eb/No set at 10 dB"
+N.33="userFunction"*12x42#1,1<MU>
+n="viscomm.convert"
+DP=8
+DLi[1]=5
+N.34="label"*128x11
+n="Q"
+N.35="label"*128x7
+n="I"
+N.36="const"<4800>*11x47
+N.37="variable"*26x47
+n="Rate"
+N.38="variable"*34x6<M>
+n="Fc"
+N.39="const"<4000>*19x6<M>
+N.40="const"<10>*13x51
+N.41="variable"*26x51
+n="EbNo"
+N.42="Compound"*46x34#1,0
+n="PLL Acquisition
+Plot"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.43="label"*4x6
+n="The PSK Modulator accepts a binary input stream and outputs
+a complex modulated signal.
+The same PSK map file referenced by the modulator should
+also be used by the receiver."
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.44="label"*84x78
+n="Received data decisions are correct once PLL has pulled in (approx. 5 msec)"
+N.45="Compound"*100x16#1,3
+n="Receiver"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.46="label"*89x4
+n="Start plot at t= 5 msec"
+N.47="step"<0.005;1>*118x4
+N.48="wirePositioner"*27x34
+N.49="userFunction"*114x39#2,2<MUT11@2,1>
+n="viscomm.pskDetect"
+DP=168
+DLi[1]=0
+DLF[1]=0
+DLc[128]="psk_gray.dat"
+DLs[1]="0."
+N.50="userFunction"*40x19#2,2<U>
+n="viscomm.pskModulate"
+DP=280
+DLi[2]=0
+0
+DLF[5]=0
+1
+-80
+0
+0
+DLc[128]="psk_gray.dat"
+DLs[5]="0."
+"1."
+"-80"
+"0."
+"0."
+N.51="Compound"*55x46#0,1
+n="Reference
+Data"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+N.52="variable"*70x47<M>
+n="data sig"
+N.53="label"*171x47<M>
+n="add offset to data for plotting purposes"
+N.54="summingJunction"*185x40<M>
+N.55="const"(2)*97x35<M>
+N.56="label"*63x51<M>
+n="From Modulator block"
+N.57="userFunction"*100x47#1,1<MU>
+n="viscomm.delay"
+DP=64
+DLI[1]=29
+DLF[1]=0
+DLi[1]=0
+DLF[1]=1
+DLs[3]="29"
+"0."
+0
+N.58="label"*110x52<M>
+n="  one bit time +
+   filter delay
+compensation"
+I.1.i1=45.o3
+I.1.i2=51.o1
+I.2.i1=45.o1
+I.2.i2=45.o2
+I.2.i0=47.o1
+I.3.i1=4.o1
+I.4.i1=16.o1
+I.4.i2=17.o1
+G.5=3,4,6,8,11,16,17,19,20,21,22,23,28,30,38,39,
+I.5.o1=23.o1
+I.5.o2=22.o1
+f5.1.i=vT11
+I.5.i1=45.i1
+I.7.i1=13.o1
+f8.1.o=T11
+I.8.i1=22.o2
+f9.1.o=T11
+I.10.i1=48.o1
+f10.2.i=-
+I.10.i2=9.o1
+I.16.i1=20.o1
+I.17.i1=20.o2
+f18.1.o=vT11@2,1
+f18.1.i=vT11
+I.18.i1=50.o1
+f19.1.o=vT11@2,1
+f19.1.i=vT11
+I.19.i1=5.i1
+f19.2.i=vT11
+I.19.i2=21.o1
+f20.1.i=vT11
+I.20.i1=19.o1
+f21.1.o=vT11@2,1
+f21.1.i=vT11
+I.21.i1=22.o1
+f22.1.o=vT11@2,1
+I.22.i1=3.o1
+f23.1.o=vT11@2,1
+I.23.i1=16.o1
+I.23.i2=17.o1
+f24.1.o=vT11@2,1
+f24.1.i=vT11
+I.24.i1=5.o1
+f25.1.i=vT11
+I.25.i1=24.o1
+I.26.i1=33.o1
+I.33.i1=42.i1
+I.37.i1=36.o1
+I.38.i1=39.o1
+I.41.i1=40.o1
+G.42=26,33,
+I.42.i1=10.o1
+G.45=5,24,25,49,
+I.45.o1=25.o1
+I.45.o2=25.o2
+I.45.o3=49.o1
+f45.1.i=vT11
+I.45.i1=18.o1
+I.48.i1=50.o2
+f49.1.o=T3
+f49.2.o=T3
+f49.1.i=vT11
+I.49.i1=24.o1
+f49.2.i=T3
+I.49.i2=24.o2
+f50.1.o=vT11@2,1
+f50.1.i=T3
+I.50.i1=13.o1
+f50.2.i=T3
+I.50.i2=13.o2
+G.51=52,53,54,55,56,57,58,
+I.51.o1=54.o1
+I.54.i1=55.o1
+I.54.i2=57.o1
+I.57.i1=52.o1
+cEOF

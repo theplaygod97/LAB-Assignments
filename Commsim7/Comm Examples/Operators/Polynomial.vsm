@@ -1,0 +1,136 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eugene"
+PV=4.500
+PS=0
+PE=10
+PP=0.01
+PI=170
+PX=0.01
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,6,14,"Arial"
+Pc=15
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=1
+0
+1
+0
+N.1="label"*4x2
+n="POLYNOMIAL BLOCK EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,34,"Arial",0,2
+N.2="label"*5x9
+n="The Polynomial block implements up to a 5th order polynomial y(x)"
+Ob=8454143
+Og=255
+N.3="ramp"(0,1)*5x25
+N.4="plot"*60x15*88x61
+pt="Polynomial Functions  (XY Plot)"
+px="Time (sec)"
+py="y(x)"
+pax=0
+pf=S
+pf=x
+pf=F
+pb=20,-40
+pbx=6,-4
+pbY=5,-1
+pbX=10,0
+pm=-1,0
+pb.0=6,-4
+pL.0="x"
+pb.1=10,-40
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.5="userFunction"*28x51#1,1<U>
+n="viscomm.poly"
+DP=80
+DLF[6]=0.04
+-0.2
+-0.6
+1.2
+2
+5
+DLs[6]="0.04"
+"-0.2"
+"-0.6"
+"1.2"
+"2"
+"5"
+DLi[2]=0
+2
+N.6="summingJunction"*18x25
+N.7="const"<-4>*5x29
+N.8="label"*13x54
+n="                      Formula not displayed
+y(x) = 5 + 2x + 1.2x^2 - 0.6x^3 -  0.2x^4 + 0.04x^5"
+Ob=16777215
+Og=255
+N.9="label"*59x19
+n="x"
+Ob=16777215
+Og=255
+N.10="label"*56x34
+n="y(x)"
+Ob=16777215
+Og=255
+N.11="label"*70x5
+n="Simulation range is [0, 10] sec"
+Ob=16777215
+Og=255
+N.12="label"*14x21
+n="x range is [-4, 6]"
+Ob=16777215
+Og=255
+N.13="label"*5x64
+n="The y(x) formula can be displayed if desired,
+and the number of decimal digits displayed
+can be adjusted."
+Ob=8454143
+Og=255
+N.14="userFunction"*31x29#1,1<U>
+n="viscomm.poly"
+DP=80
+DLF[6]=0
+0
+-1
+0
+4
+-5
+DLs[6]="0"
+"0"
+"-1"
+"0"
+"4.2"
+"-5"
+DLi[2]=1
+2
+N.15="label"*32x32
+n="Formula displayed"
+Ob=16777215
+Og=255
+I.4.i1=6.o1
+I.4.i2=14.o1
+I.4.i3=5.o1
+I.5.i1=6.o1
+I.6.i1=3.o1
+I.6.i2=7.o1
+I.14.i1=6.o1
+cEOF

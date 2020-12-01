@@ -1,0 +1,214 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eugene"
+PV=4.500
+PS=0
+PE=2000
+PP=0.005
+PI=170
+PX=0.005
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman"
+Pc=21
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=1
+63
+1
+0
+N.1="userFunction"*3x26#1,2<U>
+n="viscomm.PNData"
+DP=136
+DLF[3]=20
+0.05
+0
+DLi[6]=9
+5
+0
+1
+1
+0
+DLI[2]=529
+63
+DLs[6]="20."
+"0."
+"9"
+"5."
+"1021"
+"77"
+N.2="sinusoid"<0;0.0005;1>*5x47
+BF=H
+N.3="*"*31x41
+N.4="userFunction"*60x31#2,1<U>
+n="viscomm.reImCpx"
+N.5="*"*19x46
+N.6="userFunction"*5x40#0,1<U>
+n="viscomm.noisePower"
+DP=96
+DLi[2]=1
+1
+DLF[3]=0.0001
+-10
+290
+DLs[3]=0
+"-10."
+0
+N.7="userFunction"*45x13#2,4<UT11>
+n="viscomm.spectrum"
+DP=136
+DLi[8]=10
+0
+0
+0
+2
+0
+0
+0
+DLF[1]=0
+DLi[1]=4
+DLs[2]="0."
+"N"
+DLi[1]=1
+N.8="userFunction"*10x13#0,1<U>
+n="viscomm.impulse"
+DP=48
+DLF[2]=0
+1
+DLs[2]="0."
+"1."
+N.9="plot"*93x0*121x42<c>
+pt="Complex Spectrum Analyzer Display of a Baseband BPSK Signal"
+px="Time (sec)"
+py="Power Spectral Density (dBm/Hz)"
+pax=3
+pf=S
+pf=x
+pf=F
+pb=5,-40
+pbx=100,-100
+pbY=0,0
+pbX=513,0
+pc=1024
+pm=-1,0
+pr=65535
+pR=0
+pb.0=100,-200
+pb.1=0,0
+pb.2=100,-200
+pb.3=0,0
+pL.3="Frequency (Hz)"
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.10="label"*41x70
+n="Note:  Level in Real Spectral Display
+is nominally 3 dB higher as it includes
+the energy from the negative frequency
+axis as well."
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.11="summingJunction"*46x30
+N.12="label"*12x37
+n="Varying noise level"
+N.13="const"<4>*8x64
+N.14="variable"*16x64
+n="N"
+N.15="label"*3x68
+n="Number of FFT Averages"
+N.16="plot"*93x43*121x42<c>
+pt="Real Spectrum Analyzer Display of a Baseband BPSK Signal"
+px="Time (sec)"
+py="Power Spectral Density (dBm/Hz)"
+pax=3
+pf=S
+pf=x
+pf=F
+pb=5,-40
+pbx=100,0
+pbY=0,0
+pbX=257,0
+pc=513
+pm=-1,0
+pr=255
+pR=0
+pb.0=0,0
+pb.1=0,0
+pb.2=1,-1000
+pb.3=100,0
+pL.3="Frequency (Hz)"
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.17="userFunction"*39x56#2,4<UT11>
+n="viscomm.spectrumRe"
+DP=136
+DLi[8]=10
+0
+0
+0
+2
+0
+0
+0
+DLF[1]=0
+DLi[1]=4
+DLs[2]="0."
+"N"
+DLi[1]=1
+N.18="variable"*28x19
+n="trig"
+N.19="variable"*16x56
+n="trig"
+N.20="label"*2x2
+n="SPECTRUM ANALYZER (REAL) EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,34,"Arial",0,2
+N.21="label"*3x31
+n="Baseband BSPK signal"
+I.3.i1=6.o1
+I.3.i2=5.o1
+f4.1.o=v
+I.4.i1=11.o1
+I.5.i1=2.o1
+I.5.i2=2.o1
+f7.2.o=v
+f7.3.o=v
+f7.4.o=v
+I.7.i1=8.o1
+f7.2.i=v
+I.7.i2=4.o1
+f9.3.i=v
+I.9.i3=7.o2
+f9.4.i=v
+I.9.i4=7.o4
+I.9.i0=7.o1
+I.11.i1=1.o1
+I.11.i2=3.o1
+I.14.i1=13.o1
+f16.3.i=v
+I.16.i3=17.o2
+f16.4.i=v
+I.16.i4=17.o4
+I.16.i0=17.o1
+f17.2.o=v
+f17.3.o=v
+f17.4.o=v
+I.17.i1=19.o1
+I.17.i2=11.o1
+I.18.i1=8.o1
+cEOF

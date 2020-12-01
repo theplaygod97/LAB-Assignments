@@ -1,0 +1,159 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eritek, Inc."
+PV=4.500
+PS=0
+PE=20
+PP=0.01
+PI=170
+PX=0.01
+PN=1e-006
+PL=5
+PT=0.05
+Pn=-8,6,14,"Arial"
+Pc=9
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=0
+17
+1
+0
+N.1="userFunction"*32x23#1,2<U>
+n="viscomm.fileData"
+DP=320
+DLi[1]=0
+DLF[3]=4
+0.25
+0
+DLc[128]="data_in.dat"
+DLi[2]=1
+1
+DLF[1]=0
+DLs[3]="4."
+"0."
+"0."
+N.2="plot"*66x5*82x26
+pt="Single Event Output Data"
+px="Time (sec)"
+pax=0
+pf=S
+pf=F
+pb=8,-4
+pbx=20,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=7,-3
+pb.1=0,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.3="userFunction"*36x62#1,2<U>
+n="viscomm.fileData"
+DP=320
+DLi[1]=0
+DLF[3]=4
+0.25
+0
+DLc[128]="data_in.dat"
+DLi[2]=0
+1
+DLF[1]=0
+DLs[3]="4."
+"0."
+"0."
+N.4="label"*2x2
+n="FILE DATA EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,34,"Arial",0,2
+N.5="label"*5x8
+n="The File Data block allows the input of file based data
+into the simulation.  The data can be clocked internally or
+externally, and multiple outputs are supported. 
+The data can be made to repeat once the EOF is reached."
+Ob=8454143
+Og=255
+N.6="userFunction"*32x32#1,3<U>
+n="viscomm.fileData"
+DP=320
+DLi[1]=0
+DLF[3]=4
+0.25
+0
+DLc[128]="data_in.dat"
+DLi[2]=1
+2
+DLF[1]=0
+DLs[3]="4."
+"0."
+"0."
+N.7="plot"*66x32*82x26
+pt="Single Event Output Data (2 Outputs)"
+px="Time (sec)"
+pax=0
+pf=S
+pf=F
+pb=8,-4
+pbx=20,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=7,-3
+pb.1=0,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.8="plot"*66x59*82x26
+pt="Repeat at End of File (EOF) Output Mode"
+px="Time (sec)"
+pax=0
+pf=S
+pf=F
+pb=8,-4
+pbx=20,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=7,-3
+pb.1=0,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.9="label"*3x42
+n="Data file format is ASCII, with multiple entries per line allowed.
+The first line in the file is skipped (reserved for Header use).
+Supported delimiters include:
+- Commas
+- Tabs
+- Spaces
+- Carriage Returns"
+Ob=8454143
+Og=255
+I.2.i1=1.o1
+I.2.i8=1.o2
+I.7.i1=6.o1
+I.7.i2=6.o2
+I.8.i2=3.o1
+cEOF

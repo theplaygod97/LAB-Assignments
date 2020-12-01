@@ -1,0 +1,186 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-2002 Visual Solutions
+POt="GMSK vs. MSK modulation example"
+POa="Eritek, Inc."
+PV=5.000.48
+PS=0
+PE=0.02
+PP=5.20835e-005
+PI=170
+PX=5.20835e-005
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman",18,0,400,2,0,1,0,1
+Pc=14
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=3071,0,0,3071,0,0
+Pd=1e-005
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[5]=0
+331
+1
+0
+560
+QLc[8]="5.0.6c"
+QLc[64]="Uµ‹£¶‚WŽ¹|—“{CTŽ¨."
+N.1="userFunction"*2x16#1,2<U>
+n="viscomm.PNData"
+DP=136
+DLF[3]=1200
+0.000833333333333333
+0
+DLi[6]=5
+6
+0
+0
+1
+0
+DLI[2]=37
+31
+DLs[6]="1200."
+"0."
+"5"
+"6"
+"45"
+"37"
+N.2="label"*5x22
+n="R = 1200 sps"
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.3="plot"*83x38*115x37
+pt="MSK baseband waveform"
+px="Time (msec)"
+pax=0
+pf=S
+pS=7
+pf=F
+pb=2,-1
+pbx=0.02,0
+pbY=0,0
+pbX=0,0
+pc=10000
+pm=10,0
+pb.0=1,-1
+pL.0="MSK Baseband Signal (I Channel)"
+pb.1=1,-1
+pL.1="MSK Baseband Signal (Q Channel)"
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.4="userFunction"*37x30#2,2<U>
+n="viscomm.mskMod"
+DP=168
+DLF[5]=0
+1200
+1
+0
+0
+DLs[5]="0."
+"1200."
+"1."
+"0."
+"0."
+DLi[1]=0
+N.5="label"*85x77
+n="NOTE:  MSK waveform exibits alternate bit inversion"
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.6="userFunction"*62x39#1,2<UT11@2,1>
+n="viscomm.cpxReIm"
+N.7="label"*2x1
+n="MSK MODULATION EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,18,"Times New Roman",0,2
+N.8="label"*4x45
+n="Notes:
+- The Q input is delayed by 1/2 a bit inteval internal
+   to the modulator
+- The internal rate of the MSK modulator must
+   match the actual I & Q input rate exactly
+- Use the \"Start Time\" parameter to compensate
+   for any data time offsets"
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.9="userFunction"*3x32#1,2<U>
+n="viscomm.PNData"
+DP=136
+DLF[3]=1200
+0.000833333333333333
+0
+DLi[6]=7
+14
+0
+0
+1
+0
+DLI[2]=137
+31
+DLs[6]="1200."
+"0."
+"7"
+"14"
+"45"
+"37"
+N.10="plot"*83x4*115x32
+pt="I and Q Data Inputs"
+px="Time (msec)"
+pax=0
+pf=S
+pS=7
+pf=F
+pb=3,-3
+pbx=0.02,0
+pbY=0,0
+pbX=0,0
+pc=10000
+pm=10,0
+pb.0=1,-1
+pL.0="I Data Signal"
+pb.1=1,-1
+pL.1="Q Data Signal"
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.11="wirePositioner"*34x22
+N.12="summingJunction"*68x12<M>
+N.13="const"<-2>*49x19<M>
+N.14="Compound"*55x22#1,1
+n="Bias"
+Ms=3071,0,0,3071,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+I.3.i1=6.o1
+I.3.i2=6.o2
+f4.1.o=vT11@2,1
+I.4.i1=1.o1
+I.4.i2=9.o1
+f6.1.i=vT11
+I.6.i1=4.o1
+I.10.i1=1.o1
+I.10.i2=14.o1
+I.11.i1=9.o1
+I.12.i1=14.i1
+I.12.i2=13.o1
+G.14=12,13,
+I.14.o1=12.o1
+I.14.i1=11.o1
+cEOF

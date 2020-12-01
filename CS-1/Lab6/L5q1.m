@@ -1,0 +1,20 @@
+clc;
+clear;
+close all;
+fs=100000;
+B=3;
+Am=1;
+Ac=2;
+Fm=250;
+Fc=2500;
+t=0:(1/fs):(2/Fm)-(1/fs);
+figure(1);
+M=Am*cos(2*pi*Fm*t);
+subplot(311)
+plot(t,M);title('Message signal');xlabel('Time');ylabel('Amplitude');
+C=Ac*cos(2*pi*Fc*t);
+subplot(312);
+plot(t,C);title('Carrier signal');xlabel('time');ylabel('amplitude');
+FM=Ac*cos((2*pi*Fc*t)+B*sin(2*pi*Fm*t));
+subplot(313);
+plot(t,FM);title('Frequency modulated signal');xlabel('time');ylabel('amplitude');

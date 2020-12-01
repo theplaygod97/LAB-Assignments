@@ -1,0 +1,220 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eritek, Inc."
+PV=4.500
+PS=0
+PE=7
+PP=0.01
+PI=170
+PX=0.01
+PN=1e-006
+PL=5
+PT=0.05
+Pn=-8,4,14,"Times New Roman"
+Pc=19
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=1
+0
+1
+0
+N.1="userFunction"*47x25#0,1<U>
+n="viscomm.sineHz"
+DP=80
+DLi[1]=1
+DLF[4]=1
+1
+0
+10
+DLi[1]=1
+DLs[4]="1"
+0
+"0."
+"10"
+N.2="userFunction"*50x37#0,1<U>
+n="viscomm.sineHz"
+DP=80
+DLi[1]=1
+DLF[4]=2.1
+1.25892541179417
+0
+12
+DLi[1]=1
+DLs[4]="2.1"
+0
+"0."
+"12"
+N.3="plot"*103x9*131x20
+pt="Switch Selector Signal"
+px="Time (sec)"
+pax=0
+pf=H
+pf=F
+pb=3,0
+pbx=7,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=2,-2
+pb.1=2,-2
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.4="label"*3x2
+n="SWITCH EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,34,"Arial",0,2
+N.5="label"*3x42
+n="This Example illustrates the use of the
+RF Switch block.
+
+This block can be configured as:
+Input Switch
+Output Switch
+
+The block can model imperfect
+isolation and switch losses.
+"
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.6="label"*68x74
+n="0.5 dB loss"
+N.7="label"*77x41
+n="Extra 1 dB loss
+Perfect Isolation"
+N.8="label"*73x68
+n="20 dB Isolation"
+N.9="plot"*103x31*131x26
+px="Time (sec)"
+pax=0
+pf=H
+pf=F
+pb=1.5,-1
+pbx=7,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=2,-2
+pb.1=2,-2
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.10="plot"*103x59*131x26
+px="Time (sec)"
+pax=0
+pf=H
+pf=F
+pb=1.5,-1.5
+pbx=7,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=2,-2
+pb.1=2,-2
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.11="userFunction"*62x7#1,1<U>
+n="viscomm.dBGain"
+DP=24
+DLF[2]=-4.8
+0.575439937337157
+DLs[1]="-4.8"
+N.12="userFunction"*60x12#1,1<U>
+n="viscomm.dBGain"
+DP=24
+DLF[2]=-3
+0.707945784384138
+DLs[1]="-3"
+N.13="label"*3x66
+n="Note the additional loss through the
+devices in addition to the theoretical
+factor:
+
+2-Way theoretical loss is 3 dB
+
+3-Way loss is 4.8 dB"
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.14="userFunction"*75x34#3,1<U>
+n="viscomm.switchRF"
+DP=96
+DLi[4]=0
+1
+0
+2
+DLF[3]=50
+0.5
+0.5
+DLs[3]="50."
+"0.5"
+"0.5"
+N.15="ramp"<0;0.5>*44x9
+N.16="userFunction"*49x17#0,2<U>
+n="viscomm.pulses"
+DP=120
+DLF[5]=0.25
+2
+1
+2
+0
+DLi[1]=1
+DLF[1]=50
+DLs[6]="0.25"
+"2"
+"1"
+"0.5"
+"0."
+"50"
+N.17="userFunction"*71x60#3,1<U>
+n="viscomm.switchRF"
+DP=96
+DLi[4]=0
+0
+0
+2
+DLF[3]=20
+0.5
+0.5
+DLs[3]="20"
+"0"
+"0.5"
+N.18="const"(1)*57x60
+N.19="wirePositioner"*79x53
+I.3.i1=16.o1
+I.9.i1=1.o1
+I.9.i2=14.o1
+I.10.i1=19.o1
+I.10.i2=17.o1
+I.14.i1=16.o1
+I.14.i2=1.o1
+I.14.i3=2.o1
+I.17.i1=18.o1
+I.17.i2=1.o1
+I.17.i3=2.o1
+I.19.i1=1.o1
+cEOF

@@ -1,0 +1,8 @@
+clc,clear all,close all
+a=input('Enter the value of cosx = ');
+y=sind(a)/cosd(a);
+if (a>10^(-20))
+    fprintf('The value of tanx = %f\n',y)
+elseif (a<10^(-20))
+    fprintf('Invalid input \n')
+end

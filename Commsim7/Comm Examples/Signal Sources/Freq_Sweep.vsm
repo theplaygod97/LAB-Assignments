@@ -1,0 +1,85 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eritek, Inc."
+PV=4.500
+PS=0
+PE=0.01
+PP=1e-005
+PI=170
+PX=1e-005
+PN=1e-006
+PL=5
+PT=0.05
+Pn=-8,6,14,"Arial"
+Pc=5
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=0
+17
+1
+0
+N.1="plot"*57x9*97x35
+pt="Frequency Sweep Signal"
+px="Time (msec)"
+pax=0
+pf=S
+pS=7
+pf=F
+pb=3,-3
+pbx=0.01,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=7,-3
+pb.1=0,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.2="label"*2x2
+n="FREQUENCY SWEEP EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,34,"Arial",0,2
+N.3="label"*4x39
+n="Notes:
+Once the sweep interval is completed, the sweep resumes 
+at the start frequency and specified start phase.  A phase
+discontinuity will usually take place at this point."
+Ob=8454143
+Og=255
+N.4="userFunction"*14x15#0,1<U>
+n="viscomm.sweep"
+DP=96
+DLF[5]=1000
+10000
+0.005
+1
+0
+DLs[5]="1000."
+"10000"
+"0.005"
+"1."
+"0"
+N.5="label"*10x19
+n="Sweep Parameters:
+Start Freq.= 1 kHz
+Stop Freq.= 10 kHz
+Sweep Interval= 5 msec
+Amplitude= 1 V"
+Ob=8454143
+Og=255
+I.1.i1=4.o1
+cEOF

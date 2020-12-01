@@ -1,0 +1,214 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eritek, Inc."
+PV=4.500
+PS=0
+PE=200
+PP=0.0025
+PI=170
+PX=0.0025
+PN=1e-006
+PL=5
+PT=0.05
+Pn=-8,4,14,"Times New Roman"
+Pc=17
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=1
+0
+1
+0
+N.1="userFunction"*35x15#2,1<U>
+n="viscomm.mixer"
+DP=272
+DLi[1]=0
+DLF[9]=10
+3
+5
+17
+0
+10
+15
+100
+100
+DLs[12]="10"
+"3."
+"5"
+"17"
+"0"
+"10"
+"15"
+"100."
+"100."
+"-10"
+"30"
+0
+DLF[3]=-10
+30
+30
+N.2="userFunction"*6x10#0,1<U>
+n="viscomm.sineHz"
+DP=80
+DLi[1]=1
+DLF[4]=12.5
+0.1
+0
+-10
+DLi[1]=1
+DLs[4]="12.5"
+0
+"0."
+"-10"
+N.3="userFunction"*7x20#0,1<U>
+n="viscomm.sineHz"
+DP=80
+DLi[1]=1
+DLF[4]=8
+1
+0
+10
+DLi[1]=1
+DLs[4]="8"
+0
+"0."
+"10"
+N.4="userFunction"*46x4#0,1<U>
+n="viscomm.impulse"
+DP=48
+DLF[2]=0
+1
+DLs[2]=0
+0
+N.5="plot"*105x3*132x53<c>
+pt="IF Output from Single Tone RF Mixer Input (Real Spectrum)"
+px="Time (sec)"
+pax=2
+pf=S
+pf=x
+pf=F
+pb=5,-60
+pbx=60,0
+pbY=0,0
+pbX=4096,0
+pc=1025
+pm=-1,0
+pb.0=0,-100
+pb.1=0,0
+pb.2=100,-100
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.6="label"*5x48
+n="Mixer Notes:
+- If unsure about the LO harmonic level settings, and
+  to minimize thier impact on the output, enter a very
+  large value (e.g. 100 dBm)
+-  Intercerpt Points are referenced at the mixer INPUT"
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.7="label"*5x58
+n="- The Mixer IF output is obtained by passing the RF
+  input through an amplifier stage, and then multiplying
+  it's output by the LO signal.  Once saturation is reached,
+  the output level will no longer increase."
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.8="label"*5x36
+n="This example illustrates the various IF products formed
+when an RF and LO signals are applied to a mixer.
+
+Try varying the mixer LO settings and observe
+the impact on the various output terms:"
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.9="label"*4x3
+n="MIXER EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,34,"Arial",0,2
+N.10="label"*5x66
+n="- Due to the algorithm used to model the mixer, this block will
+  show an output level dependence on the input LO level.
+  This compromise allows for the independent setting of the
+  3rd and 5th order LO terms, which would otherwise not
+  be possible."
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.11="label"*8x25
+n="LO Signal"
+N.12="label"*9x15
+n="RF Signal"
+N.13="label"*36x21
+n="Mixer Settings:
+Conversion Loss=  10 dB
+Input IP3=  17 dBm
+Input P1=  5 dBm
+LO 3rd harmonics= -15 dBc
+LO 5th harmonics= -30 dBc"
+N.14="label"*108x61
+n="Fundamental terms are at 4.5 kHz and 20.5 kHz
+LO 3rd harmonic terms are at 11.5 kHz and 36.5 kHz (and down -15 dBc)
+LO 5th harmonic terms are at 52.5 kHz and 27.5 kHz (and down -30 dBc)"
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.15="label"*5x76
+n="- If a square wave is applied at the LO input, then all ODD 
+  harmonics will appear at the IF output, but at a fixed
+  relative level (the LO 3rd and 5th settings are not meaningful
+  in this case and should be disabled by making them very large)"
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+N.16="userFunction"*61x4#2,4<UT11>
+n="viscomm.spectrumRe"
+DP=136
+DLi[8]=11
+0
+0
+1
+1
+0
+0
+0
+DLF[1]=0
+DLi[1]=16
+DLs[2]="0."
+"16"
+DLi[1]=1
+N.17="label"*91x76
+n="Note:
+The Nominal RF input level setting in the Mixer parameters need only be approximate.
+This value is used to more accurately compute the additional loss in the output IF
+FUNDAMENTAL terms due to 3rd and 5th level harmonic contributions."
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,34,"Arial",0,2
+I.1.i1=2.o1
+I.1.i2=3.o1
+f5.1.i=v
+I.5.i1=16.o2
+f5.3.i=v
+I.5.i3=16.o4
+I.5.i0=16.o1
+f16.2.o=v
+f16.3.o=v
+f16.4.o=v
+I.16.i1=4.o1
+I.16.i2=1.o1
+cEOF

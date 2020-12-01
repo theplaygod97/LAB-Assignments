@@ -1,0 +1,168 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eritek, Inc."
+PV=4.500
+PS=0
+PE=0.02
+PP=4e-005
+PI=170
+PX=4e-005
+PN=1e-006
+PL=5
+PT=0.05
+Pn=-8,4,14,"Times New Roman"
+Pc=13
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=1
+63
+1
+0
+N.1="userFunction"*8x9#0,1<U>
+n="viscomm.sineHz"
+DP=72
+DLi[1]=1
+DLF[4]=2000
+0.446154216921401
+0
+6
+DLi[1]=1
+DLs[4]="2000."
+0
+"0."
+"6."
+N.2="userFunction"*8x15#0,1<U>
+n="viscomm.sineHz"
+DP=72
+DLi[1]=1
+DLF[4]=2500
+0.446154216921401
+0
+6
+DLi[1]=1
+DLs[4]="2500."
+0
+"0."
+"6."
+N.3="userFunction"*53x14#1,1<U>
+n="viscomm.amp"
+DP=176
+DLi[2]=0
+1
+DLF[6]=10
+3
+10
+30
+22
+50
+DLs[6]="10."
+"3."
+"10."
+"30."
+"22."
+"50."
+N.4="plot"*76x14*105x34
+pt="Amplifier Output (Time Domain)"
+px="Time (sec)"
+pax=0
+pf=S
+pf=F
+pb=1.5,-1.5
+pbx=0.02,0
+pbY=1,1e-031
+pbX=12500,0
+pc=5000
+pm=10,0
+pb.0=2,-1
+pb.1=0,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.5="userFunction"*33x14#2,1<U>
+n="viscomm.splitter"
+DP=72
+DLi[3]=0
+2
+2
+DLF[2]=0.5
+0.5
+DLs[2]="0.5"
+"0.5"
+N.6="label"*32x20
+n="Note:  3.5 dB loss
+through combiner"
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.7="label"*49x9
+n="1 dB comp.= 10 dBm"
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.8="label"*6x2
+n="NONLINEAR AMPLIFIER EXAMPLE"
+Ob=8454016
+Og=255
+Of=-16,0,400,0,1,0,18,"Times New Roman",0,2
+N.9="label"*92x3
+n="This example illustrates the various intermodulation
+products formed when two tones are passed through an
+amplifier close to its compression point."
+Ob=65535
+Og=255
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.10="label"*5x31
+n="To view block parameters, click
+over the block using the right
+mouse button."
+Ob=65535
+Og=255
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.11="label"*6x44
+n="Try varying the amplifier settings and
+observe the impact on the IM products."
+Ob=65535
+Og=255
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.12="label"*53x28
+n="Fs= 25 kHz"
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.13="plot"*76x49*105x34
+pt="Amplifier Output (Frequency domain)"
+px="Frequency (Hz)"
+py="Power (dB)"
+pax=0
+pf=S
+pf=d
+pf=f
+pf=F
+pb=1,1e-005
+pbx=12500,0
+pbY=2,-2
+pbX=0.02,0
+pc=5000
+pm=10,0
+pf=Y
+pg=0,5
+pb.0=2,-1
+pb.1=0,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+I.3.i1=5.o1
+I.4.i1=3.o1
+I.5.i1=1.o1
+I.5.i2=2.o1
+I.13.i1=3.o1
+cEOF

@@ -1,0 +1,130 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-2002 Visual Solutions
+POt="Demonstrates the use of the Delay Estimator block"
+POa="Eritek, Inc."
+PV=5.000.52
+PS=0
+PE=10
+PP=0.05
+PI=170
+PX=0.05
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman",18,0,400,2,0,1,0,1
+Pc=15
+Po=0.01,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=3071,0,0,3071,0,0
+Pd=777
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[5]=1
+331
+1
+0
+1453
+QLc[8]="5.0.7c"
+QLc[64]="áÅ•xãõ=è¶åÜçwCcn¢s."
+N.1="userFunction"*28x28#0,1<U>
+n="viscomm.sineHz"
+DP=120
+DLi[1]=1
+DLF[4]=0.5
+1
+0
+0
+DLi[1]=0
+DLs[4]="0.5"
+"1."
+"0."
+0
+DLi[1]=0
+N.2="const"(1.75)*32x21
+N.3="timeDelay"(0,128)*53x21
+N.4="display"<1.75>*148x22
+n=""
+Oe=6
+Ox=1
+Ov=1
+N.5="plot"*85x39*102x25
+px="Time (sec)"
+pax=0
+pf=S
+pf=F
+pb=2,-2
+pbx=10,0
+pbY=0,0
+pbX=0,0
+pc=512
+pm=10,0
+pb.0=2,-1
+pb.1=2,-1
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.6="userFunction"*111x22#2,2<U>
+n="viscomm.delayEst"
+DP=104
+DLi[1]=100
+DLF[2]=0
+2
+DLs[3]="window"
+"0."
+"2."
+N.7="light"(1,0,0.5)*147x31
+Ll=255
+Lg=255
+Lh=65280
+L0=""
+L1=""
+L2=""
+Lb=0
+N.8="label"*11x4
+n="DELAY ESTIMATOR BLOCK EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,18,"Times New Roman",0,2
+N.9="label"*156x30
+n="red=   computing
+green=  done"
+N.10="label"*32x18
+n="Delay"
+N.11="label"*9x46
+n="Try varying the delay value (by clicking over the
+constant value block with the right mouse button)
+and see the estimator work!"
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.12="label"*102x5
+n="To view block parameters
+click over the block using the right
+mouse button."
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.13="variable"*112x14
+n="window"
+N.14="const"<100>*98x14
+N.15="label"*102x17
+n="sliding window size"
+f3.1.i=lt
+I.3.i1=2.o1
+f3.2.i=lx
+I.3.i2=1.o1
+I.4.i1=6.o1
+I.5.i1=1.o1
+I.5.i2=3.o1
+I.6.i1=3.o1
+I.6.i2=1.o1
+I.7.i1=6.o2
+I.13.i1=14.o1
+cEOF

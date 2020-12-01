@@ -1,0 +1,179 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eugene"
+PV=4.500
+PS=0
+PE=1
+PP=0.005
+PI=170
+PX=0.005
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman"
+Pc=10
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=1
+123
+1
+0
+N.1="label"*6x65
+n="Notes:
+- IIR filters are implemented by using the bilinear transform
+  and a cascade Type II realization
+- Filter delay is frequency dependent
+- IIR filters can become unstable when the cutoff frequency
+  is < 1% of the simualtion sampling rate"
+Ob=8454143
+Og=255
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.2="plot"*99x8*123x33
+px="Time (sec)"
+pax=0
+pf=S
+pf=F
+pb=2,-2
+pbx=1,0
+pbY=0,0
+pbX=0,0
+pm=-1,0
+pr=255
+pR=16777215
+pb.0=2,-1
+pL.0="Input Signal"
+pb.1=1,-1
+pL.1="Filter Output"
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.3="userFunction"*15x9#0,2<U>
+n="viscomm.sineHz"
+DP=72
+DLi[1]=1
+DLF[4]=10
+1
+0
+0
+DLi[1]=0
+DLs[4]="10."
+"1."
+"0."
+0
+N.4="userFunction"*16x51#0,2<U>
+n="viscomm.sineHz"
+DP=72
+DLi[1]=1
+DLF[4]=6
+1
+0
+0
+DLi[1]=0
+DLs[4]="6."
+"1."
+"0."
+0
+N.5="userFunction"*57x54#1,1<U>
+n="viscomm.IIRfilter"
+DP=152
+DLi[7]=4
+0
+4
+1
+0
+0
+1
+DLF[5]=8
+2
+0.508847139909588
+20
+1
+DLs[6]="4"
+"8."
+"2."
+0
+"20."
+"1."
+N.6="userFunction"*56x12#1,1<U>
+n="viscomm.IIRfilter"
+DP=152
+DLi[7]=4
+0
+4
+1
+0
+0
+1
+DLF[5]=8
+2
+0.508847139909588
+20
+1
+DLs[6]="4"
+"8."
+"2."
+0
+"20."
+"1."
+N.7="plot"*99x42*123x33
+px="Time (sec)"
+pax=0
+pf=S
+pf=F
+pb=2,-2
+pbx=1,0
+pbY=0,0
+pbX=0,0
+pm=-1,0
+pr=255
+pR=16777215
+pb.0=2,-1
+pb.1=1,-1
+pb.2=0,0
+pL.2="Input Signal"
+pb.3=0,0
+pL.3="Filter Ouput"
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.8="label"*10x21
+n="Infinite Impulse Response (IIR) Filters
+
+The following filter types are supported:
+
+Butterworth
+Chebyshev (Type I & II)
+Bessel
+Elliptical"
+Ob=8454143
+Og=255
+N.9="label"*55x3
+n="A 10 Hz sine wave is attenuated much more than a 6 Hz waveform going through the same filter (8 Hz cutoff)."
+Ob=16777215
+Og=255
+Of=-13,0,400,0,0,0,18,"Times New Roman",0,2
+N.10="label"*5x2
+n="IIR FILTER EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,18,"Times New Roman",0,2
+I.2.i1=3.o1
+I.2.i2=6.o1
+I.5.i1=4.o1
+I.6.i1=3.o1
+I.7.i3=4.o1
+I.7.i4=5.o1
+cEOF

@@ -1,0 +1,165 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POa="Eugene"
+PV=4.500
+PS=0
+PE=10
+PP=0.01
+PI=170
+PX=0.01
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,6,14,"Arial"
+Pc=13
+Po=1,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,3840,0,0
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=1
+0
+1
+0
+N.1="label"*4x7
+n="The Modulo block, can operate in either
+INTEGER mode or REAL mode, as 
+illustrated by the example below."
+Ob=8454143
+Og=255
+N.2="label"*2x2
+n="MODULO BLOCK EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,34,"Arial",0,2
+N.3="userFunction"*39x20#1,1<U>
+n="viscomm.modulo"
+DP=32
+DLF[2]=4
+1e-006
+DLi[2]=0
+2
+DLs[2]="4"
+"1.e-006"
+N.4="ramp"(0,1)*8x35
+N.5="userFunction"*39x51#1,1<U>
+n="viscomm.modulo"
+DP=32
+DLF[2]=2
+1e-006
+DLi[2]=1
+4
+DLs[2]="4"
+"1.e-006"
+N.6="plot"*65x29*76x28
+pt="Real Modulo (4.5)"
+px="Time (sec)"
+pax=0
+pf=S
+pf=F
+pb=5,0
+pbx=10,0
+pbY=0,0
+pbX=0,0
+pm=-1,0
+pb.0=0,0
+pb.1=0,0
+pb.2=4,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.7="plot"*65x1*76x28
+pt="Real Modulo (4.0)"
+px="Time (sec)"
+pax=0
+pf=S
+pf=F
+pb=5,0
+pbx=10,0
+pbY=0,0
+pbX=0,0
+pm=-1,0
+pb.0=0,0
+pb.1=0,0
+pb.2=4,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.8="plot"*65x57*76x28
+pt="Integer Modulo (4)"
+px="Time (sec)"
+pax=0
+pf=S
+pf=F
+pb=5,0
+pbx=10,0
+pbY=0,0
+pbX=0,0
+pm=-1,0
+pb.0=0,0
+pb.1=0,0
+pb.2=4,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.9="userFunction"*39x35#1,1<U>
+n="viscomm.modulo"
+DP=32
+DLF[2]=4.5
+1e-006
+DLi[2]=0
+2
+DLs[2]="4.5"
+"1.e-006"
+N.10="plot"*4x61*59x23
+pt="Input Value"
+px="Time (sec)"
+pax=0
+pf=S
+pf=F
+pb=10,0
+pbx=10,0
+pbY=0,0
+pbX=0,0
+pm=-1,0
+pb.0=0,0
+pb.1=10,0
+pb.2=0,0
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.11="label"*39x24
+n="Range is [ 0, 4.0 )
+i.e.   0 =<  y < 4.0"
+Ob=8454143
+Og=255
+N.12="label"*41x39
+n="Range is [ 0, 4.5 )"
+Ob=8454143
+Og=255
+N.13="label"*40x55
+n="Range is [ 0, 3 ]"
+Ob=8454143
+Og=255
+I.3.i1=4.o1
+I.5.i1=4.o1
+I.6.i1=9.o1
+I.7.i1=3.o1
+I.8.i1=5.o1
+I.9.i1=4.o1
+I.10.i2=4.o1
+cEOF

@@ -1,0 +1,130 @@
+; VisSim Block Diagram Format (VBDF)
+; Copyright ©1989-1999 Visual Solutions
+POt="Compander use example"
+POa="Eritek, Inc."
+PV=4.500
+PS=0
+PE=1
+PP=0.01
+PI=170
+PX=0.01
+PN=1e-006
+PL=5
+PT=1e-005
+Pn=-8,4,14,"Times New Roman"
+Pc=14
+Po=0.01,50,664,0
+Ppl=0
+Ppp=0
+Ppt=0
+Ppf=1
+Pe=0
+PD=1024x768
+Pf=0x0
+Ps=2048,0,0,1536,0,0
+Pd=777
+PM=1,1,1,1
+Qn="viscomm.dll"
+QLi[4]=1
+331
+1
+0
+N.1="Compound"*23x37#1,1<C>
+n="quantizer"
+Ms=2048,0,0,1536,0,0
+Ml=0
+Mr=0
+Mh=0
+Mp=0
+Mw=""
+N.2="quantize"(0.05)*119x33<M>
+N.3="summingJunction"*80x32<M>
+N.4="const"(0.025)*49x26<M>
+N.5="label"*117x37<M>
+n="0.1 steps"
+N.6="label"*42x22<M>
+n="1/2 step offset"
+N.7="plot"*88x12*109x50
+pt="Compander Example"
+px="Time (sec)"
+pax=0
+pf=S
+pf=F
+pb=2,-1.5
+pbx=1,0
+pbY=0,0
+pbX=0,0
+pc=2000
+pm=10,0
+pb.0=1,-1
+pL.0="Input Signal"
+pb.1=0,0
+pL.1="Compader Output"
+pb.2=0,0
+pL.2="Expanded Output After Quantization"
+pb.3=0,0
+pb.4=0,0
+pb.5=0,0
+pb.6=0,0
+pb.7=0,0
+N.8="userFunction"*19x13#0,1<U>
+n="viscomm.sineHz"
+DP=72
+DLi[1]=1
+DLF[4]=1
+1
+0
+0
+DLi[1]=0
+DLs[4]="1."
+"1."
+"0."
+0
+N.9="userFunction"*41x19#1,1<U>
+n="viscomm.compander"
+DP=64
+DLi[2]=0
+0
+DLF[3]=255
+87.56
+1
+DLs[3]="255."
+"87.56"
+"1."
+N.10="userFunction"*51x36#1,1<U>
+n="viscomm.compander"
+DP=64
+DLi[2]=0
+1
+DLF[3]=255
+87.56
+1
+DLs[3]="255."
+"87.56"
+"1."
+N.11="label"*91x3
+n="This example shows the non-linear quantization which
+can be achieved by using a compander."
+Of=-11,0,400,0,0,0,18,"Times New Roman",0,2
+N.12="label"*19x41
+n="quantizer steps @ 0.05"
+N.13="label"*5x2
+n="COMPANDER EXAMPLE"
+Ob=8454143
+Og=255
+Of=-16,0,400,0,1,0,18,"Times New Roman",0,2
+N.14="label"*7x48
+n="A Compander allows the application of un-equal
+quantization levels in a Comm system"
+G.1=2,3,4,5,6,
+I.1.o1=2.o1
+I.1.i1=9.o1
+I.2.i1=3.o1
+I.3.i1=4.o1
+I.3.i2=1.i1
+I.7.i1=8.o1
+I.7.i2=9.o1
+I.7.i3=10.o1
+I.9.i1=8.o1
+I.10.i1=1.o1
+cEOF

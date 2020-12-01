@@ -1,0 +1,30 @@
+clc;
+clear;
+close all;
+fs=100000;
+B=0.1;
+Am=1;
+Ac=2;
+Fm=250;
+Fc=2500;
+t=0:1/fs:1;
+figure(1);
+M=Am*cos(2*pi*Fm*t);
+u=length(M);
+f1=(-((u-1)/2)):((u+1)/2)*(fs/u);
+y1=abs(fft(M,u));
+subplot(312);
+subplot(311)
+stem(f1,fftshift(y1));title('Spectrum of Message signal');xlabel('Frequency');ylabel('Amplitude');
+C=Ac*cos(2*pi*Fc*t);
+u=length(C);
+f3=(-((u-1)/2)):((u+1)/2)*(fs/u);
+y2=abs(fft(C,u));
+subplot(312);
+stem(f3,fftshift(y2));title('Spectrum of Carrier signal');xlabel('Frequency');ylabel('Amplitude');
+FM=Ac*(cos((2*pi*Fc*t)+B*sin(2*pi*Fm*t)));
+u=length(FM);
+f2=(-((u-1)/2)):((u+1)/2)*(fs/u);
+y3=abs(fft(FM,u));
+subplot(313)
+stem(f2,fftshift(y3));title('Spectrum of Frequency modulated signal');xlabel('Frequency');ylabel('Amplitude');
